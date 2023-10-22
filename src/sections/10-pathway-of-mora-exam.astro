@@ -2,11 +2,115 @@
 // JS required for this section goes here (don't bother for now)
 ---
 
-<div>
-	Pathway of Mora Exam section
-	<!-- HTML required for this section goes here -->
+<div class="one" >
+    <p class="two"><b>Pathway of Mora Exam</b></p>
+
+    <div class="carrousel">
+        
+        <article class="card" >
+            <h1 class="three" >2007</h1> 
+            <h2 class="four">Beginning ▶</h2>
+            <p >The need for the pilot examination is felt.An exam was held for physical science and biological science
+                 students. This exam transformed as Mora Exam 2010</p>
+
+        </article>
+<article class="card">
+    <h1 class="three">2010</h1> 
+    <h2 class="four">Restart 🚀</h2>
+    <p>The need for the pilot examination is felt. An exam was held for physical science and biological science students.
+        This exam transformed as Mora Exam after 2010.
+    </p>
+</article>
+
+<article class="card">
+    <h1 class="three">2016</h1>
+    <h2 class="four">Technology Stream ➕</h2>
+    <p>We too have included the Technology stream due to the kindful request of the students and also the Provincial Director of
+        Education in 2016. But now because of the demands, we have handed over the responsibilities of Technology stream to the very own 
+        faculty of Technology students, The University of Jaffna and we just guide them for the betterment.
+    </p>
+</article>
+<article class="card">
+    <h1 class="three">2022</h1>
+    <h2 class="four">Now 🏆</h2>
+    <p>In the 13th year of Mora Exam, We are getting proud to serve the students. Last year we had expanded our service to the 18 distrricts 
+        and have conducted the examinations in above 45 examination centers and have accomodated above 5000 candidates. </p>
+</article>
 </div>
+    </div>
+</div>
+ 
 
 <style>
-	/* CSS for this section goes here */
+    
+    .carrousel {
+        display: grid;
+        grid-auto-flow: column;
+        scroll-behavior: auto;
+        gap: 1.2rem;
+       
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width:none;
+    }
+    
+    
+    .one{
+        background:linear-gradient(to bottom right,#3c006b,#9948d9);
+        height: 500px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 20px;
+        
+       
+    }
+    .two{
+        font-size:40px;
+        color: rgb(128, 191, 191);
+    }
+    
+    .three{
+        background-color: #4d4f53;
+        width:70px;
+        padding-left:50px;
+        border-radius:40px;
+        text-align:left;
+        
+    }
+    .four{
+        text-transform:uppercase;
+        padding-left: 20px;
+    }
+    
+    
+    
+    .card{
+        scroll-snap-align: start;
+        border-radius: 30px;
+        min-height: 300px;
+        min-width: 400px;
+        cursor: pointer;
+        transition: transform 0.4s;;
+
+    }
+    .card:hover{
+        transform: perspective(800px);
+        rotateX(-30deg)
+        rotateY(-25deg)
+        translateX(-30px);
+    }
+    
+           
+    
+    
+    .card:nth-child(odd) {
+        background:linear-gradient(-229deg,#fbd52d,#ef3a7b);
+        
+    }
+    .card:nth-child(even) {
+        background: linear-gradient(-229deg,#ff70af,#5fa8f5);
+    }
+
 </style>
+
