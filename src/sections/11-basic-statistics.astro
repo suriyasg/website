@@ -1,12 +1,78 @@
 ---
-// JS required for this section goes here (don't bother for now)
+
 ---
 
-<div>
-	Years, districts, centres, candidates numbers section
-	<!-- HTML required for this section goes here -->
-</div>
-
-<style>
-	/* CSS for this section goes here */
-</style>
+<body>
+	<div class="wrapper" id="counter">
+		<div class="container">
+	<span class="num"  >13</span>
+	<span class="text">🕑 Years</span>
+	</div>
+	
+	<div class="container">
+		<span class="num">22</span>
+		<span class="text">🪧 Districts</span>
+	</div>
+	
+	<div class="container">
+		<span class="num">69</span>
+		<span class="text">🏢 Centres </span>
+		
+	</div>
+	
+	<div class="container">
+		<span class="num">6821</span>
+		<span class="text">🧑‍🎓 Candidates</span>
+	</div>
+	</div>
+	</body>
+	
+	
+	
+	
+	
+	
+	<style>
+		*{
+			padding:3px;
+			margin:2px;
+			box-sizing:border-box;
+		}
+		
+		.wrapper{
+			position: absolute;
+			width: 8vw;
+			transform: translate();
+			
+			gap:100px;
+			
+			justify-content:space-evenly; 
+	   }
+	   .container{
+		width:300px;
+		height:200px;
+		display:flex;
+		flex-direction: column;
+		justify-content:space-around;
+		padding: 1cm 0;
+	   	font-weight:600;
+		font-size:3cm;
+		background:linear-gradient(to right,#ff5733,#6A3093);
+		border-radius:20px;
+		}
+		span.text{
+			color:antiquewhite;
+			font-size:1cm;
+			text-align: center;
+			padding-bottom: 40px;
+			font-weight:600;
+			
+	
+		}
+		span.num{
+			display: grid;
+			place-items: center;
+		}
+	</style>
+	
+	
