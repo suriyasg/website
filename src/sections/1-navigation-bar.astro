@@ -1,6 +1,10 @@
 ---
 // JS required for this section goes here (don't bother for now)
 ---
+<div class="top-bar">
+	<a class="email" href="mailto:moraetamils@gmail.com">moraetamils@gmail.com</a>
+	<a class="telephone" href="tel:+94704616400">+94 70 461 6400</a>
+</div>
 
 <nav>
 	<div class="logo">
@@ -21,11 +25,8 @@
 		<div class="menu-line"></div>
 	</div>
 </nav>
-<div class="container">
 
-<img src="/logo.png">
 
-</div>
 <style>
 	nav{
 		background-color: #3c006b;
@@ -34,6 +35,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		height: 80px;
+		position: sticky;
 		
 	}
 	nav a{
@@ -64,6 +67,13 @@
 	.menu{
 		cursor: pointer;
 		display: none;
+	}
+	.top-bar{
+		margin: 0px 150px 0px 150px;
+		padding-bottom: 5px ;
+	}
+	.telephone{
+		margin-left: 50px;
 	}
 	@media all and(max-width: 1300px;){
 		nav{
