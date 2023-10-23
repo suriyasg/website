@@ -1,11 +1,46 @@
 ---
 // JS required for this section goes here (don't bother for now)
 ---
-
-<div>
-	
+<div class="hero">
+<img src="/logo.png">
+<p class="welcome">WELCOME TO MORA E-TAMILS</p>
+<p class="language">Please Select Your language</p>
+<div class="button">
+<button class="tamil"><a href="">Tamil</a></button>
+<button class="english"><a href="">English</a></button>
 </div>
-
+</div>
 <style>
-	/* CSS for this section goes here */
+	.hero{
+		margin-left: 300px;
+		margin-top: 200px;
+		margin-bottom: 250px;
+	}
+	.tamil{
+		margin-right: 25px;
+	}
+	.welcome{
+		font-size: 36px;
+	}
+	.language{
+		font-size: 28px;
+	}
+	.tamil,.english{
+		font-size: 24px;
+		background-color: purple;
+		cursor: pointer;
+		padding: 20px 40px 20px 40px;
+		border-radius: 15px;
+		
+		
+		
+	}
+	a{
+		text-decoration: none;
+		color: aliceblue;
+	}
+	.tamil:hover,.english:hover{
+		background-color: #3c006b;
+	}
+	
 </style>
