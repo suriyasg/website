@@ -8,7 +8,7 @@
 		 subjects in our youtube channel. Click any of subjects listed below 
 		 and view respective videos</p>
 	</center>
-		 
+	<div class="video">	 
 	<a href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn" target="_blank"> 
 		<img  src="subject/maths.jpg"><button class="button"> MATHS</button></a>
 	
@@ -16,39 +16,42 @@
 		 <img src="subject/physics.jpg"><button class="button">PHYSICS</button></a>
 	
 	<a href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP" target="_blank">
-		 <img  src="subject/chemistry.jpg"> <button class="button">CHEMISTRY</button></a>
-	
+		 <img  src="subject/chemistry.jpg">
+		 <button class="button">CHEMISTRY</button></a>
+		</div>
 
 </article>
 	
 	
 	<style>
+		
 	
 	img{
 	   width:280px ;
 	   padding:3cm 0;
+	   align-items: center;
 	   
 	}
 	
-	button{
+	.button{
 		background-color: #3498db;
 		color:#fff
-		cursor:pointer:
-		padding:50px 90px;
+		cursor:pointer;
 		width:170px;
 		height:50px;
 		border-radius:5px;
-		font-size:25px
+		font-size:25px;
+		margin-right:100px;
 	}
 	.button:hover{
 		background-color: darkblue;
-		color:#fff
+		color:#fff;
 	}
 	.one{
 		font-size: 60px;
 	}
 	.two{
-		font-size:30px
+		font-size:30px;
 	}
 	article{
 		background:linear-gradient(45deg,#ff3231,#ff08) ;
@@ -58,6 +61,10 @@
 		padding-right: 1cm;
 		padding-bottom: 1cm;
 		
+	}
+	.video{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	
 	</style>
