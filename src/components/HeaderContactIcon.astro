@@ -1,0 +1,41 @@
+---
+interface brand {
+	name: "twitter" | "facebook" | "linkedin" | "youtube";
+}
+const name = Astro.props.name;
+
+let hrefLink = null;
+switch (name) {
+	case "twitter":
+		hrefLink = "https://twitter.com/moraexams";
+		break;
+	case "facebook":
+		hrefLink = "https://www.facebook.com/moraexams";
+		break;
+	case "linkedin":
+		// TODO
+		hrefLink = "https://twitter.com/moraexams";
+		break;
+	case "youtube":
+		hrefLink = "https://www.youtube.com/@MoraETamils";
+		break;
+	default:
+		throw new Error("");
+}
+---
+
+<a href={hrefLink}>
+	<i class={`fa-brands fa-${name}`}></i>
+</a>
+
+<style>
+	i {
+		font-size: 1.1em;
+		color: hsl(0, 0%, 100%, 40%);
+		margin-right: 12px;
+		transition: color 0.2s ease-in-out;
+	}
+	i:hover {
+		color: hsl(0, 0%, 100%, 100%);
+	}
+</style>
