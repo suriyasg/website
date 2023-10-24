@@ -1,46 +1,47 @@
 ---
 // JS required for this section goes here (don't bother for now)
 ---
-<div class="hero">
-<img src="/logo.png">
-<p class="welcome">WELCOME TO MORA E-TAMILS</p>
-<p class="language">Please Select Your language</p>
-<div class="button">
-<button class="tamil"><a href="">Tamil</a></button>
-<button class="english"><a href="">English</a></button>
-</div>
-</div>
+
+<section>
+	<img src="/logo.png" />
+	<p class="welcome">WELCOME TO MORA E-TAMILS</p>
+	<p class="language">Please Select Your language</p>
+	<div class="button">
+		<button class="tamil"><a href="">Tamil</a></button>
+		<button class="english"><a href="">English</a></button>
+	</div>
+</section>
+
 <style>
-	.hero{
-		margin-left: 300px;
-		margin-top: 200px;
-		margin-bottom: 250px;
+	section {
+		padding: 200px 0px 250px 300px;
+		background-image: url("/hero-bg.jpg");
+		background-size: cover;
+		color: white;
 	}
-	.tamil{
+	.tamil {
 		margin-right: 25px;
 	}
-	.welcome{
+	.welcome {
 		font-size: 36px;
 	}
-	.language{
+	.language {
 		font-size: 28px;
 	}
-	.tamil,.english{
+	.tamil,
+	.english {
 		font-size: 24px;
 		background-color: purple;
 		cursor: pointer;
 		padding: 20px 40px 20px 40px;
 		border-radius: 15px;
-		
-		
-		
 	}
-	a{
+	a {
 		text-decoration: none;
 		color: aliceblue;
 	}
-	.tamil:hover,.english:hover{
+	.tamil:hover,
+	.english:hover {
 		background-color: #3c006b;
 	}
-	
 </style>
