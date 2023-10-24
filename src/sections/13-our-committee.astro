@@ -6,27 +6,27 @@
 	<p class="mora-committee">Mora Exam - 2023 | Committee</p>
 	<div class="committee">
 		<div class="photo">
-			<img src="/logo.png">
-			<p>SARUJAN</p>
-			<p>President,
+			<img src="/sarujan.jpeg">
+			<p><span class="committee-name">SARUJAN</span><br>
+			resident,<br>
 				Student Of Department Of Civil Engineering</p>
 		</div>
 		<div class="photo">
-			<img src="/logo.png">
-			<p>HARIKISHNA</p>
-			<p>Secretary,
+			<img class="pic" src="/harikishna.jpeg">
+			<p><span class="committee-name">HARIKISHNA</span><br>
+			Secretary,<br>
 				Student Of Department Of Computer Science And Engineering</p>
 		</div>
 		<div class="photo">
-			<img src="/logo.png">
-			<p>MAYOORATHAN</p>
-			<p>Treasurer,
+			<img src="/mayoorathan.jpeg">
+			<p> <span class="committee-name">MAYOORATHAN</span><br>
+			Treasurer,<br>
 				Student Of Department Of Material Science And Engineering</p>
 		</div>
 		<div class="photo">
-			<img src="/logo.png">
-			<p>THABENDRA</p>
-			<p>Vice President
+			<img class="pic" src="/thabendra.jpg">
+			<p> <span class="committee-name">THABENDRA<br></span>
+			Vice President,<br>
 				Student Of Department Science And Engineering</p>
 		</div>
 	</div>
@@ -43,13 +43,33 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		margin-bottom: 100px;
 		margin-top: 100px;
+		gap: 15px;
+		
 	}
 	.photo{
-		padding: 10px;
+		padding: 30px;
+		background-color: azure;
+		
+
 	}
 	.mora-committee{
 		font-size: 36px;
 		text-align: center;
+	}
+	img{
+		height: 350px;
+		width: 350px;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+		padding: 10px;
+
+	}
+	.pic{
+		padding-bottom: 40px;
+	}
+	.committee-name{
+		color: blueviolet;
+		font-size: 24px;
 	}
 
 </style>
