@@ -46,15 +46,11 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 </header>
 
 <style>
-	header {
-		width: 100%;
-		background-color: rgb(66, 64, 64);
-		padding-top: 4px;
-		display: flex;
-		flex-direction: column;
-	}
 	nav,
 	.top-bar {
+		display: flex;
+		align-items: center;
+		background-color: rgb(66, 64, 64);
 		padding: 4px var(--body-margin-x);
 	}
 	a {
@@ -70,8 +66,6 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 	nav {
 		background-color: rgb(36, 36, 36);
 		color: aliceblue;
-		display: flex;
-		align-items: center;
 		justify-content: space-between;
 		position: sticky;
 		padding-bottom: 6px;
@@ -80,9 +74,16 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 		display: inline-block;
 		margin: 0 8px;
 	}
+	nav a {
+		text-decoration: none;
+		color: blanchedalmond;
+	}
 	.logo {
 		font-size: 36px;
 		font-weight: bolder;
+	}
+	nav a:hover {
+		text-decoration: underline;
 	}
 	.menu-line {
 		height: 3px;
@@ -96,8 +97,6 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 	}
 	.top-bar {
 		color: white;
-		display: flex;
-		align-items: center;
 		font-size: 1rem;
 	}
 	.top-bar i {
