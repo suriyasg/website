@@ -11,7 +11,7 @@
 		referrerpolicy="no-referrer"
 	/>
 	<div class="container">
-		<div class="mora-etamils">
+		<div class="main">
 			<h2>Mora E-Tamils</h2>
 			<p class="para">Faculty of Engineering,University of Moratuwa.</p>
 			<div class="contact">
@@ -88,14 +88,28 @@
 	footer {
 		width: 100%;
 		height: auto;
-		padding: 50px 100px 30px;
+		padding: 50px var(--body-margin-x) 30px;
 		background-color: #f6e7fd;
 	}
 	.container {
 		width: 100%;
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr 2fr;
+		grid-template-rows: 100%;
 		grid-gap: 0 10px;
+		grid-template-areas: "main useful-links our-services newsletter";
+	}
+	.main {
+		grid-area: main;
+	}
+	.useful-links {
+		grid-area: useful-links;
+	}
+	.services {
+		grid-area: our-services;
+	}
+	.newsletter {
+		grid-area: newsletter;
 	}
 	.container h2,
 	h3 {
@@ -175,5 +189,16 @@
 		text-decoration: none;
 		font-weight: 600;
 		color: #800080;
+	}
+	@media (max-width: 800px) {
+		.container {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-areas:
+				"main main"
+				"useful-links our-services"
+				"newsletter newsletter";
+			gap: 20px 10px;
+		}
 	}
 </style>

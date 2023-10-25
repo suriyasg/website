@@ -1,70 +1,89 @@
 ---
 // JS required for this section goes here (don't bother for now)
 ---
-<article>
-<center>
-	<p class="one"><b>E-Learning videos</b></p>
-	<p class="two">We have done video explainations regarding important topics of each
-		 subjects in our youtube channel. Click any of subjects listed below 
-		 and view respective videos</p>
-	</center>
-	<div class="video">	 
-	<a href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn" target="_blank"> 
-		<img  src="subject/maths.jpg"><button class="button"> MATHS</button></a>
-	
-	<a href="https://www.youtube.com/watch?v=vJ8oHxNUJGk&list=PL7rqMCp2H_mQ1lASzvCKicK19cB6IcihD" target="_blank">
-		 <img src="subject/physics.jpg"><button class="button">PHYSICS</button></a>
-	
-	<a href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP" target="_blank">
-		 <img  src="subject/chemistry.jpg">
-		 <button class="button">CHEMISTRY</button></a>
-		</div>
 
-</article>
-	
-	
-	<style>
-		
-	
-	img{
-	   width:280px ;
-	   padding:3cm 0;
-	   align-items: center;
-	   
+<section>
+	<h2>E-Learning videos</h2>
+	<p>
+		We have done video explainations regarding important topics of each subjects
+		in our youtube channel. Click any of subjects listed below and view
+		respective videos
+	</p>
+	<div class="video-cards-container">
+		<a
+			href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn"
+			target="_blank"
+		>
+			<img src="subject/maths.jpg" /><button>MATHS</button>
+		</a>
+
+		<a
+			href="https://www.youtube.com/watch?v=vJ8oHxNUJGk&list=PL7rqMCp2H_mQ1lASzvCKicK19cB6IcihD"
+			target="_blank"
+		>
+			<img src="subject/physics.jpg" /><button>PHYSICS</button
+			></a
+		>
+
+		<a
+			href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP"
+			target="_blank"
+		>
+			<img src="subject/chemistry.jpg" />
+			<button>CHEMISTRY</button></a
+		>
+	</div>
+</section>
+
+<style>
+	.video-cards-container {
+		display: flex;
+		gap: 10px;
+		justify-content: center;
 	}
-	
-	.button{
+	a {
+		max-width: 300px;
+	}
+	img {
+		width: 100%;
+		padding-bottom: 10px;
+		align-items: center;
+	}
+	button {
 		background-color: #3498db;
-		color:#fff
-		cursor:pointer;
-		width:170px;
-		height:50px;
-		border-radius:5px;
-		font-size:25px;
-		margin-right:100px;
+		color: #fff;
+		cursor: pointer;
+		width: 170px;
+		height: 50px;
+		border-radius: 5px;
+		border: none;
+		font-size: 25px;
 	}
-	.button:hover{
+	button:hover {
 		background-color: darkblue;
-		color:#fff;
+		color: #fff;
 	}
-	.one{
+	h2 {
 		font-size: 60px;
+		text-align: center;
+		margin-top: 0px;
 	}
-	.two{
-		font-size:30px;
+	p {
+		font-size: 20px;
+		text-align: center;
+		margin: 10px 0 20px;
 	}
-	article{
-		background:linear-gradient(45deg,#ff3231,#ff08) ;
+	section {
+		background: linear-gradient(45deg, #ff3231, #ff08);
 		border-radius: 30px;
 		padding-top: 1cm;
 		padding-left: 1cm;
 		padding-right: 1cm;
 		padding-bottom: 1cm;
-		
 	}
-	.video{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+	@media (max-width: 640px) {
+		.video-cards-container {
+			flex-direction: column;
+		}
 	}
-	
-	</style>
+</style>
