@@ -1,30 +1,146 @@
 ---
+import HeaderContactIcon from "../components/HeaderContactIcon.astro";
+
 // JS required for this section goes here (don't bother for now)
 ---
 
-<div>
-	<!-- Navigation bar (top with logo, links, and contact information) -->
-	
-	<nav>
-		<a class="logo" href="">Mora Exams</a>
-		<a href="">Home</a>
-		<a href="">About</a>
-		<a href="">Exam Centres</a>
-		<a href="">Schedule</a>
-		<a href="">Pastpapers</a>
-		<a href="">Practive Exams</a>
-		<a href="">Contact Us</a>
+<header>
+	<div class="top-bar">
+		<div>
+			<i class="fa-solid fa-envelope"></i>
+			<a class="email" href="mailto:moraetamils@gmail.com"
+				>moraetamils@gmail.com
+			</a>
+		</div>
+		<div>
+			<i class="fa-solid fa-phone"></i>
+			<a class="telephone" href="tel:+94704616400">+94 70 461 6400</a>
+		</div>
+		<div style="margin-left: auto;">
+			<HeaderContactIcon name="twitter" />
+			<HeaderContactIcon name="facebook" />
+			<HeaderContactIcon name="linkedin" />
+			<HeaderContactIcon name="youtube" />
+		</div>
+	</div>
 
+	<nav>
+		<div class="logo">
+			<a href="/">Mora Exams</a>
+		</div>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Exam Centres</a></li>
+			<li><a href="">Schedule</a></li>
+			<li><a href="">Past papers</a></li>
+			<li><a href="">Practice Exam</a></li>
+			<li><a href="">Contact Us</a></li>
+		</ul>
+		<div class="menu">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+		</div>
 	</nav>
-</div>
+</header>
 
 <style>
+	nav,
+	.top-bar {
+		display: flex;
+		align-items: center;
+		background-color: rgb(66, 64, 64);
+		padding: 4px var(--body-margin-x);
+	}
 	a {
+		color: inherit;
 		text-decoration: none;
 	}
-	.logo {
-		font-weight: bold;
-		font-size: 20px;
+	a:hover {
+		text-decoration: underline;
 	}
-	/* CSS for this section goes here */
+	.top-bar a {
+		opacity: 0.8;
+	}
+	nav {
+		background-color: rgb(36, 36, 36);
+		color: aliceblue;
+		justify-content: space-between;
+		position: sticky;
+		padding-bottom: 6px;
+	}
+	nav li {
+		display: inline-block;
+		margin: 0 8px;
+	}
+	nav a {
+		text-decoration: none;
+		color: blanchedalmond;
+	}
+	.logo {
+		font-size: 36px;
+		font-weight: bolder;
+	}
+	nav a:hover {
+		text-decoration: underline;
+	}
+	.menu-line {
+		height: 3px;
+		width: 20px;
+		background-color: darkslateblue;
+		margin-bottom: 3px;
+	}
+	.menu {
+		cursor: pointer;
+		display: none;
+	}
+	.top-bar {
+		color: white;
+		font-size: 1rem;
+	}
+	.top-bar i {
+		font-size: 0.85em;
+		margin-right: 6px;
+	}
+	.email {
+		margin-right: 20px;
+	}
+	ul {
+		margin: 0;
+	}
+	@media all and(max-width: 1300px;) {
+		nav {
+			flex-direction: column;
+		}
+		nav li {
+			display: block;
+			padding: 10px 0;
+		}
+		ul {
+			text-align: center;
+			padding: 0;
+			display: none;
+		}
+		.logo {
+			align-self: flex-start;
+			margin: 10px 0px 0px 30px;
+		}
+		.menu {
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 25px;
+		}
+		.showmenu {
+			display: block;
+		}
+	}
 </style>
+<script>
+	const menu = document.querySelector(".menu");
+	const menulist = document.querySelector("nav ul");
+	menu.addEventListener("click", () => {
+		menulist.classList.toggle("showmenu");
+	});
+</script>

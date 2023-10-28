@@ -23,6 +23,17 @@ const { pageTitle } = Astro.props;
 <style is:global>
 	html {
 		font-family: system-ui, sans-serif;
-		background-size: 224px;
+	}
+	html,
+	body {
+		margin: 0;
+	}
+	* {
+		box-sizing: border-box;
+	}
+
+	:root {
+		--body-width: min(82rem, 96vw);
+		--body-margin-x: calc((100vw - var(--body-width)) / 2);
 	}
 </style>

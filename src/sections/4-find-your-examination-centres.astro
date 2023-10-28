@@ -1,12 +1,72 @@
 ---
-// JS required for this section goes here (don't bother for now)
+
 ---
 
-<div>
-	Find your examination centres section
-	<!-- HTML required for this section goes here -->
+<div class="one">
+  <p>
+    <h1>Find your examination centres</h1>
+    <h4>
+      We have 67 examination center network covering almost whole island. Choose
+      your District to view the examination centres available...
+    </h4>
+  </p>
+
+  <select id="search-input">
+    <option>🔍Choose a District...</option>
+    <option value="ampara">Ampara</option>
+    <option value="anurathapura">Anurathapura</option>
+    <option value="budulla">Budulla</option>
+    <option value="batticaloa">Batticaloa</option>
+    <option value="colombo">Colombo</option>
+    <option value="galle">Galle</option>
+    <option value="gampaha">Gampaha</option>
+    <option value="hambantota">Hambantota</option>
+    <option value="jaffna">Jaffna</option>
+    <option value="kalutura">Kalutura</option>
+    <option value="kandy">Kandy</option>
+    <option value="kegalle">Kegalle</option>
+    <option value="kilinochchi">Kilinochchi</option>
+    <option value="kurunegala">Kurunegala</option>
+    <option value="mannar">Mannar</option>
+    <option value="matale">Matale</option>
+    <option value="matara">Matara</option>
+    <option value="mullaitivu">Mullaitivu</option>
+    <option value="nuwara-eliya">Nuwara-Eliya</option>
+    <option value="puttalam">Puttalam</option>
+    <option value="trincomalee">Trincomalee</option>
+    <option value="vavuniya">Vavuniya</option>
+  </select>
 </div>
 
 <style>
-	/* CSS for this section goes here */
+  .one {
+    background: linear-gradient(-229deg, #8ce0f1, #79f391);
+    text-align: center;
+    
+    margin: 10px;
+	  margin-top: 100px;
+	  padding: 30px;
+
+  }
+  #search-input {
+    padding: 10px;
+    border: 1px solid#ccc;
+    border-radius: 10px;
+    width: 350px;
+	  height: 50px;
+  }
+  #search-input:hover{
+	background-color: rgb(178, 162, 181);
+  }
+  h1{
+	text-align: center;
+	font-size: 48px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  option{
+	font-size: 28px;
+  }
+
 </style>

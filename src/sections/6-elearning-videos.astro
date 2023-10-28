@@ -2,11 +2,88 @@
 // JS required for this section goes here (don't bother for now)
 ---
 
-<div>
-	E-learning videos section
-	<!-- HTML required for this section goes here -->
-</div>
+<section>
+	<h2>E-Learning videos</h2>
+	<p>
+		We have done video explainations regarding important topics of each subjects
+		in our youtube channel. Click any of subjects listed below and view
+		respective videos
+	</p>
+	<div class="video-cards-container">
+		<a
+			href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn"
+			target="_blank"
+		>
+			<img src="subject/maths.jpg" /><button>MATHS</button>
+		</a>
+
+		<a
+			href="https://www.youtube.com/watch?v=vJ8oHxNUJGk&list=PL7rqMCp2H_mQ1lASzvCKicK19cB6IcihD"
+			target="_blank"
+		>
+			<img src="subject/physics.jpg" /><button>PHYSICS</button
+			></a
+		>
+
+		<a
+			href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP"
+			target="_blank"
+		>
+			<img src="subject/chemistry.jpg" />
+			<button>CHEMISTRY</button></a
+		>
+	</div>
+</section>
 
 <style>
-	/* CSS for this section goes here */
+	.video-cards-container {
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+	}
+	a {
+		max-width: 300px;
+	}
+	img {
+		width: 100%;
+		padding-bottom: 10px;
+		align-items: center;
+	}
+	button {
+		background-color: #3498db;
+		color: #fff;
+		cursor: pointer;
+		width: 170px;
+		height: 50px;
+		border-radius: 5px;
+		border: none;
+		font-size: 25px;
+	}
+	button:hover {
+		background-color: darkblue;
+		color: #fff;
+	}
+	h2 {
+		font-size: 60px;
+		text-align: center;
+		margin-top: 0px;
+	}
+	p {
+		font-size: 20px;
+		text-align: center;
+		margin: 10px 0 20px;
+	}
+	section {
+		background: linear-gradient(45deg, #ff3231, #ff08);
+		border-radius: 30px;
+		padding-top: 1cm;
+		padding-left: 1cm;
+		padding-right: 1cm;
+		padding-bottom: 1cm;
+	}
+	@media (max-width: 640px) {
+		.video-cards-container {
+			flex-direction: column;
+		}
+	}
 </style>

@@ -1,12 +1,72 @@
 ---
-// JS required for this section goes here (don't bother for now)
+
 ---
 
-<div>
-	Years, districts, centres, candidates numbers section
-	<!-- HTML required for this section goes here -->
-</div>
+<section>
+	<div class="wrapper" id="counter">
+		<div class="container">
+			<span class="num">13</span>
+			<span class="text">🕑 Years</span>
+		</div>
+
+		<div class="container">
+			<span class="num">22</span>
+			<span class="text">🪧 Districts</span>
+		</div>
+
+		<div class="container">
+			<span class="num">69</span>
+			<span class="text">🏢 Centres</span>
+		</div>
+
+		<div class="container">
+			<span class="num">6821</span>
+			<span class="text">🧑‍🎓 Candidates</span>
+		</div>
+	</div>
+</section>
 
 <style>
-	/* CSS for this section goes here */
+	* {
+		padding: 3px;
+		margin: 2px;
+		box-sizing: border-box;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 10px 0;
+		font-weight: 600;
+		font-size: 1em;
+		background: linear-gradient(to right, #7adc5fee, #6ad1e6);
+		border-radius: 20px;
+	}
+	span.text {
+		color: rgb(141, 120, 92);
+		font-size: 1cm;
+		text-align: center;
+		padding-bottom: 40px;
+		font-weight: 600;
+	}
+	span.num {
+		font-size: 3em;
+		text-align: center;
+	}
+	@media (max-width: 720px) {
+		.wrapper {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (max-width:500px) {
+		.wrapper {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
 </style>
