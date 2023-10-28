@@ -1,116 +1,65 @@
-<body>
-    <div class="one">
-    <center>
-        <h1>OUR SPONCERS</h1>
-    </center>
-        <hr />
-        <div class="two">
-        <ul> 
-           <li>
-                <a href="https://sltc.ac.lk/">
-                <img src=" public/SLTC.png"alt="" />
-                 </a>
-                
-            </li>
-            <li>
-                <a href="https://web.facebook.com/northwayfamilymart?_rdc=1&_rdr">
-                <img src="Northway.png"alt=""/>
-                </a>
-            </li>
-            <li>
-                 
-                 <img src ="pirakanth.png"alt""/>
-            </li>
-          </ul>
-        </div>
-     </div>
-</body>
-
-
-
-
-
+<section>
+	<h1>OUR SPONSORS</h1>
+		<ul class="sponsors-grid">
+			<li>
+				<a href="https://sltc.ac.lk/">
+					<img src="/SLTC.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="https://web.facebook.com/northwayfamilymart?_rdc=1&_rdr">
+					<img src="/2.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<img src="/pirakanth.png" alt="" />
+			</li>
+		</ul>
+</section>
 
 <style>
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
 
-*
-{
-    padding: 0;
-    margin : 0;
-    box-sizing: border-box;
-}
+	section {
+		display: grid;
+		place-items: center;
+		background: #f5f5f5;
+        padding: 32px 0;
+		text-align: center;
+	}
 
+	h1 {
+		font-size: 30px;
+        margin-bottom: 20px;
+	}
 
-body
-{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items:center;
-    background:#f5f5f5;
-
-}
-
-.one
-{
-    width: 90%;
-    height: auto;
-    text-align: center;
-
-}
-
-.one h1
-{
-    font-size: 60px;
-     color:#555;
-}
-
-.one hr
-{
-    width: 15%;
-    height:5px;
-    border:none;
-    background:blue;
-    margin: auto;
-    margin-top:30px;
-    margin-bottom:30px:
-
-}
-.two
-{
-    width: 100%;
-    height: auto;
-
-}
-.two ul
-{
-    width: 100%;
-    height: auto;
-
-}
-.two ul li
-{
-    list-style: none;
-    display: inline-block;
-    width: 150px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 70px;
-    box-shadow:0px 0px 10px -7px #555;
-    transition: .5%;
-
-}
-.two ul li img
-{
-    width:100%;
-    height:100%;
-
-}
-
-
-
-
-
+	.sponsors-grid {
+		width: 90%;
+		height: auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+	}
+	.sponsors-grid li {
+        max-width: 280px;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+        filter: grayscale(100%);
+        transform: scale(0.8);
+		transition: filter .2s ease-in-out, transform .2s ease-in-out;
+	}
+    .sponsors-grid li:hover {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+	.sponsors-grid img {
+		width: 100%;
+		height: auto;
+	}
 </style>
