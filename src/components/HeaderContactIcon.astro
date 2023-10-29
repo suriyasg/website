@@ -24,7 +24,7 @@ switch (name) {
 }
 ---
 
-<a href={hrefLink}>
+<a href={hrefLink} class="dark">
 	<i class={`fa-brands fa-${name}`}></i>
 </a>
 
@@ -37,5 +37,11 @@ switch (name) {
 	}
 	i:hover {
 		color: hsl(0, 0%, 100%, 100%);
+	}
+	.dark i {
+		color: hsl(0, 0%, 10%);
+	}
+	.dark i:hover {
+		color: hsl(0, 0%, 40%);
 	}
 </style>

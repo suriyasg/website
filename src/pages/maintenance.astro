@@ -1,77 +1,90 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 ---
 
-<div class="back">
-  <center> <img src="../system-maintenance-3.svg" /></center>
-  <h1>
-    Sorry We're down for maintenance. <br />
-     We will be back soon
-  </h1>
-  <h2>If you want Past Papers click below</h2>
-
-  <center
-    ><a
-      href="https://drive.google.com/drive/folders/1aTr8w_YHB0_UyFewyjs49_YB-KfPji77"
-      ><button class="button">Past Papers</button></a
-    ></center
-  >
-  <h2>Our Social Medieas</h2>
-  <div >
-    <HeaderContactIcon name="twitter" />
-    <HeaderContactIcon name="facebook" />
-    <HeaderContactIcon name="linkedin" />
-    <HeaderContactIcon name="youtube" />
-  </div>
-</div>
+<Layout pageTitle="Under Maintenance">
+	<img src="../system-maintenance-3.svg" />
+	<h1>
+		Sorry We're down for maintenance. <br />
+		 We will be back soon
+	</h1>
+	<p>
+		Until we are back, you can access our past papers from
+		<a
+			href="https://drive.google.com/drive/folders/1aTr8w_YHB0_UyFewyjs49_YB-KfPji77"
+		>
+			here</a
+		>.
+	</p>
+  <p>
+    Stay connected with us through social media
+  </p>
+	<div class="icon-container">
+		<HeaderContactIcon name="twitter" />
+		<HeaderContactIcon name="facebook" />
+		<HeaderContactIcon name="linkedin" />
+		<HeaderContactIcon name="youtube" />
+	</div>
+</Layout>
 
 <style>
-  @font-face {
-    font-family: "Poppins Regular";
-    src: url("public/FontsFree-Net-Poppins-Regular.ttf") format("tff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  * {
-    font-family: "Poppins Regular", sans-serif;
-  }
-  img {
-    height: 100px;
-    width: 100px;
-    margin-top: 100px;
-  }
-  h1,
-  h2 {
-    text-align: center;
-  }
-
-  body {
-    background-color: rgb(237, 203, 251);
-  }
-  .pastpaper {
-    text-align: center;
-    font-size: 28px;
-  }
-  .button {
-    font-size: 28px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: rgb(188, 135, 206);
-  }
-  .button:hover {
-    background-color: rgb(192, 92, 239);
-    cursor: pointer;
-  }
-  .social li a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: #3c005a;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    text-decoration: none;
-    border-radius: 100%;
+	@font-face {
+		font-family: "Poppins Regular";
+		src: url("public/FontsFree-Net-Poppins-Regular.ttf") format("tff");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+	* {
+		font-family: "Poppins Regular", sans-serif;
+	}
+	img {
+		height: 100px;
+		width: 100px;
+		margin-top: 100px;
+	}
+	h1,
+	h2 {
+		text-align: center;
+	}
+	p {
+		max-width: 50ch;
+    margin: 0;
+    margin-top: 10px;
+	}
+	body {
+		background-color: rgb(237, 203, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+	.pastpaper {
+		text-align: center;
+		font-size: 28px;
+	}
+	.button {
+		font-size: 28px;
+		padding: 15px;
+		border-radius: 10px;
+		background-color: rgb(188, 135, 206);
+	}
+	.button:hover {
+		background-color: rgb(192, 92, 239);
+		cursor: pointer;
+	}
+	.social li a {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background: #3c005a;
+		display: grid;
+		align-content: center;
+		justify-content: center;
+		text-decoration: none;
+		border-radius: 100%;
+	}
+  .icon-container {
+    margin-top: 20px;
   }
 </style>
