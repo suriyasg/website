@@ -2,36 +2,40 @@
 import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 ---
 
-<body>
-  <div class="back">
-    <center> <img src="../system-maintenance-3.svg" /></center>
-    <h1>
-      Sorry We're down for maintenance. <br />
-       We will be back soon
-    </h1>
-    <h2>If you want Past Papers click below</h2>
+<div class="back">
+  <center> <img src="../system-maintenance-3.svg" /></center>
+  <h1>
+    Sorry We're down for maintenance. <br />
+     We will be back soon
+  </h1>
+  <h2>If you want Past Papers click below</h2>
 
-    <center><button class="button">Past Papers</button></center>
-    <h2>Our Social Medieas</h2>
-    <div style="margin-left: auto;">
-      <HeaderContactIcon name="twitter" />
-      <HeaderContactIcon name="facebook" />
-      <HeaderContactIcon name="linkedin" />
-      <HeaderContactIcon name="youtube" />
-    </div>
+  <center
+    ><a
+      href="https://drive.google.com/drive/folders/1aTr8w_YHB0_UyFewyjs49_YB-KfPji77"
+      ><button class="button">Past Papers</button></a
+    ></center
+  >
+  <h2>Our Social Medieas</h2>
+  <div >
+    <HeaderContactIcon name="twitter" />
+    <HeaderContactIcon name="facebook" />
+    <HeaderContactIcon name="linkedin" />
+    <HeaderContactIcon name="youtube" />
   </div>
-</body>
+</div>
+
 <style>
-    @font-face {
-  font-family: 'Poppins Regular';
-  src: url('public/FontsFree-Net-Poppins-Regular.ttf') format('tff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-*{
-    font-family:'Poppins Regular',sans-serif;
-}
+  @font-face {
+    font-family: "Poppins Regular";
+    src: url("public/FontsFree-Net-Poppins-Regular.ttf") format("tff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  * {
+    font-family: "Poppins Regular", sans-serif;
+  }
   img {
     height: 100px;
     width: 100px;
@@ -58,5 +62,16 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
   .button:hover {
     background-color: rgb(192, 92, 239);
     cursor: pointer;
+  }
+  .social li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #3c005a;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100%;
   }
 </style>
