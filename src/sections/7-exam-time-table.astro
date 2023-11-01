@@ -40,20 +40,21 @@
 	.one {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3,1fr);
-		gap: 1cm;
+		gap: 20px;
 	}
 	.two {
 		background-color: #D9DBF1;
-		border-radius: 0.5cm;
-		padding-left:0.5cm;
-		padding-top: 0.1cm;
-		padding-bottom: 0.1cm;
-		padding-right:0.5cm;
+		border-radius: 20px;
+		padding:20px;
 	}
 	.ttable {
-		padding: 1cm;
+		padding:60px;
 		
+	}
+	@media (max-width:720px){
+	.one{
+		grid-template-columns: repeat(1,1fr);
+	}	
 	}
 	
 </style>
