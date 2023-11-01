@@ -2,11 +2,62 @@
 // JS required for this section goes here (don't bother for now)
 ---
 
-<div>
-	Exam time table section
-	<!-- HTML required for this section goes here -->
+
+<div class="ttable">
+	<h1>Time Table</h1>
+<div class="one">
+<div class="two">
+	<h2>th November 2023 (Saturday)</h2>
+	<p>1.30 p.m. - 4.40 p.m.  : COMBINED MATHEMATICS - I<br>
+	1.30 p.m. -3.30 p.m.  : BIOLOGY -I</p>
+</div>
+<div class="two">
+	<h2>th November 2023 (Sunday)</h2>
+	<p>1.30 p.m. - 4.40 p.m.  : COMBINED MATHEMATICS - II<br>
+	1.30 p.m. -4.40 p.m.  : BIOLOGY -II</p>
+</div>
+<div class="two">
+	<h2>th November 2023 (Saturday)</h2>
+	<p>1.30 p.m. - 3.30 p.m.  : PHYSICS - I</p>
+</div>
+<div class="two">
+	<h2>th November 2023 (Sunday)</h2>
+	<p>1.30 p.m. - 4.40 p.m.  :  PHYSICS - II</p>
+</div>
+<div class="two">
+	<h2>th November 2023 (Saturday)</h2>
+	<p>1.30 p.m. - 3.30 p.m.  : CHEMISTRY - I<br>
+	1.30 p.m. - 3.30 p.m.  : ICT -I</p>
+</div>
+<div class="two">
+	<h2>th November 2023 (Sunday)</h2>
+	<p>1.30 p.m. - 4.40 p.m.  : CHEMISTRY - II<br>
+	1.30 p.m. - 4.40 p.m.  : ICT -II</p>
+</div>
 </div>
 
 <style>
-	/* CSS for this section goes here */
+	h1{
+		font-size: 48px;
+		align-items: center;
+	}
+	.one{
+		
+		display:grid;
+		grid-template-columns: repeat(2,1fr);
+		gap:1cm;
+	}
+	.two{
+		background-color: #b596e5;
+		border-radius: 0.5cm;
+		padding-left: 1.5cm;
+		padding-top: 0.1cm;
+		padding-bottom: 0.1cm;
+		padding-right: 1cm;
+	}
+	.ttable{
+		padding:1cm;
+		background-color:#8207c5;
+		border-radius: 0.5cm;
+	}
 </style>

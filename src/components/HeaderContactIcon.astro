@@ -7,14 +7,14 @@ const name = Astro.props.name;
 let hrefLink = null;
 switch (name) {
 	case "twitter":
-		hrefLink = "https://twitter.com/moraexams";
+		hrefLink = "https://x.com/moraetamils?t=N-7OEAXI7Ssi3axfYDjwXw&s=08";
 		break;
 	case "facebook":
 		hrefLink = "https://www.facebook.com/moraexams";
 		break;
 	case "linkedin":
 		// TODO
-		hrefLink = "https://twitter.com/moraexams";
+		hrefLink = "https://www.linkedin.com/company/mora-exams/";
 		break;
 	case "youtube":
 		hrefLink = "https://www.youtube.com/@MoraETamils";
@@ -24,7 +24,7 @@ switch (name) {
 }
 ---
 
-<a href={hrefLink}>
+<a href={hrefLink} class="dark">
 	<i class={`fa-brands fa-${name}`}></i>
 </a>
 
@@ -37,5 +37,11 @@ switch (name) {
 	}
 	i:hover {
 		color: hsl(0, 0%, 100%, 100%);
+	}
+	.dark i {
+		color: hsl(0, 0%, 10%);
+	}
+	.dark i:hover {
+		color: hsl(0, 0%, 40%);
 	}
 </style>
