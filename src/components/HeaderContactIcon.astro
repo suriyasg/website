@@ -1,8 +1,9 @@
 ---
 interface brand {
 	name: "twitter" | "facebook" | "linkedin" | "youtube";
+	dark: boolean;
 }
-const name = Astro.props.name;
+const { name, dark } = Astro.props;
 
 let hrefLink = null;
 switch (name) {
@@ -24,7 +25,7 @@ switch (name) {
 }
 ---
 
-<a href={hrefLink} class="dark">
+<a href={hrefLink} class={dark ? "dark" : undefined}>
 	<i class={`fa-brands fa-${name}`}></i>
 </a>
 
