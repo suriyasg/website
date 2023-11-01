@@ -17,7 +17,7 @@ const { pageTitle } = Astro.props;
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<title>{pageTitle}</title>
@@ -46,5 +46,17 @@ const { pageTitle } = Astro.props;
 	:root {
 		--body-width: min(82rem, 96vw);
 		--body-margin-x: calc((100vw - var(--body-width)) / 2);
+	}
+	h1 {
+		@apply text-5xl;
+	}
+	h2 {
+		@apply text-4xl font-semibold mb-4;
+	}
+	h4 {
+		@apply text-2xl font-medium;
+	}
+	ol, ul {
+		@apply m-4 p-4;
 	}
 </style>
