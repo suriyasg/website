@@ -2,46 +2,18 @@
 // JS required for this section goes here (don't bother for now)
 ---
 
-<section>
-	<img src="/logo.png" />
-	<p class="welcome">WELCOME TO MORA E-TAMILS</p>
-	<p class="language">Please Select Your language</p>
-	<div class="button">
-		<button class="tamil"><a href="">Tamil</a></button>
-		<button class="english"><a href="">English</a></button>
-	</div>
-</section>
-
-<style>
-	section {
-		padding: 200px 0px 250px var(--body-margin-x);
-		background-image: url("/hero-bg.jpg");
-		background-size: cover;
-		color: white;
-	}
-	.tamil {
-		margin-right: 25px;
-	}
-	.welcome {
-		font-size: 36px;
-	}
-	.language {
-		font-size: 28px;
-	}
-	.tamil,
-	.english {
-		font-size: 24px;
-		background-color: purple;
-		cursor: pointer;
-		padding: 20px 40px 20px 40px;
-		border-radius: 15px;
-	}
-	a {
-		text-decoration: none;
-		color: aliceblue;
-	}
-	.tamil:hover,
-	.english:hover {
-		background-color: #3c006b;
-	}
-</style>
+<div class="pt-40 pr-0 pl-60 pb-60 bg-[url('/hero-bg.jpg')] bg-cover text-white">
+  <img src="/logo.png" />
+  <p class="text-4xl">WELCOME TO MORA E-TAMILS</p>
+  <p class="text-2xl">Please Select Your language</p>
+  <div class="button">
+    <button
+      class="mr-6 text-xl bg-purple-800 cursor-pointer px-12 py-5 rounded-2xl hover:bg-purple-950"
+      ><a class="no-underline text-blue-100" href="">Tamil</a></button
+    >
+    <button
+      class="text-xl bg-purple-800 cursor-pointer px-12 py-5 rounded-2xl hover:bg-purple-950"
+      ><a class="no-underline text-blue-100" href="">English</a></button
+    >
+  </div>
+</div>
