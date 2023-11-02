@@ -4,75 +4,100 @@
 
 <section>
 	<h2 class="mora-committee">Mora Exam - 2023 | Committee</h2>
+ 
 	<div class="committee">
-		<div class="committee-member">
-			<img src="/committee/sarujan.jpg" />
-			<p>
-				<span class="committee-name">SARUJAN</span><br />
-				 President,<br />
+	    <!-- President -->
+		<div class="member">
+			<div class="photo">
+				<img src="/committee/sarujan.jpg" />
+			</div>
+		    <div class="Discription">
+				<h4 class="name">SARUJAN</h4>
+			    <span class="post">President,</span>
+			    <p>
 				 Student of the  Department of Civil Engineering
-			</p>
+			    </p>
+		    </div>
+		</div>	
+    	<!-- Secretary --> 
+		<div class="member">
+			<div class="photo">
+				<img src="/committee/harikishna.jpg" />
+			</div>
+		    <div class="Discription">
+				<h4 class="name">HARIKISHNA</h4>
+			    <span class="post">Secretary,</span>
+			    <p>
+					Student Of Department Of Computer Science And Engineering
+			    </p>
+		    </div>
+		</div>	
+    	<!-- Treasurer -->
+		<div class="member">
+			<div class="photo">
+				<img src="/committee/mayoorathan.jpg" />
+			</div>
+		    <div class="Discription">
+				<h4 class="name">MAYOORATHAN</h4>
+			    <span class="post">Treasurer,</span>
+			    <p>
+					Student Of Department Of Material Science And Engineering
+			    </p>
+		    </div>
 		</div>
-		<div class="committee-member">
-			<img class="pic" src="/committee/harikishna.jpg" />
-			<p>
-				<span class="committee-name">HARIKISHNA</span><br />
-				 Secretary,<br />
-				 Student Of Department Of Computer Science And Engineering
-			</p>
-		</div>
-		<div class="committee-member">
-			<img class="pic" src="/committee/mayoorathan.jpg" />
-			<p>
-				<span class="committee-name">MAYOORATHAN</span><br />
-				 Treasurer,<br />
-				 Student Of Department Of Material Science And Engineering
-			</p>
-		</div>
-		<div class="committee-member">
-			<img class="pic" src="/committee/thabendra.jpg" />
-			<p>
-				<span class="committee-name">THABENDRA<br /></span>
-				 Vice President,<br />
-				 Student Of Department Science And Engineering
-			</p>
+    	<!-- President -->
+		<div class="member">
+			<div class="photo">
+				<img src="/committee/thabendra.jpg" />
+			</div>
+		    <div class="Discription">
+				<h4 class="name">THABENDRA</h4>
+			    <span class="post">President,</span>
+			    <p>
+					Student Of Department Science And Engineering
+			    </p>
+		    </div>
 		</div>
 	</div>
 </section>
 
 <style>
+	h2 {
+		text-align: center;
+	}
 	.committee {
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		margin-bottom: 100px;
-		margin-top: 100px;
+		margin-bottom: 50px;
+		margin-top: 20px;
 		gap: 15px;
 	}
-	.committee-member {
+	.member {
 		padding: 10px;
-		background-color: azure;
-		border-radius: 10px;
+		border-radius: 20px;
+		background-color: #fff;
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
 	}
-	.committee-member:hover {
-		background-color: rgb(224, 207, 240);
-	}
-	h2 {
-		font-size: 36px;
-		text-align: center;
-	}
-	img {
-		height: auto;
+	.member .photo {
 		width: 100%;
-		border-top-right-radius: 50%;
-		border-bottom-left-radius: 100px;
-		padding: 10px;
+		height: auto;
+		border-radius: 50%;
+		padding: 15px;
+		margin-bottom: 25px;
 	}
-	.pic {
-		padding-bottom: 40px;
+	.photo img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
 	}
-	.committee-name {
-		color: hsl(271, 68%, 40%);
-		font-size: 24px;
+	.Discription{
+		text-align: center;
+
+	}
+	.name .post{
+		display: block;
+		font-size: 15px;
 	}
 </style>
