@@ -3,8 +3,8 @@
 ---
 
 <section>
+	<center>
 	<h2>Contact Us</h2>
-	<div class="cards-container">
 		<div>
 			<img
 				src="https://th.bing.com/th/id/R.4f088fed46932a1c0856ae7e6b1c6a0a?rik=3oW6UNWm8AyhEg&pid=ImgRaw&r=0"
@@ -13,6 +13,7 @@
 			<h3>Our Address</h3>
 			<p>Keraliwaththai Lane, Neervely South, Neervely, Jaffna.</p>
 		</div>
+		</center>
 		<div class="ddone">
 			<img
 				src="https://th.bing.com/th/id/R.c52a6ca4b798e80a5519571bbab7ae41?rik=%2bwkIGhr68DWj5w&riu=http%3a%2f%2fclipart-library.com%2fimages%2fyikrLMzET.png&ehk=WeMFq7O6zXZAbby20f%2bySIZ6EUxdhPnbsU4Fnor7Mfo%3d&risl=&pid=ImgRaw&r=0"
@@ -32,6 +33,7 @@
 			   ourselves together under the banner of Mora E-Tamils.
 			</p>
 		</div>
+		<div class="cards-container">
 		<div class="ddone">
 			<img
 				src="https://th.bing.com/th/id/R.0ca9cc34607aab8cb722ab67b7b5f958?rik=FF2fM%2bCW7RqwCw&riu=http%3a%2f%2fwebbiquity.com%2fwp-content%2fuploads%2f2011%2f02%2fEmail-Icon.jpg&ehk=%2fGdR90TBkvGgN6Nmd6O6tOuSydW00%2bewtbcohsgmeQo%3d&risl=&pid=ImgRaw&r=0"
@@ -45,26 +47,25 @@
 				src="https://www.logolynx.com/images/logolynx/8d/8d291fd3cc6737abcc69cb13cbd0625c.png"
 				class="imone"
 			/>
-			<h1>Call Us</h1>
+			<h3>Call Us</h3>
 			<p>tel:+94704616400</p>
 		</div>
-
+		
 		<div class="ddone">
 			<form>
 				<table>
 					<tr>
-						<td><input type="text" placeholder="Your Name"></td>
+						<td><input class="tbox" type="text" placeholder="Your Name"></td>
 					</tr>
 					<tr>
-						<td class="email"
-							><input type="email" placeholder="Your Email"></td
-						>
+						<td ><input class="tbox" type="email" placeholder="Your Email"></td>
+						
 					</tr>
 					<tr>
-						<td><input type="text" placeholder="Subject"></td>
+						<td><input class="tbox"  type="text" placeholder="Subject"></td>
 					</tr>
 					<tr>
-						<td><input type="text" placeholder="Message"></td>
+						<td><input class="tbox"  type="text" placeholder="Message"></td>
 					</tr>
 				</table>
 			</form>
@@ -76,13 +77,13 @@
 <style>
 	section {
 		padding: 30px;
-		width: 100%;
+		
 		color: black;
-		background: hsl(73, 11%, 75%);
+		background: hsl(73, 11%, 85%);
 	}
-	.email {
-		height: 100px;
-		width: 200px;
+	.tbox {
+		height:30px;
+		width: 300px;
 	}
 	
 	h3 {
@@ -92,14 +93,17 @@
 		font-size: 50px;
 	}
 	.cards-container {
-		padding: 10px;
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
 	}
 	.ddone{
 		background: linear-gradient(#eb78b1, hsl(191, 30%, 54%));
 		color: black;
-		padding: 30px;
+		padding-left: 30px;
 		border-style: solid;
 		border-color: rgb(222, 193, 193);
+		padding-top: 30px;
+		padding-bottom: 10px;
 	}
 	
 	.imone {
@@ -113,6 +117,11 @@
 	.button:hover {
 		color: red;
 		background-color:darkgray;
+	}
+	@media (max-width:720px) {
+		.cards-container{
+			grid-template-columns: repeat(1,1fr);
+		}
 	}
 	
 </style>
