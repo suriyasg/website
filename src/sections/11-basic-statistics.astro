@@ -2,71 +2,27 @@
 
 ---
 
-<section>
-	<div class="wrapper" id="counter">
-		<div class="container">
-			<span class="num">14</span>
-			<span class="text">🕑 Years</span>
+<section class="text-center  box-border">
+	<div class="pt-5 gap-2.5 grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1" id="counter" >
+		<div class="py-10 rounded-3xl bg-pink-200 flex-auto flex-col">
+			<span class="text-5xl">14</span></br>
+			<span class="font-semibold text-4xl text-yellow-800">🕑Years</span>
 		</div>
 
-		<div class="container">
-			<span class="num">22</span>
-			<span class="text">🪧 Districts</span>
+		<div class="py-10 rounded-3xl bg-pink-200 flex-auto flex-col">
+			<span class="text-5xl">22</span></br>
+			<span class="font-semibold text-4xl text-yellow-800">🪧 Districts</span>
 		</div>
 
-		<div class="container">
-			<span class="num">69</span>
-			<span class="text">🏢 Centres</span>
+		<div class="py-10 text-base justify-around rounded-3xl bg-pink-200 flex-auto flex-col">
+			<span class="text-justify text-5xl">69</span></br>
+			<span class="text-justify font-semibold text-4xl text-yellow-800">🏢 Centres</span>
 		</div>
 
-		<div class="container">
-			<span class="num">6821</span>
-			<span class="text">🧑‍🎓 Candidates</span>
+		<div class="py-10 text-base justify-around rounded-3xl bg-pink-200 flex-auto flex-col">
+			<span class="text-justify text-5xl">6821</span></br>
+			<span class="text-justify font-semibold text-4xl text-yellow-800">🧑‍🎓 Candidates</span>
 		</div>
 	</div>
 </section>
 
-<style>
-	* {
-		padding: 3px;
-		margin: 2px;
-		box-sizing: border-box;
-	}
-
-	.wrapper {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 10px;
-	}
-	.container {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		padding: 10px 0;
-		font-weight: 600;
-		font-size: 1em;
-		background:#ffc6d9;
-		border-radius: 20px;
-	}
-	span.text {
-		color: rgb(141, 120, 92);
-		font-size: 2em;
-		text-align: center;
-		padding-bottom: 40px;
-		font-weight: 600;
-	}
-	span.num {
-		font-size: 3em;
-		text-align: center;
-	}
-	@media (max-width: 720px) {
-		.wrapper {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-	@media (max-width:500px) {
-		.wrapper {
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
-</style>
