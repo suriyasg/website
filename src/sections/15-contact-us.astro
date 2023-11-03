@@ -3,54 +3,42 @@
 ---
 
 <section>
-	<h2 class="text-center">Contact Us</h2>
-		<div class="text-center">
-			<h3> <img
-				src="https://th.bing.com/th/id/R.4f088fed46932a1c0856ae7e6b1c6a0a?rik=3oW6UNWm8AyhEg&pid=ImgRaw&r=0"
-				class="imone"
-			/>
-			Our Address</h3>
-			<p>Keraliwaththai Lane, Neervely South, Neervely, Jaffna.</p>
-		</div>
-		<div class="ddone">
-			<h3>❤️ Mora E-Tamils</h3>
-			<p>
-				We, engineers, are very much concerned about  society and its
-				betterment, and we believe that the betterment of  society will bring a
-				more prosperous and hybrid future generation than  irrelevant mutations.
-			</p>
-			<br />
-			<p>
-				It is very obvious  how the engineering students in our society
-				bring  themselves up and plan out schemes to assist our community in many
-				ways. We too, the Tamil people of the University of Moratuwa, brought
-			   ourselves together under the banner of Mora E-Tamils.
-			</p>
-		</div>
-		<div class="cards-container">
-		<div class="ddone">
-			<h3>📧 Email Us</h3>
-			<p>moraetamils@gmail.com</p>
-		</div>
-		<div class="ddone">
-			<h3>📞 Call Us</h3>
-			<p>tel:+94704616400</p>
-		</div>
+	<h2>❤️ Mora E-Tamils</h2>
+	<p>
+		We, engineers, are very much concerned about society and its betterment, and
+		we believe that the betterment of society will bring a more prosperous and
+		hybrid future generation than irrelevant mutations.
+	</p>
+	<p>
+		It is very obvious how the engineering students in our society bring
+		themselves up and plan out schemes to assist our community in many ways. We
+		too, the Tamil people of the University of Moratuwa, brought ourselves
+		together under the banner of Mora E-Tamils.
+	</p>
+	<div class="ddone">
+		<h3>Contact Us</h3>
+		<ul class="list-none p-0">
+			<li>Address: Keraliwaththai Lane, Neervely South, Neervely, Jaffna.</li>
+			<li>Email: moraetamils@gmail.com</li>
+			<li>Telephone: +94704616400</li>
+		</ul>
+	</div>
+	<div class="cards-container">
 		<div class="ddone">
 			<form>
 				<table>
 					<tr>
-						<td><input class="tbox" type="text" placeholder="Your Name"></td>
+						<td><input class="tbox" type="text" placeholder="Your Name" /></td>
 					</tr>
 					<tr>
-						<td ><input class="tbox" type="email" placeholder="Your Email"></td>
-						
+						<td><input class="tbox" type="email" placeholder="Your Email" /></td
+						>
 					</tr>
 					<tr>
-						<td><input class="tbox"  type="text" placeholder="Subject"></td>
+						<td><input class="tbox" type="text" placeholder="Subject" /></td>
 					</tr>
 					<tr>
-						<td><input class="tbox"  type="text" placeholder="Message"></td>
+						<td><textarea class="tbox" placeholder="Message" /></td>
 					</tr>
 				</table>
 			</form>
@@ -62,54 +50,46 @@
 <style>
 	section {
 		padding: 30px;
-		
+		background: #d9dbf1;
 		color: black;
-		background: hsl(73, 11%, 85%);
 	}
 	.tbox {
-		height:30px;
+		height: 30px;
 		width: 300px;
 	}
-	h2{
-		font-size:32px;
+	h2 {
+		@apply mt-0;
+		font-size: 32px;
 	}
 	h3 {
+		@apply m-0;
 		font-size: 25px;
 	}
-	h1{
-		font-size: 50px;
+	textarea {
+		resize: vertical;
+	}
+	input, textarea {
+		@apply pl-2 pt-0;
+		border-radius: 2px;
+		border: 1px solid;
 	}
 	.cards-container {
 		display: grid;
-		grid-template-columns: repeat(3,1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
-	.ddone{
-		background:#d9dbf1;
-		color: black;
-		padding-left: 30px;
-		border-style: solid;
-		border-color: rgb(222, 193, 193);
-		padding-top: 15px;
-		padding-bottom: 10px;
-		padding-right: 15px;
-	}
-	
+
 	.imone {
 		height: 30px;
 		width: 30px;
-		
-		
 	}
-	
 
 	.button:hover {
 		color: red;
-		background-color:darkgray;
+		background-color: darkgray;
 	}
-	@media (max-width:720px) {
-		.cards-container{
-			grid-template-columns: repeat(1,1fr);
+	@media (max-width: 720px) {
+		.cards-container {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
-	
 </style>

@@ -42,9 +42,11 @@ const { pageTitle } = Astro.props;
 	body {
 		margin: 0;
 	}
-
 	:root {
 		--body-width: min(82rem, 96vw);
 		--body-margin-x: calc((100vw - var(--body-width)) / 2);
+	}
+	p {
+		@apply max-w-prose;
 	}
 </style>

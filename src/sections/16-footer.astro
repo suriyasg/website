@@ -80,6 +80,7 @@
 		background-color: #fdf8ff;
 	}
 	.container {
+		@apply pb-2;
 		width: 100%;
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr 2fr;
@@ -183,7 +184,7 @@
 	@media (max-width: 800px) {
 		.container {
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(3, 1fr);
+			grid-template-rows: repeat(3, auto);
 			grid-template-areas:
 				"main main"
 				"useful-links our-services"
