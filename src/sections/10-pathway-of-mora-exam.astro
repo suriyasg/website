@@ -2,114 +2,50 @@
 // JS required for this section goes here (don't bother for now)
 ---
 
-<div class="one">
-	<p class="two"><b>Pathway of the Mora Exam</b></p>
+<div class="bg-[AB92BF] text-center pt-3 p-10">
+  <p class="text-10 text-[#255555]"><b>Pathway of the Mora Exam</b></p>
 
-	<div class="carrousel">
-		<article class="card">
-			<h1 class="three">2007</h1>
-			<h2 class="four">Beginning ▶</h2>
-			<p>
-				The need for the pilot examination is felt. An exam was held for physical
-				science and biological science students. This exam transformed into the Mora
-				Exam in 2010
-			</p>
-		</article>
-		<article class="card">
-			<h1 class="three">2010</h1>
-			<h2 class="four">Restart 🚀</h2>
-			<p>
-				The need for the pilot examination is felt. An exam was held for
-				physical science and biological science students. This exam transformed
-				into the  Mora Exam after 2010.
-			</p>
-		</article>
+  <div class="grid grid-cols-1 sm:grid-cols-2 scroll-auto gap-10 ">
+    <article class="rounded-2xl cursor-pointer bg-[#AEB3EA] ">
+      <h1 class="bg-[#818792] w-40 pl-12 rounded-xl text-left">2007</h1>
+      <h2 class="uppercase pl-5">Beginning ▶</h2>
+      <p class="text-20 p-3">
+        The need for the pilot examination is felt. An exam was held for
+        physical science and biological science students. This exam transformed
+        into the Mora Exam in 2010
+      </p>
+    </article>
+    <article class="rounded-2xl cursor-pointer bg-[#AEC0EA]">
+      <h1 class="bg-[#818792] w-40 pl-12 rounded-xl text-left">2010</h1>
+      <h2 class="fouuppercaser">Restart 🚀</h2>
+      <p text-lg p-3>
+        The need for the pilot examination is felt. An exam was held for
+        physical science and biological science students. This exam transformed
+        into the Mora Exam after 2010.
+	  </p>
+    </article>
 
-		<article class="card">
-			<h1 class="three">2016</h1>
-			<h2 class="four">Technology Stream ➕</h2>
-			<p>
-				We,too , have included the technology stream due to the kind request of
-				the students and also the Provincial Director of Education in 2016. But
-				now, because of the demands, we have handed over the responsibilities of
-				the technology stream to the very own faculty of technology students, the
-				University of Jaffna, and we just guide them for their own  betterment.
-			</p>
-		</article>
-		<article class="card">
-			<h1 class="three">2023</h1>
-			<h2 class="four">Now 🏆</h2>
-			<p>
-				In the 14th year of the Mora Exam, we are  proud to serve the
-				students. Last year, we  expanded our service to  22 districts, 
-				 conducted the examinations in more than 69 examination centres, and 
-				accommodated more than 6,000 candidates.
-			</p>
-		</article>
-	</div>
+    <article class="rounded-2xl cursor-pointer bg-[#AEB3EA]">
+      <h1 class="bg-[#818792] w-40 pl-12 rounded-xl text-left">2016</h1>
+      <h2 class="uppercase">Technology Stream ➕</h2>
+      <p text-2xl p-3>
+        We,too , have included the technology stream due to the kind request of
+        the students and also the Provincial Director of Education in 2016. But
+        now, because of the demands, we have handed over the responsibilities of
+        the technology stream to the very own faculty of technology students,
+        the University of Jaffna, and we just guide them for their own
+        betterment.
+      </p>
+    </article>
+    <article class="rounded-2xl cursor-pointer bg-[#AEC0EA]">
+      <h1 class="bg-[#818792] w-40 pl-12 rounded-xl text-left">2023</h1>
+      <h2 class="uppercase">Now 🏆</h2>
+      <p text-5 p-3>
+        In the 14th year of the Mora Exam, we are proud to serve the students.
+        Last year, we expanded our service to 22 districts, conducted the
+        examinations in more than 69 examination centres, and accommodated more
+        than 6,000 candidates.
+      </p>
+    </article>
+  </div>
 </div>
-
-<style>
-	.carrousel {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		scroll-behavior: auto;
-		gap: 1.2rem;
-
-		overscroll-behavior-x: contain;
-		scroll-snap-type: x mandatory;
-		scrollbar-width: none;
-	}
-
-	.one {
-		background:hsl(273, 93%, 87%);
-		text-align: center;
-		padding-top:10px;
-		padding:30px;
-		
-	}
-	.two {
-		font-size: 40px;
-		color: #255555;
-	}
-
-	.three {
-		background-color: hsl(221, 7%, 54%);
-		width: 150px;
-		padding-left: 50px;
-		border-radius: 40px;
-		text-align: left;
-	}
-	.four {
-		text-transform: uppercase;
-		padding-left: 20px;
-	}
-
-	.card {
-		scroll-snap-align: start;
-		border-radius: 30px;
-		min-height: 300px;
-		cursor: pointer;
-		/* transition: transform 0.4s; */
-	}
-	/* .card:hover {
-		transform: perspective(800px) rotateX(-30deg) rotateY(-25deg)
-			translateX(-30px);
-	} */
-
-	.card:nth-child(odd) {
-		background:hsl(235, 58%, 80%);
-	}
-	.card:nth-child(even) {
-		background:hsl(222, 58%, 80%);
-	}
-	p {
-		font-size: 20px;
-		padding:10px;
-	}
-	@media (max-width: 640px) {
-		.carrousel {
-			grid-template-columns: 1fr;
-		}
-	}
-</style>
