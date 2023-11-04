@@ -1,0 +1,19 @@
+---
+interface Props {
+
+	subject: string;
+	href: string;
+}
+
+const { href, subject } = Astro.props;
+---
+
+<div>
+		
+    <a
+        href={href}
+        target="_blank">
+        <img class="w-full" src="subject/{subject}.jpg" alt="{subject}">
+        <button class="bg-gray-300 hover:bg-gray-400 mt-5 px-3 py-3 uppercase rounded-xl text-lg w-40">{subject}</button>
+    </a>
+</div>
