@@ -1,41 +1,29 @@
 ---
-import videocard from "../components/videocard.astro"
+import VideoCard from "../components/VideoCard.astro";
 // JS required for this section goes here (don't bother for now)
 ---
 
 <section>
-  <h2 class="text-center pt-10 text-3xl">E-Learning videos</h2>
-  <p class="text-center text-xl my-8 px-14">
-    We have done video explanations regarding important topics in each subject
-    on our YouTube channel. Click on any of the subjects listed below and view
-    the respective videos.
-  </p>
-  <div class="grid grid-flow-row sm:grid-flow-col gap-10 mt-10 mx-16 text-center">
-	<videocard
-	href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn"
-	subject="maths"
-	/>
-			
-			
-	<div>	
-		<a
+	<h2 class="text-center pt-10 text-3xl">E-Learning videos</h2>
+	<p class="text-center text-xl my-8 px-14">
+		We have done video explanations regarding important topics in each subject
+		on our YouTube channel. Click on any of the subjects listed below and view
+		the respective videos.
+	</p>
+	<div
+		class="grid grid-flow-row sm:grid-flow-col gap-10 mt-10 mx-16 text-center"
+	>
+		<VideoCard
+			href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn"
+			subject="maths"
+		/>
+		<VideoCard
 			href="https://www.youtube.com/watch?v=vJ8oHxNUJGk&list=PL7rqMCp2H_mQ1lASzvCKicK19cB6IcihD"
-			target="_blank">
-			<img class="w-full" src="subject/physics.jpg" alt="Physics"/> 
-			<button class="bg-gray-300 hover:bg-gray-400 mt-5 px-3 py-3 rounded-xl text-lg w-40">Physics</button>
-		</a>
-	</div>
-	<div>
-		<a
+			subject="physics"
+		/>
+		<VideoCard
 			href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP"
-			target="_blank">
-			<img class="w-full" src="subject/chemistry.jpg" alt="Chemistry">
-			<button class="bg-gray-300 hover:bg-gray-400 mt-5 px-3 py-3 rounded-xl text-lg w-40">Chemistry</button>
-		</a>
+			subject="chemistry"
+		/>
 	</div>
-
-
-
-    
-  </div>
 </section>
