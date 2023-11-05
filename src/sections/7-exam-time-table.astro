@@ -1,37 +1,69 @@
 ---
+import Timetable from "../components/Timetable.astro";
+
 // JS required for this section goes here (don't bother for now)
 ---
 
 <section class="px-10 my-10">
-	<h2 class="text-center">Time Table</h2>
-	<div class="gap-5 grid md:grid-cols-2 grid-cols-1">
-		<div class="bg-violet-200 rounded-2xl px-7">
-			<h4>th November 2023 (Saturday)</h4>
-			<p>1.30 p.m.-4.40 p.m. :<br/> COMBINED MATHEMATICS-I</p>
-			<p> 1.30 p.m.-3.30 p.m. : <br/> BIOLOGY - I</p>
-		</div>
-		<div class="bg-violet-200 rounded-2xl px-7">
-			<h4>th November 2023 (Sunday)</h4>
-			<p>1.30 p.m.-4.40 p.m. :<br/>  COMBINED MATHEMATICS-II</p>
-			<p>1.30 p.m.-4.40 p.m. : <br/> BIOLOGY - II</p>
-		</div>
-		<div class="bg-violet-200 rounded-2xl px-7">
-			<h4>th December 2023 (Saturday)</h4>
-			<p>1.30 p.m.-3.30 p.m. :<br/>  PHYSICS - I</p>
-		</div>
-		<div class="bg-violet-200 rounded-2xl px-7">
-			<h4>th December 2023 (Sunday)</h4>
-			<p>1.30 p.m.-4.40 p.m. :<br/>  PHYSICS - II</p>
-		</div>
-		<div class="bg-violet-200 rounded-2xl px-7">
-			<h4>th December 2023 (Saturday)</h4>
-			<p>1.30 p.m.-3.30 p.m. : <br/> CHEMISTRY - I</p>
-			<p> 1.30 p.m.-3.30 p.m. : <br/> ICT - I</p>
-		</div>
-		<div class="bg-violet-200 rounded-2xl px-7">
-			<h4>th December 2023 (Sunday)</h4>
-			<p>1.30 p.m.-4.40 p.m. : <br/> CHEMISTRY - II</p>
-			<p> 1.30 p.m.-4.40 p.m. : <br/>  ICT - II</p>
-		</div>
-	</div>
+  <h2 class="text-center">Time Table</h2>
+  <div class="gap-5 grid md:grid-cols-2 grid-cols-1">
+    <div>
+      <Timetable
+        date="th November 2023 (Saturday)"
+        Time1="1.30 p.m.-4.40 p.m. :"
+        subject1="COMBINED MATHEMATICS-I"
+        Time2=" 1.30 p.m.-3.30 p.m. : "
+        subject2=" BIOLOGY - I"
+      />
+    </div>
+
+    <div>
+      <Timetable
+        date="th November 2023 (Sunday)"
+        Time1="1.30 p.m.-4.40 p.m. :"
+        subject1="COMBINED MATHEMATICS-II"
+        Time2="1.30 p.m.-4.40 p.m. :"
+        subject2=" BIOLOGY - II"
+      />
+    </div>
+
+    <div>
+      <Timetable
+        date="th December 2023 (Saturday)"
+        Time1="1.30 p.m.-3.30 p.m. :"
+        subject1="PHYSICS - I"
+        Time2=""
+        subject2=""
+      />
+    </div>
+
+    <div>
+      <Timetable
+        date="th December 2023 (Sunday)"
+        Time1="1.30 p.m.-4.40 p.m. :"
+        subject1="PHYSICS - II"
+        Time2=""
+        subject2=""
+      />
+    </div>
+
+    <div>
+      <Timetable
+        date="th December 2023 (Saturday)"
+        Time1="1.30 p.m.-3.30 p.m. : "
+        subject1="CHEMISTRY - I"
+        Time2="1.30 p.m.-3.30 p.m. :"
+        subject2="ICT - I"
+      />
+    </div>
+    <div>
+      <Timetable
+        date="th December 2023 (Sunday)"
+        Time1="1.30 p.m.-4.40 p.m. : "
+        subject1="CHEMISTRY - II"
+        Time2="1.30 p.m.-4.40 p.m. : "
+        subject2="ICT - II"
+      />
+    </div>
+  </div>
 </section>
