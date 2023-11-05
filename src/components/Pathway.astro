@@ -1,0 +1,15 @@
+---
+interface Props {
+	title: string;
+	body: string;
+}
+
+const {  title, body } = Astro.props;
+---
+<article class="rounded-2xl cursor-pointer bg-[#AEC0EA]">
+    <h1 class="bg-[#818792] w-36 pl-12 rounded-full text-left ml-3">2010</h1>
+    <h2 class="uppercase text-center">{title}</h2>
+    <p class="text-xl text-center px-6 pb-5">
+      {body}
+    </p>
+  </article>
