@@ -1,5 +1,5 @@
 ---
-import videocard from "../components/videocard.astro"
+import VideoCard from "../components/VideoCard.astro";
 // JS required for this section goes here (don't bother for now)
 ---
 
@@ -10,32 +10,30 @@ import videocard from "../components/videocard.astro"
     on our YouTube channel. Click on any of the subjects listed below and view
     the respective videos.
   </p>
-  <div class="grid grid-flow-row sm:grid-flow-col gap-10 mt-10 mx-16 text-center">
-	<videocard
-	href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn"
-	subject="maths"
-	/>
-			
-			
-	<div>	
-		<a
-			href="https://www.youtube.com/watch?v=vJ8oHxNUJGk&list=PL7rqMCp2H_mQ1lASzvCKicK19cB6IcihD"
-			target="_blank">
-			<img class="w-full" src="subject/physics.jpg" alt="Physics"/> 
-			<button class="bg-gray-300 hover:bg-gray-400 mt-5 px-3 py-3 rounded-xl text-lg w-40">Physics</button>
-		</a>
-	</div>
-	<div>
-		<a
-			href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP"
-			target="_blank">
-			<img class="w-full" src="subject/chemistry.jpg" alt="Chemistry">
-			<button class="bg-gray-300 hover:bg-gray-400 mt-5 px-3 py-3 rounded-xl text-lg w-40">Chemistry</button>
-		</a>
-	</div>
+  <div
+    class="grid grid-flow-row sm:grid-flow-col gap-10 mt-10 mx-16 text-center"
+  >
+    <div>
+      <VideoCard
+        href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn"
+        subject="maths"
+        src="subject/maths.jpg"
+      />
+    </div>
 
-
-
-    
+    <div>
+      <VideoCard
+        href="https://www.youtube.com/watch?v=vJ8oHxNUJGk&list=PL7rqMCp2H_mQ1lASzvCKicK19cB6IcihD"
+        subject="physics"
+        src="subject/physics.jpg"
+      />
+    </div>
+    <div>
+      <VideoCard
+        href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP"
+        subject="chemistry"
+        src="subject/chemistry.jpg"
+      />
+    </div>
   </div>
 </section>
