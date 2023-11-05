@@ -1,66 +1,47 @@
 ---
+import Committee from "../components/Committee.astro";
+
 // JS required for this section goes here (don't bother for now)
 ---
 
 <section>
   <h2 class="text-center">Mora Exam - 2023 | Committee</h2>
 
-  <div class="px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-6 mt-5 gap-20 shadow-black w-full h-auto rounded-full p-4">
+  <div
+    class="px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-6 mt-5 gap-20 shadow-black w-full h-auto rounded-full p-4"
+  >
     <!-- President -->
-    <div class="p-3 rounded-xl bg-[#fff] ">
-      <div class="w-full h-auto rounded-full mb-6 p-4">
-        <img  class="w-full h-auto rounded-full"src="/committee/sarujan.jpg" />
-      </div>
-      <div class="text-center p-0">
-        <h4 class="text-xl p-0">SARUJAN</h4>
-        <div class="p-0 text-xl text-[#cd5c5c]">President,</div>
-        <p>
-          BSc Eng. (Hons) (Reading),<br />Civil Engineering,<br />University of
-          Moratuwa.
-        </p>
-      </div>
+    <div>
+      <Committee
+        name="SARUJAN"
+        post="President"
+        faculty="Civil Engineering"
+        src="/committee/sarujan.jpg"
+      />
     </div>
-    <!-- Secretary -->
-    <div class="p-3 rounded-xl bg-[#fff] ">
-      <div class="w-full h-auto rounded-full mb-6 p-4">
-        <img  class="w-full h-auto rounded-full"src="/committee/harikishna.jpg" />
-      </div>
-      <div class="text-center p-0">
-        <h4 class="text-xl p-0">HARIKRISHNA</h4>
-        <span class="p-0 text-xl text-[#cd5c5c]">Secretary,</span>
-        <p>
-          BSc Eng. (Hons) (Reading),<br />Computer Science and Engineering,<br
-          />University of Moratuwa.
-        </p>
-      </div>
+    <div>
+      <Committee
+        name="HARIKRISHNA"
+        post="Secretary"
+        faculty="Computer Science and Engineering"
+        src="/committee/harikrishna.jpg"
+      />
     </div>
-    <!-- Treasurer -->
-    <div class="p-3 rounded-xl bg-[#fff] ">
-      <div class="w-full h-auto rounded-full mb-6 p-4">
-        <img  class="w-full h-auto rounded-full"src="/committee/mayoorathan.jpg" />
-      </div>
-      <div class="text-center p-0">
-        <h4 class="text-xl p-0">MAYOORATHAN</h4>
-        <span class="p-0 text-xl text-[#cd5c5c]">Treasurer,</span>
-        <p>
-          BSc Eng. (Hons) (Reading),<br />Material Science And Engineering,<br
-          />University of Moratuwa.
-        </p>
-      </div>
+    <div>
+      <Committee
+        name="MAYOORATHAN"
+        post="Treasurer"
+        faculty="Material Science And Engineering"
+        src="/committee/mayoorathan.jpg"
+      />
     </div>
-    <!-- Vice President -->
-    <div class="p-3 rounded-xl bg-[#fff] ">
-      <div class="w-full h-auto rounded-full mb-6 p-4">
-        <img class="w-full h-auto rounded-full" src="/committee/thabendra.jpg" />
-      </div>
-      <div class="text-center p-0">
-        <h4 class="text-xl p-0">THABENDRA</h4>
-        <span class="p-0 text-xl text-[#cd5c5c]">Vice President,</span>
-        <p>
-          BSc Eng. (Hons) (Reading),<br />Computer Science and Engineering,<br
-          />University of Moratuwa.
-        </p>
-      </div>
+    <div>
+      <Committee
+        name="THABENDRA"
+        post="Vice President"
+        faculty="Computer Science and Engineering"
+        src="/committee/thabendra.jpg"
+      />
     </div>
   </div>
 </section>
