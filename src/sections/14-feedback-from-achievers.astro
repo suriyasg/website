@@ -1,126 +1,67 @@
+---
+import Feedback from "../components/Feedback.astro";
+---
+
 <section>
-	<h2>FEEDBACK FROM ACHIEVERS</h2>
-	<div class="achievers-container">
-		<div class="feedback">
-			<img src="/achievers/iroshan.jpg" alt="iroshan" />
-			<p>
-				<span class="name">Iroshan</span><br />
-				 Ex-President<br />
-				 Tamil Literary Association
-			</p>
-			<p>
-				It has gone through a variety of  dimensions, and now it has reached  national
-				recognition and standards. Simply put, it's just another level.
-			</p>
-		</div>
-		<div class="feedback">
-			<img src="/achievers/daru.jpg" alt="darukeesan" />
-			<p>
-				<span class="name">Darukeesan</span><br />
-				 Island First<br />
-				 2014 A/L(MATHS)
-			</p>
-			<p>
-				It is a common notion in society that students who are in
-				universities focus only on their studies and have no care or concern
-				for society. Our students have proved that to be wrong.
-			</p>
-		</div>
-		<div class="feedback">
-			<img src="/achievers/abarna.jpg" alt="abarna" />
-			<p>
-				<span class="name">Abarna</span><br />
-				 Island First<br />2019 A/L(BIO-OLD)
-			</p>
-			<p>
-				Since the exam papers are prepared by well-experienced teachers, this
-				team is important in our preparations for the final exam. It is better to
-				practice two or three years of Mora exam past papers to face the final
-				examination successfully !!
-			</p>
-		</div>
-		<div class="feedback">
-			<img src="/achievers/sankavi.jpg" alt="sankavi" />
-			<p>
-				<span class="name">Sankavi</span><br />
-				 District First(JAFFNA)<br />2019 A/L(MATHS-OLD)
-			</p>
-			<p>
-				Mora exams become part of the A/L examination. It gave me more
-				practice and confidence. I am very glad about it. I saw the reflection
-				of mora exams in my final examination.
-			</p>
-		</div>
-		<div class="feedback">
-			<img src="/achievers/jathusan.jpg" alt="jathusan" />
-			<p>
-				<span class="name">Jathushan</span><br />
-				 District First(JAFFNA)<br />2019 A/L(MATHS-NEW)
-			</p>
-			<p>
-				 The MORA exam provided a chance to improve my time management,the most
-				important aspect of an examination. This examination creates an
-				environment similar to that of the final examination, which helps to
-				develop our mental stamina.
-			</p>
-		</div>
-		<div class="feedback">
-			<img src="/achievers/Sundarabavan.jpg" alt="Sundarabavan" />
-			<p>
-				<span class="name">Sundarbavan</span><br />
-				 Island First(JAFFNA)<br />2020 A/L(MATHS-NEW)
-			</p>
-			<p>
-				Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly
-				five months. In that respect, Mora exams helped me  develop the
-				ability to approach the questions and answer them properly.
-			</p>
-		</div>
-		<div class="feedback">
-			<img src="/achievers/Suriya.jpg" alt="suriya" />
-			<p>
-				<span class="name">Suriya</span><br />
-				 District First(JAFFNA)<br />2021 A/L(A/L(MATHS-NEW)
-			</p>
-			<p>
-				Mora exams are very similar to our A/L final examination. It helps
-				students find their strengths and weaknesses beforehand.
-			</p>
-		</div>
-	</div>
+  <h2 class="text-center">FEEDBACK FROM ACHIEVERS</h2>
+  <div class="flex overflow-auto">
+    <div>
+      <Feedback
+        src="/achievers/iroshan.jpg"
+        name="Iroshan"
+        state="Ex-President"
+        batch="Tamil Literary Association"
+        body="It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level."
+      />
+    </div><div>
+      <Feedback
+        src="/achievers/daru.jpg"
+        name="Darukeesan"
+        state="Island First"
+        batch="2014 A/L(MATHS)"
+        body="It is a common notion in society that students who are in universities focus only on their studies and have no care or concern for society. Our students have proved that to be wrong."
+      />
+    </div><div>
+      <Feedback
+        src="/achievers/abarna.jpg"
+        name="Abarna"
+        state="Island First"
+        batch="2019 A/L(BIO-OLD)"
+        body="Since the exam papers are prepared by well-experienced teachers, this team is important in our preparations for the final exam. It is better to practice two or three years of Mora exam past papers to face the final examination successfully !!"
+      />
+    </div><div>
+      <Feedback
+        src="/achievers/sankavi.jpg"
+        name="Sankavi"
+        state="District First(JAFFNA)"
+        batch="2019 A/L(MATHS-OLD)"
+        body="Mora exams become part of the A/L examination. It gave me more practice and confidence. I am very glad about it. I saw the reflection of mora exams in my final examination."
+      />
+    </div><div>
+      <Feedback
+        src="/achievers/jathusan.jpg"
+        name="Jathushan"
+        state="District First(JAFFNA)"
+        batch="2019 A/L(MATHS-NEW)"
+        body="The MORA exam provided a chance to improve my time management,the most important aspect of an examination. This examination creates an environment similar to that of the final examination, which helps to develop our mental stamina."
+      />
+    </div><div>
+      <Feedback
+        src="/achievers/Sundarabavan.jpg"
+        name="Sundarbavan"
+        state="Island First(JAFFNA)"
+        batch="2020 A/L(MATHS-NEW)"
+        body="Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly."
+      />
+    </div><div>
+      <Feedback
+        src="/achievers/Suriya.jpg"
+        name="Suriya"
+        state="District First(JAFFNA)"
+        batch="2021 A/L(A/L(MATHS-NEW)"
+        body="Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand."
+      />
+    </div>
+  </div>
 </section>
 
-<style>
-	h2 {
-		text-align: center;
-	}
-	.achievers-container {
-		overflow: auto hidden;
-		display: flex;
-		gap: 20px;
-		margin-bottom: 20px;
-	}
-	.feedback {
-		padding: 15px;
-		text-align: justify;
-		transition: 0.15s;
-		min-width: 400px;
-		width: 32%;
-	}
-	.feedback:hover {
-		background-color: lightblue;
-	}
-
-	img {
-		height: 80px;
-		width: 80px;
-		border-radius: 50%;
-		margin: 10px;
-		margin-right: 40px;
-	}
-	.name {
-		font-size: 20px;
-		font-weight: bold;
-		margin-bottom: 50px;
-	}
-</style>
