@@ -36,47 +36,12 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 	<div class="text-3xl font-bold">
 		<a class="no-underline hover:underline" href="/">Mora Exams</a>
 	</div>
-	<ul class="ml-25 mb-0 p-0">
-		<li class="inline-block mt-0 mb-2 px-3">
-			<a class="no-underline text-blanchedalmond-900 hover:underline" href=""
-				>Home</a
-			>
-		</li>
-		<li class="inline-block mt-0 mb-2 px-3">
-			<a class="no-underline text-blanchedalmond-900 hover:underline" href=""
-				>About</a
-			>
-		</li>
-		<li class="inline-block mt-0 mb-2 px-3">
-			<a class="no-underline text-blanchedalmond-900 hover:underline" href=""
-				>Exam Centres</a
-			>
-		</li>
-		<li class="inline-block mt-0 mb-2 px-3">
-			<a class="no-underline text-blanchedalmond-900 hover:underline" href=""
-				>Schedule</a
-			>
-		</li>
-		<li class="inline-block mt-0 mb-2 px-3">
-			<a class="no-underline text-blanchedalmond-900 hover:underline" href=""
-				>Past papers</a
-			>
-		</li>
-		<li class="inline-block mt-0 mb-2 px-3">
-			<a class="no-underline text-blanchedalmond-900 hover:underline" href=""
-				>Practice Exam</a
-			>
-		</li>
-		<li class="inline-block mt-0 mb-2 px-3">
-			<a class="no-underline text-blanchedalmond-900 hover:underline" href=""
-				>Contact Us</a
-			>
-		</li>
+		<NavLink text="Home" />
+		<NavLink text="About" />
+		<NavLink text="Exam Centres" />
+		<NavLink text="Schedule" />
+		<NavLink text="Past Papers" />
+		<NavLink text="Practice Exam" />
+		<NavLink text="Contact Us" />
 	</ul>
-	<!-- TODO -->
-	<!-- <div class="cursor-pointer text-xm">
-    <div class="h-75 w-5 mb-0.75"></div>
-    <div class="h-75 w-5 mb-0.75"></div>
-    <div class="h-75 w-5 mb-0.75"></div>
-  </div> -->
 </nav>
