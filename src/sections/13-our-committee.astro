@@ -1,47 +1,43 @@
 ---
-import Committee from "../components/Committee.astro";
+import CommitteeMemberCard from "../components/CommitteeMemberCard.astro";
 
 // JS required for this section goes here (don't bother for now)
 ---
 
 <section>
-  <h2 class="text-center">Mora Exam - 2023 | Committee</h2>
+	<h2 class="text-center">Mora Exam - 2023 | Committee</h2>
 
-  <div
-    class="px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-6 mt-5 gap-20 shadow-black w-full h-auto rounded-full p-4"
-  >
-    <!-- President -->
-    <div>
-      <Committee
-        name="SARUJAN"
-        post="President"
-        faculty="Civil Engineering"
-        src="/committee/sarujan.jpg"
-      />
-    </div>
-    <div>
-      <Committee
-        name="HARIKRISHNA"
-        post="Secretary"
-        faculty="Computer Science and Engineering"
-        src="/committee/harikrishna.jpg"
-      />
-    </div>
-    <div>
-      <Committee
-        name="MAYOORATHAN"
-        post="Treasurer"
-        faculty="Material Science And Engineering"
-        src="/committee/mayoorathan.jpg"
-      />
-    </div>
-    <div>
-      <Committee
-        name="THABENDRA"
-        post="Vice President"
-        faculty="Computer Science and Engineering"
-        src="/committee/thabendra.jpg"
-      />
-    </div>
-  </div>
+	<div
+		class="px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-6 mt-5 gap-10 shadow-black w-full h-auto rounded-full p-4"
+	>
+		<!-- President -->
+		<div>
+			<CommitteeMemberCard
+				name="sarujan"
+				post="President"
+				faculty="Civil Engineering"
+			/>
+		</div>
+		<div>
+			<CommitteeMemberCard
+				name="harikrishna"
+				post="Secretary"
+				faculty="Computer Science and Engineering"
+			/>
+		</div>
+		<div>
+			<CommitteeMemberCard
+				name="mayoorathan"
+				post="Treasurer"
+				faculty="Material Science And Engineering"
+			/>
+		</div>
+		<div>
+			<CommitteeMemberCard
+				name="thabendra"
+				post="Vice President"
+				faculty="Computer Science and Engineering"
+			/>
+		</div>
+	</div>
 </section>
