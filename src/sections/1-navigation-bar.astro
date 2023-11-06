@@ -1,10 +1,11 @@
 ---
 import HeaderContactIcon from "../components/HeaderContactIcon.astro";
+import NavLink from "../components/NavLink.astro";
 
 // JS required for this section goes here (don't bother for now)
 ---
 
-<header class="bg-mora-purple-800 flex items-center py-1 text-white">
+<header class="hidden sm:flex bg-mora-purple-800 items-center py-1 text-white">
 	<div>
 		<i class="fa-solid fa-envelope text-s mr-1.5"></i>
 		<a
@@ -22,7 +23,7 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 		>
 	</div>
 
-	<div style="margin-left: auto;">
+	<div class="ml-auto">
 		<HeaderContactIcon name="twitter" />
 		<HeaderContactIcon name="facebook" />
 		<HeaderContactIcon name="linkedin" />
@@ -31,11 +32,33 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 </header>
 
 <nav
-	class="flex items-center py-1 justify-between sticky top-0 pb-1.5 bg-white z-10"
+	class="flex items-center gap-x-2 py-3 sm:py-2 justify-between sticky top-0 bg-white z-10"
 >
-	<div class="text-3xl font-bold">
-		<a class="no-underline hover:underline" href="/">Mora Exams</a>
+	<div>
+		<a
+			class="text-3xl font-bold inline-block w-max no-underline hover:underline relative z-30"
+			href="/"
+		>
+			Mora&nbsp;E-Tamils
+		</a>
 	</div>
+	<input type="checkbox" class="hidden" id="nav-bar-toggle" />
+	<label
+		for="nav-bar-toggle"
+		class="block sm:hidden h-full cursor-pointer relative z-30 opacity-80"
+	>
+		<div
+			class="h-1 w-7 mb-2 bg-mora-black rounded-sm"
+			id="nav-bar-toggle-line-1"
+		>
+		</div>
+		<div class="h-1 w-7 bg-mora-black rounded-sm" id="nav-bar-toggle-line-2">
+		</div>
+	</label>
+
+	<ul
+		class="m-0 sm:ml-25 pl-[var(--body-margin-x)] pt-[12vh] text-2xl sm:p-0 bg-mora-purple-50 flex flex-wrap flex-col sm:flex-row gap-y-8 sm:gap-y-0 sm:justify-end gap-x-3 absolute top-0 bottom-0 right-0 left-0 sm:static z-20 translate-x-[-100%] sm:translate-0 sm:items-center h-[100vh] backdrop-blur"
+	>
 		<NavLink text="Home" />
 		<NavLink text="About" />
 		<NavLink text="Exam Centres" />
@@ -45,3 +68,25 @@ import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 		<NavLink text="Contact Us" />
 	</ul>
 </nav>
+
+<style>
+	ul {
+		transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+		transition-delay: 0.1s;
+	}
+	#nav-bar-toggle:checked ~ ul {
+		@apply translate-x-0;
+	}
+	label > div {
+		@apply origin-center transition-transform;
+	}
+	#nav-bar-toggle:checked ~ label > div {
+		@apply scale-x-90;
+	}
+	#nav-bar-toggle:checked ~ label #nav-bar-toggle-line-1 {
+		@apply rotate-[45deg] translate-y-[0.375rem];
+	}
+	#nav-bar-toggle:checked ~ label #nav-bar-toggle-line-2 {
+		@apply rotate-[-45deg] translate-y-[-0.375rem];
+	}
+</style>
