@@ -3,19 +3,20 @@ interface Props {
 	src: string;
 	name: string;
 	state: string;
-    body: string;
-    batch:string;
+	body: string;
+	batch: string;
 }
 
-const { src, name, state,body,batch } = Astro.props;
+const { src, name, state, body, batch } = Astro.props;
 ---
-<div class="p-4 text-justify duration-150 min-w-[400px]  hover:bg-[#add8e6]">
-    <img class="h-20 w-20 rounded-full m-3 mr-10" src={src} alt={name} />
-    <p>
-        <span class="text-lg font-bold mb-12">{name}</span><br />
-         {state}<br />{batch}
-    </p>
-    <p>
-       {body}
-    </p>
+
+<div class="p-4 text-justify duration-150 min-w-[400px] hover:bg-[#add8e6]">
+	<img class="h-20 w-20 rounded-full m-3 mr-10" src={src} alt={name} />
+	<p>
+		<span class="text-lg font-bold mb-12">{name}</span><br />
+		{state}<br />{batch}
+	</p>
+	<p>
+		{body}
+	</p>
 </div>
