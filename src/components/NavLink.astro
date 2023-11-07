@@ -12,16 +12,15 @@ if (href == undefined) {
 ---
 
 <li class="inline-block w-fit">
-	<a
-		class="no-underline text-blanchedalmond-900 hover:underline"
-		href={href || ""}
-	>
+	<a class="text-inherit no-underline hover:underline" href={href || ""}>
 		{text}</a
 	>
 </li>
 
 <style>
-	li::before {
-		content: "— ";
+	@media (max-width: 640px) {
+		li::before {
+			content: "— ";
+		}
 	}
 </style>
