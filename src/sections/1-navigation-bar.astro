@@ -47,18 +47,14 @@ import NavLink from "../components/NavLink.astro";
 		for="nav-bar-toggle"
 		class="block sm:hidden h-full cursor-pointer relative z-30 opacity-80"
 	>
-		<div
-			class="h-1 w-7 mb-2 bg-mora-black rounded-sm"
-			id="nav-bar-toggle-line-1"
-		>
+		<div class="h-1 w-7 mb-2 bg-white rounded-sm" id="nav-bar-toggle-line-1">
 		</div>
-		<div class="h-1 w-7 bg-mora-black rounded-sm" id="nav-bar-toggle-line-2">
-		</div>
+		<div class="h-1 w-7 bg-white rounded-sm" id="nav-bar-toggle-line-2"></div>
 	</label>
 
 	<ul
 		class={[
-			`m-0 pl-[var(--body-margin-x)] pt-[12vh] text-2xl bg-mora-purple-50 flex flex-wrap flex-col gap-y-8 gap-x-3 absolute top-0 bottom-0 right-0 left-0 z-20 translate-x-[-100%] h-[100vh] backdrop-blur`,
+			`m-0 pl-[var(--body-margin-x)] pt-[12vh] text-2xl bg-mora-purple-800 flex flex-wrap flex-col gap-y-8 gap-x-3 absolute top-0 bottom-0 right-0 left-0 z-20 translate-x-[-100%] h-[100vh] backdrop-blur`,
 			`sm:ml-25 sm:p-0 sm:flex-row sm:gap-y-0 sm:justify-end sm:static sm:translate-x-[0] sm:items-center sm:bg-inherit sm:h-fit sm:text-base`,
 		].join(" ")}
 	>
