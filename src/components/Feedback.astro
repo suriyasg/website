@@ -1,29 +1,66 @@
 ---
 interface Props {
-	src: string;
 	name: string;
 	state: string;
 	body: string;
 	batch: string;
 }
 
-const { src, name, state, body, batch } = Astro.props;
+const { name, state, body, batch } = Astro.props;
 ---
 
-<div
-	class="p-4 text-justify duration-150 min-w-[400px] hover:bg-[#add8e6] grid h-full gap-x-4 items-center"
->
-	<img class="h-20 w-20 rounded-full" src={src} alt={name} />
-	<p>
-		<span class="text-lg font-bold mb-12">{name}</span><br />
-		{state}<br />{batch}
-	</p>
-	<p class="col-span-2">
-		{body}
-	</p>
+<div class="relative cursor-pointer card">
+	<div class="face face1">
+		<div class="content">
+			<img src={`/achievers/${name}.jpg`} alt={name} />
+			<h3 class="text-white mt-1 p-0 text-center text-2xl">
+				<span class="capitalize">
+					{name}
+				</span>
+				<br />
+				{state}<br />
+				{batch}
+			</h3>
+		</div>
+	</div>
+	<div class="face face2">
+		<p class="content-center text-lg p-0 m-0">
+			{body}
+		</p>
+	</div>
 </div>
 <style>
-	div {
-		grid-template-columns: auto 1fr;
+	.card .face {
+		@apply rounded-lg w-96;
+		transition: transform 0.5s;
+	}
+
+	.card .face.face1 {
+		@apply relative bg-gray-700 z-[4] py-5;
+	}
+
+	.card:hover .face.face1 {
+		@apply bg-fairy-tale-500 translate-y-[5%];
+	}
+
+	.card .face.face1 .content {
+		@apply opacity-40 transition-all duration-500 flex flex-col items-center;
+	}
+
+	.card:hover .face.face1 .content {
+		@apply opacity-100;
+	}
+
+	.card .face.face1 .content img {
+		@apply mb-3 aspect-square w-32 rounded-full;
+	}
+
+	.card .face.face2 {
+		@apply p-5 pt-6 bg-white relative flex justify-center items-center translate-y-[-100%];
+		box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+	}
+
+	.card:hover .face.face2 {
+		@apply translate-y-[0];
 	}
 </style>
