@@ -1,9 +1,13 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <section class="bg-sky-200 text-center mt-30 py-10" id="exam-centres">
-	<h2 class="text-3xl mt-0">Find your examination centres.</h2>
+	<h2 class="text-3xl mt-0 mx-auto max-w-[30ch]">
+		{t("find_your_examination_centres__tile")}
+	</h2>
 	<p class="text-xl">
 		We have 67 examination centre networks covering almost the whole island.
 		Choose your district to view the examination centres available...
