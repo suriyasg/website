@@ -2,6 +2,35 @@
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const t = useTranslations(getLangFromUrl(Astro.url));
+
+const districts = [
+	"ampara",
+	"anurathapura",
+	"budulla",
+	"batticaloa",
+	"colombo",
+	"galle",
+	"gampaha",
+	"hambantota",
+	"jaffna",
+	"kalutura",
+	"kandy",
+	"kegalle",
+	"kilinochchi",
+	"kurunegala",
+	"mannar",
+	"matale",
+	"matara",
+	"mullaitivu",
+	"nuwara-eliya",
+	"puttalam",
+	"trincomalee",
+	"vavuniya",
+];
+
+function capitalize(word: string) {
+	return word.charAt(0).toUpperCase().concat(word.slice(1));
+}
 ---
 
 <section class="bg-sky-200 text-center mt-30 py-10" id="exam-centres">
@@ -14,27 +43,14 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 
 	<select class="p-3 border rounded-xl h-12 mt-5">
 		<option>🔍Choose a District...</option>
-		<option value="ampara">Ampara</option>
-		<option value="anurathapura">Anurathapura</option>
-		<option value="budulla">Budulla</option>
-		<option value="batticaloa">Batticaloa</option>
-		<option value="colombo">Colombo</option>
-		<option value="galle">Galle</option>
-		<option value="gampaha">Gampaha</option>
-		<option value="hambantota">Hambantota</option>
-		<option value="jaffna">Jaffna</option>
-		<option value="kalutura">Kalutura</option>
-		<option value="kandy">Kandy</option>
-		<option value="kegalle">Kegalle</option>
-		<option value="kilinochchi">Kilinochchi</option>
-		<option value="kurunegala">Kurunegala</option>
-		<option value="mannar">Mannar</option>
-		<option value="matale">Matale</option>
-		<option value="matara">Matara</option>
-		<option value="mullaitivu">Mullaitivu</option>
-		<option value="nuwara-eliya">Nuwara-Eliya</option>
-		<option value="puttalam">Puttalam</option>
-		<option value="trincomalee">Trincomalee</option>
-		<option value="vavuniya">Vavuniya</option>
+		{
+			districts.map((district) => {
+				return (
+					<option value={district}>
+						{district.split("-").map(capitalize).join("-")}
+					</option>
+				);
+			})
+		}
 	</select>
 </section>
