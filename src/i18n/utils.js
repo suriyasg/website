@@ -35,8 +35,7 @@ export function replaceLanguage(url, lang) {
 	}
 
 	parts[1] = lang;
-	url.pathname = parts.join("/");
-	return url.toString();
+	return parts.join("/");
 }
 
 /**

@@ -1,11 +1,12 @@
 ---
 import Timetable from "../components/Timetable.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
-// JS required for this section goes here (don't bother for now)
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <section class="my-10" id="timetable">
-	<h2 class="text-center">Time Table</h2>
+	<h2 class="text-center">{t("timetable__title")}</h2>
 	<div class="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 		<div>
 			<Timetable
