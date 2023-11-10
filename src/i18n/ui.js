@@ -51,6 +51,17 @@ export const defaultLang = "en";
  * @prop {string} committee__vice_president_post
  * @prop {string} committee__university
  * @prop {string} looking_for_past_papers__description
+ * @prop {string} footer_title_1
+ * @prop {string} footer_title_1_description_p1
+ * @prop {string} footer_title_1_description_p2
+ * @prop {string} footer_title_2
+ * @prop {string} footer_title_3
+ * @prop {string} footer_title_4
+ * @prop {string} footer_title_4_s1
+ * @prop {string} footer_title_4_s2
+ * @prop {string} footer_title_4_s3
+ * @prop {string} footer_title_4_s4
+ * @prop {string} footer_title_4_s5
  */
 
 /**
@@ -86,6 +97,17 @@ export const ui = Object.freeze({
 		committee__university: "University of Moratuwa",
 		looking_for_past_papers__description:
 			"Now It is even easier to find the paper you need. We have advanced filtering options. And we divided all the questions for each year based on the sub-sections of each subject. Now you can practice our past papers section-wise.",
+		footer_title_1: "Mora Exams",	
+		footer_title_1_description_p1: "We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
+		footer_title_1_description_p2: "It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
+		footer_title_2: "Contact Us :",
+		footer_title_3: "Follow Us :",
+		footer_title_4: "Our Services",
+		footer_title_4_s1: "Mora Exam",
+		footer_title_4_s2: "Practice Papers",
+		footer_title_4_s3: "E-learning Videos",
+		footer_title_4_s4: "E-learning Site",
+		footer_title_4_s5: "Doubts Forms",
 	},
 	ta: {
 		meta__description:
@@ -118,5 +140,16 @@ export const ui = Object.freeze({
 		committee__university: "மொரட்டுவ பல்கலைக்கழகம்",
 		looking_for_past_papers__description:
 			"இப்போது உங்களுக்குத் தேவையான காகிதத்தைக் கண்டுபிடிப்பது இன்னும் எளிதாகிவிட்டது. எங்களிடம் மேம்பட்ட வடிகட்டுதல் விருப்பங்கள் உள்ளன. மேலும் ஒவ்வொரு பாடத்தின் துணைப்பிரிவுகளின் அடிப்படையில் ஒவ்வொரு ஆண்டுக்கான அனைத்து கேள்விகளையும் பிரித்தோம். இப்போது நீங்கள் எங்கள் கடந்த தாள்களை பிரிவு வாரியாக பயிற்சி செய்யலாம்.",
+		footer_title_1:"மோரா தேர்வுகள்",
+		footer_title_1_description_p1: "பொறியியலாளர்களாகிய நாம், சமூகம் மற்றும் அதன் மேம்பாடு குறித்து மிகவும் அக்கறை கொண்டுள்ளோம், மேலும் சமூகத்தின் மேம்பாடு பொருத்தமற்ற பிறழ்வுகளை விட மிகவும் வளமான மற்றும் கலப்பின எதிர்கால தலைமுறையைக் கொண்டுவரும் என்று நாங்கள் நம்புகிறோம்.",
+		footer_title_1_description_p2: "நமது சமூகத்தில் உள்ள பொறியியல் மாணவர்கள் எவ்வாறு தங்களை வளர்த்துக்கொள்கிறார்கள் மற்றும் எங்கள் சமூகத்திற்கு பல வழிகளில் உதவுவதற்கான திட்டங்களைத் திட்டமிடுகிறார்கள் என்பது மிகவும் தெளிவாகத் தெரிகிறது. மொரட்டுவை பல்கலைக்கழக தமிழ் மக்களாகிய நாமும் மொரா இ-தமிழர் என்ற பதாகையின் கீழ் ஒன்றிணைந்தோம்.",
+		footer_title_2: "தொடர்பு கொள்க :",
+		footer_title_3: "எங்களைப் பின்பற்றவும் :",
+		footer_title_4: "எங்கள் சேவைகள்",
+		footer_title_4_s1: "மோரா தேர்வு",
+		footer_title_4_s2: "பயிற்சிக் கட்டுரைகள்",
+		footer_title_4_s3: "மின் கற்றல் வீடியோக்கள்",
+		footer_title_4_s4: "மின் கற்றல் தளம்",
+		footer_title_4_s5: "சந்தேக படிவங்கள்",
 	},
 });
