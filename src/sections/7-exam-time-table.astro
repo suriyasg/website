@@ -34,6 +34,7 @@ const t = useTranslations(lang);
 						><br />Biology-I<br /><span class="sm:ml-[20px]"
 							>1.30 P.m - 3.30 P.m</span
 						>
+						<span class="article-number"></span>
 					</p>
 				</div>
 				<span class="timeline-author"></span>
@@ -87,7 +88,8 @@ const t = useTranslations(lang);
 				<div class="content-left">
 					<p class="text-[16px] lg:text-[22px]">
 						Physics-I<br /><span class="sm:ml-[20px]"></span>2.30 P.m - 4.30 P.m<span
-							class="article-number"></span>
+							class="article-number">03</span
+						>
 					</p>
 				</div>
 				<span class="timeline-author"></span>
@@ -200,7 +202,7 @@ const t = useTranslations(lang);
 		#conference-timeline {
 			position: relative;
 			max-width: 1400px;
-
+			background-color: #d7b4df;
 			width: 100%;
 			margin: 0 auto;
 			margin-top: 30px;
@@ -235,6 +237,7 @@ const t = useTranslations(lang);
 			padding-top: 60px;
 			padding-bottom: 60px;
 		}
+
 		.timeline-article {
 			width: 100%;
 			height: 100%;
@@ -385,7 +388,7 @@ const t = useTranslations(lang);
 				display: none;
 			}
 			#conference-timeline .conference-center-line {
-				margin-left: 25px;
+				margin-left: 23px;
 			}
 			.timeline-article .meta-date {
 				margin-left: -2px;
@@ -398,6 +401,9 @@ const t = useTranslations(lang);
 			.timeline-article .content-right {
 				border: 6px solid #9b2cb4;
 			}
+			#conference-timeline .timeline-end {
+				margin-left: 10px;
+			}
 		}
 		@media only screen and (max-width: 400px) {
 			.timeline-article p {
@@ -407,7 +413,7 @@ const t = useTranslations(lang);
 				display: none;
 			}
 			#conference-timeline .conference-center-line {
-				margin-left: 10px;
+				margin-left: 14px;
 			}
 			.timeline-article .meta-date {
 				margin-left: -2px;
