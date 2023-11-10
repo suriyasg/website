@@ -22,6 +22,24 @@ export function getLangFromUrl(url) {
 }
 
 /**
+ * @param {URL} url
+ * @param {import("./ui").Language} lang
+ * @returns {string}
+ */
+export function replaceLanguage(url, lang) {
+	const parts = url.pathname.split("/");
+	const language = parts[1];
+
+	if (!isSupportedLanguage(lang) || !isSupportedLanguage(language)) {
+		return url.toString();
+	}
+
+	parts[1] = lang;
+	url.pathname = parts.join("/");
+	return url.toString();
+}
+
+/**
  * @param {import("./ui").Language} lang
  */
 export function useTranslations(lang) {

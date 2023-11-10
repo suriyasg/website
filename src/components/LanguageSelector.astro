@@ -1,0 +1,49 @@
+---
+import { LIST_OF_LANGUAGES, languages } from "../i18n/ui";
+import { getLangFromUrl, replaceLanguage } from "../i18n/utils";
+
+interface Props {
+	class: string;
+}
+
+interface OtherLanguage {
+	langName: string;
+	redirectUrl: string;
+}
+
+const { class: className } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const otherLanguages: OtherLanguage[] = new Array(LIST_OF_LANGUAGES.length - 1);
+
+let lastIndex = 0;
+for (let i = 0; i < LIST_OF_LANGUAGES.length; i++) {
+	const currentLanguage = LIST_OF_LANGUAGES[i];
+	if (currentLanguage == lang) continue;
+
+	otherLanguages[lastIndex] = {
+		langName: languages[currentLanguage],
+		redirectUrl: replaceLanguage(Astro.url, currentLanguage),
+	};
+	lastIndex++;
+}
+---
+
+<div
+	class={`rounded-lg bg-ultra-violet-200 py-2 px-3 text-base w-fit mx-auto ${className}`}
+>
+	This page is also available in {
+		otherLanguages.map((t, i) => {
+			return (
+				<>
+					<a
+						href={t.redirectUrl}
+						class="no-underline text-ultra-violet-700 hover:underline"
+					>
+						{t.langName}
+					</a>
+					{i == otherLanguages.length - 1 ? "" : ", "}
+				</>
+			);
+		})
+	}
+</div>
