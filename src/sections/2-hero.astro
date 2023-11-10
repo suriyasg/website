@@ -1,13 +1,12 @@
 ---
 import LanguageSelector from "../components/LanguageSelector.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
-// JS required for this section goes here (don't bother for now)
 
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <section
-	class="pt-20 pb-4 bg-cover text-black bg-mora-purple-50 h-[70vh] flex flex-col items-center"
+	class="pt-20 pb-4 bg-cover text-white bg-[url('/hero.jpeg')] bg-mora-purple-50 h-[70vh] flex flex-col items-center"
 >
 	<!-- <img class="h-24 sm:h-32" src="/logo.png" /> -->
 	<h1
