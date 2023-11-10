@@ -50,6 +50,7 @@ export const defaultLang = "en";
  * @prop {string} committee__vice_president_name
  * @prop {string} committee__vice_president_post
  * @prop {string} committee__university
+ * @prop {string} looking_for_past_papers__description
  */
 
 /**
@@ -83,6 +84,8 @@ export const ui = Object.freeze({
 		committee__treasurer_faculty: "Material Science And Engineering",
 		committee__vice_president_faculty: "Computer Sciecne and Engineering",
 		committee__university: "University of Moratuwa",
+		looking_for_past_papers__description:
+			"Now It is even easier to find the paper you need. We have advanced filtering options. And we divided all the questions for each year based on the sub-sections of each subject. Now you can practice our past papers section-wise.",
 	},
 	ta: {
 		meta__description:
@@ -113,5 +116,7 @@ export const ui = Object.freeze({
 		committee__treasurer_faculty: "பொருள் விஞ்ஞானம் மற்றும் பொறியியல்",
 		committee__vice_president_faculty: "கணினி விஞ்ஞானம் மற்றும் பொறியியல்",
 		committee__university: "மொரட்டுவ பல்கலைக்கழகம்",
+		looking_for_past_papers__description:
+			"இப்போது உங்களுக்குத் தேவையான காகிதத்தைக் கண்டுபிடிப்பது இன்னும் எளிதாகிவிட்டது. எங்களிடம் மேம்பட்ட வடிகட்டுதல் விருப்பங்கள் உள்ளன. மேலும் ஒவ்வொரு பாடத்தின் துணைப்பிரிவுகளின் அடிப்படையில் ஒவ்வொரு ஆண்டுக்கான அனைத்து கேள்விகளையும் பிரித்தோம். இப்போது நீங்கள் எங்கள் கடந்த தாள்களை பிரிவு வாரியாக பயிற்சி செய்யலாம்.",
 	},
 });

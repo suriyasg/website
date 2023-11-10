@@ -1,4 +1,4 @@
-import { ui, defaultLang, languages, LIST_OF_LANGUAGES } from "./ui";
+import { ui, defaultLang, LIST_OF_LANGUAGES } from "./ui";
 
 /**
  * @param {string} lang
