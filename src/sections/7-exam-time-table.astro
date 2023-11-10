@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 import Timetable from "../components/Timetable.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
@@ -16,55 +17,381 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 				Time2="1.30 p.m.-3.30 p.m. : "
 				subject2=" BIOLOGY - I"
 			/>
-		</div>
+=======
+<!-- Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900"
+	rel="stylesheet"
+	type="text/css"
+/>
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
+	rel="stylesheet"
+	type="text/css"
+/>
+<!-- // Fonts -->
 
-		<div>
-			<Timetable
-				date="26th November 2023 (Sunday)"
-				Time1="1.30 p.m.-4.40 p.m. :"
-				subject1="COMBINED MATHEMATICS-II"
-				Time2="1.30 p.m.-4.40 p.m. :"
-				subject2=" BIOLOGY - II"
-			/>
+<!-- Vertical Timeline -->
+<section id="conference-timeline">
+	<div class="timeline-start">Start</div>
+	<div class="conference-center-line"></div>
+	<div class="conference-timeline-content">
+		<!-- Article -->
+		<div class="timeline-article">
+			<div class="content-left-container">
+				<div class="content-left">
+					<p class="16px lg:text-[24px] m-0">
+						Combined Mathematics-I<br />1.30 PM - 4.40 PM<br />Biology-I<br
+						/>1.30 PM - 3.30 PM
+					</p>
+				</div>
+				<span class="timeline-author"></span>
+			</div>
+			<div class="content-right-container">
+				<!-- <div class="content-right">
+							<p>
+								<br />
+								<span class="article-number"></span>
+							</p>
+						</div> -->
+				<span class="timeline-author"></span>
+			</div>
+			<div class="meta-date">
+				<span class="date">25</span>
+				<span class="month">SEP</span>
+			</div>
+>>>>>>> 8d6bbf3 (timetable)
 		</div>
-
-		<div>
-			<Timetable
-				date="30th November 2023 (Thursday)"
-				Time1="2.30 p.m.-4.30 p.m. :"
-				subject1="PHYSICS - I"
-				Time2=""
-				subject2=""
-			/>
+		<!-- // Article -->
+		<!-- Article -->
+		<div class="timeline-article">
+			<!-- <div class="content-left-container">
+							<div class="content-left">
+								<p>
+									Combined Mathematics-II<br />1.30 PM - 4.30 PM<span
+										class="article-number"></span>
+								</p>
+							</div>
+							<span class="timeline-author"></span>
+						</div> -->
+			<div class="content-right-container">
+				<div class="content-right">
+					<p>
+						Combined Mathematics-II<br />1.30 PM - 4.40 PM<br />Biology-II<br
+						/>1.30 PM - 4.40 PM <span class="article-number"></span>
+					</p>
+				</div>
+				<span class="timeline-author"></span>
+			</div>
+			<div class="meta-date">
+				<span class="date">26</span>
+				<span class="month">SEP</span>
+			</div>
 		</div>
-
-		<div>
-			<Timetable
-				date="03rd December 2023 (Sunday)"
-				Time1="1.30 p.m.-4.40 p.m. :"
-				subject1="PHYSICS - II"
-				Time2=""
-				subject2=""
-			/>
+		<!-- // Article -->
+		<!-- Article -->
+		<div class="timeline-article">
+			<div class="content-left-container">
+				<div class="content-left">
+					<p>
+						Physics-I<br />2.30 PM - 4.30 PM<span class="article-number"></span>
+					</p>
+				</div>
+				<span class="timeline-author"></span>
+			</div>
+			<div class="content-right-container">
+				<!-- <div class="content-right">
+								<p>
+									Biology-II<br />1.30 PM - 4.30 PM <span class="article-number"
+									></span>
+								</p>
+							</div> -->
+				<span class="timeline-author"></span>
+			</div>
+			<div class="meta-date">
+				<span class="date">30</span>
+				<span class="month">SEP</span>
+			</div>
 		</div>
-
-		<div>
-			<Timetable
-				date="9th December 2023 (Saturday)"
-				Time1="1.30 p.m.-3.30 p.m. : "
-				subject1="CHEMISTRY - I"
-				Time2="1.30 p.m.-3.30 p.m. :"
-				subject2="ICT - I"
-			/>
+		<!-- // Article -->
+		<!-- Article -->
+		<div class="timeline-article">
+			<!-- <div class="content-left-container">
+							<div class="content-left">
+								<p>
+									Combined Mathematics-II<br />1.30 PM - 4.30 PM<span
+										class="article-number"></span>
+								</p>
+							</div>
+							<span class="timeline-author"></span>
+						</div> -->
+			<div class="content-right-container">
+				<div class="content-right">
+					<p>
+						Physics-II<br />1.30 PM - 4.40 PM <span class="article-number"
+						></span>
+					</p>
+				</div>
+				<span class="timeline-author"></span>
+			</div>
+			<div class="meta-date">
+				<span class="date">O3</span>
+				<span class="month">DEC</span>
+			</div>
 		</div>
-		<div>
-			<Timetable
-				date="10th December 2023 (Sunday)"
-				Time1="1.30 p.m.-4.40 p.m. : "
-				subject1="CHEMISTRY - II"
-				Time2="1.30 p.m.-4.40 p.m. : "
-				subject2="ICT - II"
-			/>
+		<!-- // Article -->
+		<!-- Article -->
+		<div class="timeline-article">
+			<div class="content-left-container">
+				<div class="content-left">
+					<p>
+						Chemistry-I<br />1.30 PM - 3.30 PM<br />ICT-I<br />1.30 PM - 3.30 PM<span
+							class="article-number"></span>
+					</p>
+				</div>
+				<span class="timeline-author"></span>
+			</div>
+			<div class="content-right-container">
+				<!-- <div class="content-right">
+								<p>
+									Biology-II<br />1.30 PM - 4.30 PM <span class="article-number"
+									></span>
+								</p>
+							</div> -->
+				<span class="timeline-author"></span>
+			</div>
+			<div class="meta-date">
+				<span class="date">09</span>
+				<span class="month">DEC</span>
+			</div>
 		</div>
+		<!-- // Article -->
+		<!-- Article -->
+		<div class="timeline-article">
+			<div class="content-left-container">
+				<!-- <div class="content-left">
+								<p>
+									Combined Mathematics-II<br />1.30 PM - 4.30 PM<span
+										class="article-number"></span>
+								</p>
+							</div> -->
+				<span class="timeline-author"></span>
+			</div>
+			<div class="content-right-container">
+				<div class="content-right">
+					<p>
+						Chemistry-II<br />1.30 PM - 4.40 PM <br />ICT-II<br />1.30 PM - 4.40
+						PM<span class="article-number"></span>
+					</p>
+				</div>
+				<span class="timeline-author"></span>
+			</div>
+			<div class="meta-date">
+				<span class="date">10</span>
+				<span class="month">DEC</span>
+			</div>
+		</div>
+		<!-- // Article -->
 	</div>
+	<div class="timeline-end">End</div>
 </section>
+<!-- // Vertical Timeline -->
+<style>
+	/*===== Vertical Timeline =====*/
+	* {
+		font-family: "Poppins", sans-serif;
+	}
+
+	#conference-timeline {
+		position: relative;
+		max-width: 1400px;
+
+		width: 100%;
+		margin: 0 auto;
+	}
+	#conference-timeline .timeline-start,
+	#conference-timeline .timeline-end {
+		display: table;
+		font-family: "Poppins", sans-serif;
+		font-size: 18px;
+		font-weight: 900;
+		text-transform: uppercase;
+		background: purple;
+		padding: 15px 23px;
+		color: #fff;
+		max-width: 5%;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#conference-timeline .conference-center-line {
+		position: absolute;
+		width: 5px;
+		height: 100%;
+		top: 0;
+		left: 50%;
+		margin-left: -2px;
+		background: purple;
+		z-index: -1;
+	}
+	#conference-timeline .conference-timeline-content {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.timeline-article {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		margin: 20px 0;
+	}
+	.timeline-article .content-left-container,
+	.timeline-article .content-right-container {
+		max-width: 44%;
+		width: 100%;
+	}
+	.timeline-article .timeline-author {
+		display: block;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #242424;
+		text-align: right;
+	}
+	.timeline-article .content-left:hover,
+	.timeline-article .content-right:hover {
+		background-color: rgb(222, 208, 222);
+
+		transition-duration: 1s;
+	}
+	.timeline-article .content-left,
+	.timeline-article .content-right {
+		position: relative;
+		width: auto;
+		border: 5px solid #9b2cb4;
+		background-color: #fff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+		padding: 20px 15px;
+	}
+	.timeline-article .content-left {
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border-top-left-radius: 30px;
+	}
+	.timeline-article .content-right {
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border-top-right-radius: 30px;
+	}
+	.timeline-article p {
+		margin: 0 0 0 60px;
+		padding: 0;
+		font-weight: 400;
+		color: #242424;
+
+		line-height: 24px;
+		position: relative;
+	}
+
+	.timeline-article .content-left-container {
+		float: left;
+	}
+	.timeline-article .content-right-container {
+		float: right;
+	}
+	.timeline-article .content-left:before,
+	.timeline-article .content-right:before {
+		position: absolute;
+		top: 20px;
+		font-size: 23px;
+		font-family: "FontAwesome";
+		color: #fff;
+	}
+	.timeline-article .content-left:before {
+		content: "\f0da";
+		right: -13px;
+
+		color: #9b2cb4;
+		height: 12px;
+	}
+	.timeline-article .content-right:before {
+		content: "\f0d9";
+		left: -13px;
+		color: #9b2cb4;
+	}
+	.timeline-article .meta-date {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 70px;
+		height: 70px;
+		margin-left: -31px;
+		color: #fff;
+		border-radius: 100%;
+		background: purple;
+	}
+	.timeline-article .meta-date .date,
+	.timeline-article .meta-date .month {
+		display: block;
+		text-align: center;
+		font-weight: 500;
+	}
+	.timeline-article .meta-date .date {
+		font-size: 24px;
+		line-height: 40px;
+	}
+	.timeline-article .meta-date .month {
+		font-size: 20px;
+		line-height: 10px;
+	}
+	/*===== // Vertical Timeline =====*/
+
+	/*===== Resonsive Vertical Timeline =====*/
+	@media only screen and (max-width: 830px) {
+		#conference-timeline .timeline-start,
+		#conference-timeline .timeline-end {
+			margin: 0;
+		}
+		#conference-timeline .conference-center-line {
+			margin-left: 0;
+			left: 50px;
+		}
+		.timeline-article .meta-date {
+			margin-left: 0;
+			left: 20px;
+		}
+		.timeline-article .content-left-container,
+		.timeline-article .content-right-container {
+			max-width: 100%;
+			width: auto;
+			float: none;
+			margin-left: 110px;
+			min-height: 53px;
+		}
+		.timeline-article .content-left-container {
+			margin-bottom: 20px;
+		}
+		.timeline-article .content-left,
+		.timeline-article .content-right {
+			padding: 10px 25px;
+			min-height: 65px;
+		}
+		.timeline-article .content-left:before {
+			content: "\f0d9";
+			right: auto;
+			left: -8px;
+		}
+		.timeline-article .content-right:before {
+			display: none;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		.timeline-article p {
+			margin: 0;
+		}
+		.timeline-article p span.article-number {
+			display: none;
+		}
+	}
+	/*===== // Resonsive Vertical Timeline =====*/
+</style>
