@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <!-- Fonts -->
 <link
 	href="https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900"
@@ -10,7 +17,7 @@
 	type="text/css"
 />
 <!-- // Fonts -->
-<h1 class="text-[28px] text-center mt-5">Time Table</h1>
+<h1 class="text-[28px] text-center mt-5">{t("timetable__title")}</h1>
 
 <!-- Vertical Timeline -->
 <section id="conference-timeline">
