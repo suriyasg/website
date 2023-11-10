@@ -1,5 +1,5 @@
 ---
-import { LIST_OF_LANGUAGES, languages } from "../i18n/ui";
+import { LANGUAGES_DISPLAY_TEXT, LIST_OF_LANGUAGES } from "../i18n/ui";
 import { getLangFromUrl, replaceLanguage } from "../i18n/utils";
 
 interface Props {
@@ -21,7 +21,7 @@ for (let i = 0; i < LIST_OF_LANGUAGES.length; i++) {
 	if (currentLanguage == lang) continue;
 
 	otherLanguages[lastIndex] = {
-		langName: languages[currentLanguage],
+		langName: LANGUAGES_DISPLAY_TEXT[currentLanguage],
 		redirectUrl: replaceLanguage(Astro.url, currentLanguage),
 	};
 	lastIndex++;

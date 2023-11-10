@@ -6,6 +6,16 @@ export const languages = Object.freeze({
  * @typedef {keyof typeof languages} Language
  */
 
+export const LANGUAGES_DISPLAY_TEXT = Object.freeze(
+	/**
+	 * @type {Record<Language, string>}
+	 */
+	{
+		en: "English",
+		ta: "தமிழ்",
+	},
+);
+
 /**
  * @type {Array<Language>}
  */
@@ -35,7 +45,7 @@ export const ui = Object.freeze({
 	ta: {
 		nav__timetable: "பரீட்சை அட்டவணை",
 		nav__exam_centres: "பரீட்சை நிலையங்கள்",
-		nav__past_papers: "கடந்த கால கேள்வித்தாள்கள்",
+		nav__past_papers: "கடந்த கால வினாத்தாள்கள்",
 		nav__about: "எம்மைப் பற்றி",
 	},
 });
