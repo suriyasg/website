@@ -1,26 +1,17 @@
 ---
+import HeaderContactLink from "../components/HeaderContactLink.astro";
 import NavLink from "../components/NavLink.astro";
 
 // JS required for this section goes here (don't bother for now)
 ---
 
 <header class="hidden sm:flex bg-mora-purple-800 items-center py-1 text-white">
-	<div>
-		<i class="fa-solid fa-envelope text-s mr-1.5"></i>
-		<a
-			class="text-inherit no-underline hover:underline opacity-80 mr-5"
-			href="
-        mailto:moraetamils@gmail.com"
-			>moraetamils@gmail.com
-		</a>
-	</div>
-	<div>
-		<i class="fa-solid fa-phone text-s mr-1.5"></i>
-		<a
-			class="text-inherit no-underline hover:underline opacity-80 mr-5"
-			href="tel:+94704616400">+94 70 461 6400</a
-		>
-	</div>
+	<HeaderContactLink icon="envelope" href="mailto:moraetamils@gmail.com">
+		moraetamils@gmail.com
+	</HeaderContactLink>
+	<HeaderContactLink icon="phone" href="tel:+94704616400">
+		+94 70 461 6400
+	</HeaderContactLink>
 </header>
 
 <nav
