@@ -62,6 +62,11 @@ export const defaultLang = "en";
  * @prop {string} footer_title_4_s3
  * @prop {string} footer_title_4_s4
  * @prop {string} footer_title_4_s5
+ * @prop {string} elearning_videos_title
+ * @prop {string} elearning_videos_p
+ * @prop {string} elearning_videos_sub1
+ * @prop {string} elearning_videos_sub2
+ * @prop {string} elearning_videos_sub3
  */
 
 /**
@@ -108,6 +113,11 @@ export const ui = Object.freeze({
 		footer_title_4_s3: "E-learning Videos",
 		footer_title_4_s4: "E-learning Site",
 		footer_title_4_s5: "Doubts Forms",
+		elearning_videos_title: "E-Learning videos",
+		elearning_videos_p: "We have done video explanations regarding important topics in each subject on our YouTube channel. Click on any of the subjects listed below and view the respective videos.",
+		elearning_videos_sub1: "maths",
+		elearning_videos_sub2: "physics",
+		elearning_videos_sub3: "chemistry",
 	},
 	ta: {
 		meta__description:
@@ -151,5 +161,10 @@ export const ui = Object.freeze({
 		footer_title_4_s3: "மின் கற்றல் வீடியோக்கள்",
 		footer_title_4_s4: "மின் கற்றல் தளம்",
 		footer_title_4_s5: "சந்தேக படிவங்கள்",
+		elearning_videos_title: "மின் கற்றல் வீடியோக்கள்",
+		elearning_videos_p: "எங்கள் யூடியூப் சேனலில் ஒவ்வொரு பாடத்திலும் முக்கியமான தலைப்புகள் குறித்து வீடியோ விளக்கங்கள் செய்துள்ளோம். கீழே பட்டியலிடப்பட்டுள்ள ஏதேனும் ஒன்றைத் தெரிவுசெய்து அந்தந்த வீடியோக்களைப் பார்க்கவும்.",
+		elearning_videos_sub1: "maths",
+		elearning_videos_sub2: "physics",
+		elearning_videos_sub3: "chemistry",
 	},
 });
