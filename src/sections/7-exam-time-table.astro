@@ -45,7 +45,7 @@ const t = useTranslations(lang);
 								<span class="article-number"></span>
 							</p>
 						</div> -->
-				<span class="timeline-author"></span>
+				<!-- <span class="timeline-author"></span> -->
 			</div>
 			<div class="meta-date">
 				<span class="date">25</span>
@@ -128,7 +128,7 @@ const t = useTranslations(lang);
 				<span class="timeline-author"></span>
 			</div>
 			<div class="meta-date">
-				<span class="date">O3</span>
+				<span class="date">03</span>
 				<span class="month">DEC</span>
 			</div>
 		</div>
@@ -189,205 +189,234 @@ const t = useTranslations(lang);
 		<!-- // Article -->
 	</div>
 	<div class="timeline-end">End</div>
-</section>
-<!-- // Vertical Timeline -->
-<style>
-	/*===== Vertical Timeline =====*/
-	* {
-		font-family: "Poppins", sans-serif;
-	}
 
-	#conference-timeline {
-		position: relative;
-		max-width: 1400px;
+	<!-- // Vertical Timeline -->
+	<style>
+		/*===== Vertical Timeline =====*/
+		* {
+			font-family: "Poppins", sans-serif;
+		}
 
-		width: 100%;
-		margin: 0 auto;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	#conference-timeline .timeline-start,
-	#conference-timeline .timeline-end {
-		display: table;
-		font-family: "Poppins", sans-serif;
-		font-size: 18px;
-		font-weight: 900;
-		text-transform: uppercase;
-		background: purple;
-		padding: 15px 23px;
-		color: #fff;
-		max-width: 5%;
-		width: 100%;
-		text-align: center;
-		margin: 0 auto;
-	}
-	#conference-timeline .conference-center-line {
-		position: absolute;
-		width: 5px;
-		height: 100%;
-		top: 0;
-		left: 50%;
-		margin-left: -2px;
-		background: purple;
-		z-index: -1;
-	}
-	#conference-timeline .conference-timeline-content {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-	.timeline-article {
-		width: 100%;
-		height: 100%;
-		position: relative;
-		overflow: hidden;
-		margin: 20px 0;
-	}
-	.timeline-article .content-left-container,
-	.timeline-article .content-right-container {
-		max-width: 44%;
-		width: 100%;
-	}
-	.timeline-article .timeline-author {
-		display: block;
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 24px;
-		color: #242424;
-		text-align: right;
-	}
+		#conference-timeline {
+			position: relative;
+			max-width: 1400px;
 
-	.timeline-article .content-left,
-	.timeline-article .content-right {
-		position: relative;
-		width: auto;
-		border: 5px solid #9b2cb4;
-		background-color: #ded0de;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
-		padding: 20px 15px;
-	}
-	.timeline-article .content-left {
-		border-bottom-left-radius: 30px;
-		border-bottom-right-radius: 30px;
-		border-top-left-radius: 30px;
-	}
-	.timeline-article .content-right {
-		border-bottom-left-radius: 30px;
-		border-bottom-right-radius: 30px;
-		border-top-right-radius: 30px;
-	}
-	.timeline-article p {
-		margin: 0 0 0 60px;
-		padding: 0;
-		font-weight: 400;
-		color: #242424;
-
-		line-height: 24px;
-		position: relative;
-	}
-
-	.timeline-article .content-left-container {
-		float: left;
-	}
-	.timeline-article .content-right-container {
-		float: right;
-	}
-	.timeline-article .content-left:before,
-	.timeline-article .content-right:before {
-		position: absolute;
-		top: 20px;
-		font-size: 23px;
-		font-family: "FontAwesome";
-		color: #fff;
-	}
-	.timeline-article .content-left:before {
-		content: "\f0da";
-		right: -13px;
-
-		color: #9b2cb4;
-		height: 12px;
-	}
-	.timeline-article .content-right:before {
-		content: "\f0d9";
-		left: -13px;
-		color: #9b2cb4;
-	}
-	.timeline-article .meta-date {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		width: 70px;
-		height: 70px;
-		margin-left: -31px;
-		color: #fff;
-		border-radius: 100%;
-		background: purple;
-	}
-	.timeline-article .meta-date .date,
-	.timeline-article .meta-date .month {
-		display: block;
-		text-align: center;
-		font-weight: 500;
-	}
-	.timeline-article .meta-date .date {
-		font-size: 24px;
-		line-height: 40px;
-	}
-	.timeline-article .meta-date .month {
-		font-size: 20px;
-		line-height: 10px;
-	}
-	/*===== // Vertical Timeline =====*/
-
-	/*===== Resonsive Vertical Timeline =====*/
-	@media only screen and (max-width: 830px) {
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 		#conference-timeline .timeline-start,
 		#conference-timeline .timeline-end {
-			margin: 0;
+			display: table;
+			font-family: "Poppins", sans-serif;
+			font-size: 18px;
+			font-weight: 900;
+			text-transform: uppercase;
+			background: purple;
+			padding: 15px 23px;
+			color: #fff;
+			max-width: 5%;
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
 		}
 		#conference-timeline .conference-center-line {
-			margin-left: 0;
-			left: 50px;
+			position: absolute;
+			width: 5px;
+			height: 100%;
+			top: 0;
+			left: 50%;
+			margin-left: 0px;
+			background: purple;
+			z-index: -1;
 		}
-		.timeline-article .meta-date {
-			margin-left: 0;
-			left: 20px;
+		#conference-timeline .conference-timeline-content {
+			padding-top: 60px;
+			padding-bottom: 60px;
 		}
-		.timeline-article .content-left {
-			border-top-left-radius: 0px;
-			border-top-right-radius: 30px;
+		.timeline-article {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			margin: 20px 0;
 		}
 		.timeline-article .content-left-container,
 		.timeline-article .content-right-container {
-			max-width: 100%;
-			width: auto;
-			float: none;
-			margin-left: 110px;
-			min-height: 53px;
+			max-width: 44%;
+			width: 100%;
 		}
-		.timeline-article .content-left-container {
-			margin-bottom: 20px;
+		.timeline-article .timeline-author {
+			display: block;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			color: #242424;
+			text-align: right;
 		}
+
 		.timeline-article .content-left,
 		.timeline-article .content-right {
-			padding: 10px 25px;
-			min-height: 65px;
+			position: relative;
+			width: auto;
+			border: 5px solid #9b2cb4;
+			background-color: #ded0de;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+			padding: 20px 15px;
 		}
-		.timeline-article .content-left:before {
-			content: "\f0d9";
-			right: auto;
-			left: -8px;
+		.timeline-article .content-left {
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border-top-left-radius: 30px;
 		}
-		.timeline-article .content-right:before {
-			display: none;
+		.timeline-article .content-right {
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border-top-right-radius: 30px;
 		}
-	}
-	@media only screen and (max-width: 400px) {
 		.timeline-article p {
+			margin: 0 0 0 60px;
+			padding: 0;
+			font-weight: 400;
+			color: #242424;
+
+			line-height: 24px;
+			position: relative;
+		}
+
+		.timeline-article .content-left-container {
+			float: left;
 			margin: 0;
 		}
-		.timeline-article p span.article-number {
-			display: none;
+		.timeline-article .content-right-container {
+			float: right;
+			margin: 0;
 		}
-	}
-	/*===== // Resonsive Vertical Timeline =====*/
-</style>
+		.timeline-article .content-left:before,
+		.timeline-article .content-right:before {
+			position: absolute;
+			top: 20px;
+			font-size: 23px;
+			font-family: "FontAwesome";
+			color: #fff;
+		}
+		.timeline-article .content-left:before {
+			content: "\f0da";
+			right: -13px;
+
+			color: #9b2cb4;
+			height: 12px;
+		}
+		.timeline-article .content-right:before {
+			content: "\f0d9";
+			left: -13px;
+			color: #9b2cb4;
+		}
+		.timeline-article .meta-date {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 70px;
+			height: 70px;
+			margin-left: -31px;
+			color: #fff;
+			border-radius: 100%;
+			background: purple;
+		}
+		.timeline-article .meta-date .date,
+		.timeline-article .meta-date .month {
+			display: block;
+			text-align: center;
+			font-weight: 500;
+		}
+		.timeline-article .meta-date .date {
+			font-size: 24px;
+			line-height: 40px;
+		}
+		.timeline-article .meta-date .month {
+			font-size: 20px;
+			line-height: 10px;
+		}
+		.timeline-article .content-left-container {
+			margin-left: 10px;
+		}
+		/*===== // Vertical Timeline =====*/
+
+		/*===== Resonsive Vertical Timeline =====*/
+		@media only screen and (max-width: 830px) {
+			#conference-timeline .timeline-start,
+			#conference-timeline .timeline-end {
+				margin: 0;
+			}
+			#conference-timeline .conference-center-line {
+				margin-left: 0;
+				left: 50px;
+			}
+			.timeline-article .meta-date {
+				margin-left: 0;
+				left: 20px;
+			}
+			.timeline-article .content-left {
+				border-top-left-radius: 0px;
+				border-top-right-radius: 30px;
+			}
+			.timeline-article .content-left-container,
+			.timeline-article .content-right-container {
+				max-width: 100%;
+				width: auto;
+				float: none;
+
+				margin-top: 40px;
+			}
+			.timeline-article .content-left-container {
+			}
+			.timeline-article .content-left,
+			.timeline-article .content-right {
+				padding: 10px 25px;
+				min-height: 65px;
+			}
+			.timeline-article .content-left:before {
+				content: "\f0d9";
+				right: auto;
+				left: -8px;
+			}
+			.timeline-article .content-right:before {
+				display: none;
+			}
+			#conference-timeline .conference-center-line {
+				margin-left: 25px;
+			}
+			.timeline-article .meta-date {
+				margin-left: -2px;
+			}
+			.timeline-article .content-left-container,
+			.timeline-article .content-right-container {
+				margin-left: 90px;
+			}
+			.timeline-article .content-left,
+			.timeline-article .content-right {
+				border: 6px solid #9b2cb4;
+			}
+		}
+		@media only screen and (max-width: 400px) {
+			.timeline-article p {
+				margin: 0;
+			}
+			.timeline-article p span.article-number {
+				display: none;
+			}
+			#conference-timeline .conference-center-line {
+				margin-left: 10px;
+			}
+			.timeline-article .meta-date {
+				margin-left: -2px;
+			}
+			.timeline-article .content-left-container,
+			.timeline-article .content-right-container {
+				margin-left: 90px;
+			}
+		}
+		/*===== // Resonsive Vertical Timeline =====*/
+	</style>
+</section>
