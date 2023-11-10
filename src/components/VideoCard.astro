@@ -1,6 +1,4 @@
 ---
-import Button from "./Button.astro";
-
 interface Props {
 	subject: string;
 	href: string;
@@ -13,9 +11,11 @@ const subjectDisplayName = subject
 	.concat(subject.slice(1));
 ---
 
-<div>
-	<a href={href} target="_blank">
-		<img class="w-full mb-3" src={`/subject/${subject}.jpg`} alt={subject} />
-		<Button>{subjectDisplayName}</Button>
-	</a>
-</div>
+<a
+	href={href}
+	target="_blank"
+	class="no-underline text-inherit hover:underline"
+>
+	<img class="w-full" src={`/subject/${subject}.jpeg`} alt={subject} />
+	{subjectDisplayName}
+</a>
