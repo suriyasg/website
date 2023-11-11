@@ -67,12 +67,12 @@ export const defaultLang = "en";
  * @prop {string} elearning_videos_sub1
  * @prop {string} elearning_videos_sub2
  * @prop {string} elearning_videos_sub3
- * @prop {string} pathway__title 
- * @prop {string} pathway__card1_title 
+ * @prop {string} pathway__title
+ * @prop {string} pathway__card1_title
  * @prop {string} pathway__card2_title
  * @prop {string} pathway__card3_title
  * @prop {string} pathway__card4_title
- * @prop {string} pathway__card1_para 
+ * @prop {string} pathway__card1_para
  * @prop {string} pathway__card2_para
  * @prop {string} pathway__card3_para
  * @prop {string} pathway__card4_para
@@ -115,9 +115,11 @@ export const ui = Object.freeze({
 		committee__university: "University of Moratuwa",
 		looking_for_past_papers__description:
 			"Now It is even easier to find the paper you need. We have advanced filtering options. And we divided all the questions for each year based on the sub-sections of each subject. Now you can practice our past papers section-wise.",
-		footer_title_1: "Mora Exams",	
-		footer_title_1_description_p1: "We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
-		footer_title_1_description_p2: "It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
+		footer_title_1: "Mora Exams",
+		footer_title_1_description_p1:
+			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
+		footer_title_1_description_p2:
+			"It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
 		footer_title_2: "Contact Us :",
 		footer_title_3: "Follow Us :",
 		footer_title_4: "Our Services",
@@ -127,7 +129,8 @@ export const ui = Object.freeze({
 		footer_title_4_s4: "E-learning Site",
 		footer_title_4_s5: "Doubts Forms",
 		elearning_videos_title: "E-Learning videos",
-		elearning_videos_p: "We have done video explanations regarding important topics in each subject on our YouTube channel. Click on any of the subjects listed below and view the respective videos.",
+		elearning_videos_p:
+			"We have done video explanations regarding important topics in each subject on our YouTube channel. Click on any of the subjects listed below and view the respective videos.",
 		elearning_videos_sub1: "maths",
 		elearning_videos_sub2: "physics",
 		elearning_videos_sub3: "chemistry",
@@ -136,15 +139,14 @@ export const ui = Object.freeze({
 		pathway__card2_title: "RESTART ",
 		pathway__card3_title: "TECHNOLOGY STREAM ",
 		pathway__card4_title: "NOW ",
-		pathway__card1_para: "A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology departments in 2007. This test laid the foundation for the Mora exam.",
-		pathway__card2_para: "The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
-		pathway__card3_para: "We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
-		pathway__card4_para: "In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
-		statistics__years: "Years",
-		statistics__districts: "Districts",
-		statistics__centers: "Centres",
-		statistics__candidates: "Candidates",
-
+		pathway__card1_para:
+			"A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology departments in 2007. This test laid the foundation for the Mora exam.",
+		pathway__card2_para:
+			"The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
+		pathway__card3_para:
+			"We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
+		pathway__card4_para:
+			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 	},
 	ta: {
 		meta__description:
@@ -175,8 +177,7 @@ export const ui = Object.freeze({
 		committee__treasurer_faculty: "பொருள் விஞ்ஞானம் மற்றும் பொறியியல்",
 		committee__vice_president_faculty: "கணினி விஞ்ஞானம் மற்றும் பொறியியல்",
 		committee__university: "மொறட்டுவைப் பல்கலைக்கழகம்",
-		looking_for_past_papers__description:
-			"இப்போது உங்களுக்குத் தேவையான கடந்தகால வினாத்தாள்களை கண்டுபிடிப்பது இன்னும் எளிதாகிவிட்டது. எங்களிடம் மேம்பட்ட வடிகட்டுதல் தெரிவுகள் உள்ளன. மேலும் ஒவ்வொரு பாடத்தின் அடிப்படையில் ஒவ்வொரு ஆண்டுக்கான அனைத்து கேள்விகளையும் பிரித்துள்ளோம். இப்போது நீங்கள் எங்கள் கடந்தகால வினாத்தாள்களை பிரிவு வாரியாக பயிற்சி செய்யலாம்.",
+		looking_for_past_papers__description: "இப்போது உங்களுக்குத் தேவையான காகிதத்தைக் கண்டுபிடிப்பது இன்னும் எளிதாகிவிட்டது. எங்களிடம் மேம்பட்ட வடிகட்டுதல் விருப்பங்கள் உள்ளன. மேலும் ஒவ்வொரு பாடத்தின் துணைப்பிரிவுகளின் அடிப்படையில் ஒவ்வொரு ஆண்டுக்கான அனைத்து கேள்விகளையும் பிரித்தோம். இப்போது நீங்கள் எங்கள் கடந்த தாள்களை பிரிவு வாரியாக பயிற்சி செய்யலாம்.",
 		footer_title_1:"மொறா தேர்வுகள்",
 		footer_title_1_description_p1: "பொறியியலாளர்களாகிய நாம், சமூகம் மற்றும் அதன் மேம்பாடு குறித்து மிகவும் அக்கறை கொண்டுள்ளோம், மேலும் சமூகத்தின் மேம்பாடு பொருத்தமற்ற பிறழ்வுகளை விட மிகவும் வளமான மற்றும் கலப்பின எதிர்கால தலைமுறையைக் கொண்டுவரும் என்று நாங்கள் நம்புகிறோம்.",
 		footer_title_1_description_p2: "நமது சமூகத்தில் உள்ள பொறியியல் மாணவர்கள் எவ்வாறு தங்களை வளர்த்துக்கொள்கிறார்கள் மற்றும் எங்கள் சமூகத்திற்கு பல வழிகளில் உதவுவதற்கான திட்டங்களைத் திட்டமிடுகிறார்கள் என்பது மிகவும் தெளிவாகத் தெரிகிறது. மொறட்டுவை பல்கலைக்கழக தமிழ் மக்களாகிய நாமும் மொறா இ-தமிழர் என்ற பதாகையின் கீழ் ஒன்றிணைந்தோம்.",
@@ -189,7 +190,8 @@ export const ui = Object.freeze({
 		footer_title_4_s4: "மின் கற்றல் தளம்",
 		footer_title_4_s5: "சந்தேக படிவங்கள்",
 		elearning_videos_title: "மின் கற்றல் வீடியோக்கள்",
-		elearning_videos_p: "எங்கள் யூடியூப் சேனலில் ஒவ்வொரு பாடத்திலும் முக்கியமான தலைப்புகள் குறித்து வீடியோ விளக்கங்கள் செய்துள்ளோம். கீழே பட்டியலிடப்பட்டுள்ள ஏதேனும் ஒன்றைத் தெரிவுசெய்து அந்தந்த வீடியோக்களைப் பார்க்கவும்.",
+		elearning_videos_p:
+			"எங்கள் யூடியூப் சேனலில் ஒவ்வொரு பாடத்திலும் முக்கியமான தலைப்புகள் குறித்து வீடியோ விளக்கங்கள் செய்துள்ளோம். கீழே பட்டியலிடப்பட்டுள்ள ஏதேனும் ஒன்றைத் தெரிவுசெய்து அந்தந்த வீடியோக்களைப் பார்க்கவும்.",
 		elearning_videos_sub1: "இணைந்த கணிதம்",
 		elearning_videos_sub2: "பௌதிகவியல்",
 		elearning_videos_sub3: "இரசாயனவியல்",
@@ -198,14 +200,13 @@ export const ui = Object.freeze({
 		pathway__card2_title: "மீள் ஆரம்பம்",
 		pathway__card3_title: "தொழில்நுட்பப் பிரிவு",
 		pathway__card4_title: "தற்போது",
-		pathway__card1_para: "இறுதிப் பரீட்சைக்கு முன்பு மாணவர்களை தயார்ப்படுத்தும் நோக்கில் ஒரு பொதுவான மாதிரிப் பரீட்சைக்கான தேவை உணரப்பட்டது. 2007 ஆம் ஆண்டு கணித மற்றும் உயிரியல் பிரிவு மாணவர்களுக்கு பொதுவான மாதிரிப் பரீட்சை ஒன்று இடம்பெற்றது. இப் பரீட்சையானது மொறா பரீட்சைக்கான அடித்தளமாக அமைந்தது.",
-		pathway__card2_para: "நாட்டில் நிலவிய அசாதாரண சூழ்நிலைகளின் காரணமாக அடுத்த இரு வருடங்களும் பரீட்சை இடம்பெறவில்லை. 2010 ஆம் ஆண்டு பரீட்சை முறைமை புதிதாக கட்டமைக்கப்பட்டு முதலாவது மொறா பரீட்சை 5 மாவட்டங்களில் 500 மாணவர்களுடன் நடைபெற்றது.",
-		pathway__card3_para: "மாணவர்களினதும் மாகாணக் கல்விப் பணிப்பாளரின் தொடர்ச்சியான வேண்டுகோளின் நிமித்தம் 2016 ஆம் ஆண்டு தொழில்நுட்பப் பிரிவு மாணவர்களுக்கும் எமது பரீட்சையை விஸ்தரித்திரிந்தோம். ஆனால் சில வருடங்களின் பின்பு யாழ் பல்கைலைக்கழக தொழில்நுட்பப் பீட மாணவர்களிடம் அக் கடமையை ஒப்படைத்து அவர்களுக்குரிய ஆலோசனைகளை வழங்கி வருகின்றோம்.",
-		pathway__card4_para: "	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
-		statistics__years: "வருடங்கள்",
-		statistics__districts: "மாவட்டங்கள்",
-		statistics__centers: "பரீட்சை நிலையங்கள்",
-		statistics__candidates: "மாணவர்கள்",
-
+		pathway__card1_para:
+			"இறுதிப் பரீட்சைக்கு முன்பு மாணவர்களை தயார்ப்படுத்தும் நோக்கில் ஒரு பொதுவான மாதிரிப் பரீட்சைக்கான தேவை உணரப்பட்டது. 2007 ஆம் ஆண்டு கணித மற்றும் உயிரியல் பிரிவு மாணவர்களுக்கு பொதுவான மாதிரிப் பரீட்சை ஒன்று இடம்பெற்றது. இப் பரீட்சையானது மொறா பரீட்சைக்கான அடித்தளமாக அமைந்தது.",
+		pathway__card2_para:
+			"நாட்டில் நிலவிய அசாதாரண சூழ்நிலைகளின் காரணமாக அடுத்த இரு வருடங்களும் பரீட்சை இடம்பெறவில்லை. 2010 ஆம் ஆண்டு பரீட்சை முறைமை புதிதாக கட்டமைக்கப்பட்டு முதலாவது மொறா பரீட்சை 5 மாவட்டங்களில் 500 மாணவர்களுடன் நடைபெற்றது.",
+		pathway__card3_para:
+			"மாணவர்களினதும் மாகாணக் கல்விப் பணிப்பாளரின் தொடர்ச்சியான வேண்டுகோளின் நிமித்தம் 2016 ஆம் ஆண்டு தொழில்நுட்பப் பிரிவு மாணவர்களுக்கும் எமது பரீட்சையை விஸ்தரித்திரிந்தோம். ஆனால் சில வருடங்களின் பின்பு யாழ் பல்கைலைக்கழக தொழில்நுட்பப் பீட மாணவர்களிடம் அக் கடமையை ஒப்படைத்து அவர்களுக்குரிய ஆலோசனைகளை வழங்கி வருகின்றோம்.",
+		pathway__card4_para:
+			"	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
 	},
 });
