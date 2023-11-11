@@ -99,8 +99,15 @@ export const defaultLang = "en";
  * @prop {string} timtable__date09_sub2
  * @prop {string} timtable__date10_sub1
  * @prop {string}	timtable__date10_sub2
+<<<<<<< HEAD
  * 
 >>>>>>> 62fe1fb40c90132cadfca55c0b133b125d8ef724
+=======
+ * @prop {string} timetable__date_sep
+ * @prop {string} timetable__date_dec
+ 
+ 
+>>>>>>> 5d038c3 (tamil support)
  */
 
 /**
@@ -172,7 +179,7 @@ export const ui = Object.freeze({
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 		feedback_iroshan:
 			"It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level.",
-<<<<<<< HEAD
+
 		feedback_darukeesan:
 			"It is a common notion in society that students who are in universities focus only on their studies and have no care or concern for society. Our students have proved that to be wrong.",
 		feedback_abarna:
@@ -185,7 +192,7 @@ export const ui = Object.freeze({
 			"Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly.",
 		feedback_suriya:
 			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
-=======
+
 		statistics__years: "Years",
 		statistics__districts: "Districts",
 		statistics__centers: "Centres",
@@ -205,7 +212,12 @@ export const ui = Object.freeze({
 		timtable__date09_sub2: "ICT-I",
 		timtable__date10_sub1: "Chemistry-II",
 		timtable__date10_sub2: "ICT-II",
->>>>>>> 62fe1fb40c90132cadfca55c0b133b125d8ef724
+
+		timetable__date_sep: "SEP",
+		timetable__date_dec: "DEC"
+
+
+
 	},
 	ta: {
 		meta__description:
@@ -272,6 +284,7 @@ export const ui = Object.freeze({
 			"	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
 		feedback_iroshan:
 			"இத்தேர்வு பல்வேறு படிநிலைகளை தாண்டி தேசிய அங்கீகாரம் பெற்று காணப்படுகின்றது சுருக்கமாக சொல்லப்போனால் இது பரீட்சையின் அடுத்த நிலை ஆகும்",
+
 		feedback_darukeesan:
 			"பல்கலைக்கழகங்களில் படிக்கும் மாணவர்கள் படிப்பில் மட்டுமே கவனம் செலுத்துகிறார்கள், சமூகத்தின் மீது அக்கறையோ அக்கறையோ இல்லை என்பது சமூகத்தில் பொதுவான கருத்து. அது தவறு என்று எங்கள் மாணவர்கள் நிரூபித்துள்ளனர்.",
 		feedback_abarna:
@@ -284,5 +297,27 @@ export const ui = Object.freeze({
 			"கோவிட்-19 தொற்றுநோய் காரணமாக, கிட்டத்தட்ட ஐந்து மாதங்களாக நாங்கள் எந்த மாதிரித் தேர்வுகளையும் எதிர்கொள்ளவில்லை. அந்த வகையில் மோரா பரீட்சைகள் கேள்விகளை அணுகி சரியான முறையில் பதிலளிக்கும் திறனை வளர்க்க எனக்கு உதவியது.",
 		feedback_suriya:
 			"மோரா பரீட்சைகள் எமது A/L இறுதிப் பரீட்சைக்கு மிகவும் ஒத்தவை. மாணவர்கள் தங்கள் பலம் மற்றும் பலவீனங்களை முன்கூட்டியே கண்டறிய உதவுகிறது.",
+
+		statistics__years: "வருடங்கள்",
+		statistics__districts: "மாவட்டங்கள்",
+		statistics__centers: "பரீட்சை நிலையங்கள்",
+		statistics__candidates: "மாணவர்கள்",
+		pathway__card1_para: "இறுதிப் பரீட்சைக்கு முன்பு மாணவர்களை தயார்ப்படுத்தும் நோக்கில் ஒரு பொதுவான மாதிரிப் பரீட்சைக்கான தேவை உணரப்பட்டது. 2007 ஆம் ஆண்டு கணித மற்றும் உயிரியல் பிரிவு மாணவர்களுக்கு பொதுவான மாதிரிப் பரீட்சை ஒன்று இடம்பெற்றது. இப் பரீட்சையானது மொறா பரீட்சைக்கான அடித்தளமாக அமைந்தது.",
+		pathway__card2_para: "நாட்டில் நிலவிய அசாதாரண சூழ்நிலைகளின் காரணமாக அடுத்த இரு வருடங்களும் பரீட்சை இடம்பெறவில்லை. 2010 ஆம் ஆண்டு பரீட்சை முறைமை புதிதாக கட்டமைக்கப்பட்டு முதலாவது மொறா பரீட்சை 5 மாவட்டங்களில் 500 மாணவர்களுடன் நடைபெற்றது.",
+		pathway__card3_para: "மாணவர்களினதும் மாகாணக் கல்விப் பணிப்பாளரின் தொடர்ச்சியான வேண்டுகோளின் நிமித்தம் 2016 ஆம் ஆண்டு தொழில்நுட்பப் பிரிவு மாணவர்களுக்கும் எமது பரீட்சையை விஸ்தரித்திரிந்தோம். ஆனால் சில வருடங்களின் பின்பு யாழ் பல்கைலைக்கழக தொழில்நுட்பப் பீட மாணவர்களிடம் அக் கடமையை ஒப்படைத்து அவர்களுக்குரிய ஆலோசனைகளை வழங்கி வருகின்றோம்.",
+		pathway__card4_para: "	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
+		timetable__start: "ஆரம்பம்",
+		timetable__date25_sub1: "இணைந்த கணிதம்-I",
+		timetable__date25_sub2: "உயிரியல்-I",
+		timetable__date26_sub1: "இணைந்த கணிதம்-II",
+		timetable__date26_sub2: "உயிரியல்-II",
+		timetable__date30_sub1: "பௌதிகவியல்-I",
+		timetable__date03_sub1: "பௌதிகவியல்-II",
+		timtable__date09_sub1: "இரசாயனவியல்-I",
+		timtable__date09_sub2: "ICT-I",
+		timtable__date10_sub1: "இரசாயனவியல்-II",
+		timtable__date10_sub2: "ICT-II",
+		timetable__date_sep: "SEP",
+		timetable__date_dec: "DEC"
 	},
 });
