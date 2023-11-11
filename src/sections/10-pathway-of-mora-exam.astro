@@ -1,31 +1,34 @@
 ---
 import PathwayCard from "../components/PathwayCard.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <section class="mx-auto">
-	<h1 class="mt-10 mb-8 text-center">Pathway of the Mora Exam</h1>
+	<h1 class="mt-10 mb-8 text-center">{t("pathway__title")}</h1>
 
 	<div class="cols flex flex-wrap items-center justify-center gap-3">
 		<PathwayCard
-			title="BEGINNING"
+			title={t("pathway__card1_title")}
 			year="2007"
-			description="The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010."
+			description={t("pathway__card1_para")}
 		/>
 		<PathwayCard
-			title="RESTART"
+			title={t("pathway__card2_title")}
 			year="2010"
-			description="The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010."
+			description={t("pathway__card2_para")}
 		/>
 		<PathwayCard
-			title="TECHNOLOGY STREAM"
+			title={t("pathway__card3_title")}
 			year="2016"
-			description="We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment."
+			description={t("pathway__card3_para")}
 		/>
 
 		<PathwayCard
-			title="NOW"
+			title={t("pathway__card4_title")}
 			year="2023"
-			description="In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates."
+			description={t("pathway__card4_para")}
 		/>
 	</div>
 </section>
