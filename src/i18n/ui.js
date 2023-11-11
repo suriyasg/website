@@ -233,12 +233,18 @@ export const ui = Object.freeze({
 		timetable__date_dec: "DEC",
 		timetable__end: "END",
 		what_is_mora_pilot_exam__h2: "What is Mora A/L Pilot Examination?",
-		what_is_mora_pilot_exam__p1: "When sweeping over the ideas of how to choose the ways to advance the academic standards of Tamil-speaking students, our buddies thought of pilot examinations, which could boost the last-time preparations and be a way to appraise the students themselves at the very edge.",
-		what_is_mora_pilot_exam__p2: "But providing a common exam paper and marking wouldn’t help them , as they are very familiar to them. So, to add more and more spice,",
-		what_is_mora_pilot_exam__li1: "The exam papers are set by popular and experienced teachers.",
-		what_is_mora_pilot_exam__li2: "The exam papers are set in a way that portrays the final examination environment. This helps students ensure time management.",
-		what_is_mora_pilot_exam__li3: "We too release island ranks based on their z-scores.",
-		what_is_mora_pilot_exam__p3: "It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the final contest (G.C.E.A./L), which makes their future more efficacious.",
+		what_is_mora_pilot_exam__p1:
+			"When sweeping over the ideas of how to choose the ways to advance the academic standards of Tamil-speaking students, our buddies thought of pilot examinations, which could boost the last-time preparations and be a way to appraise the students themselves at the very edge.",
+		what_is_mora_pilot_exam__p2:
+			"But providing a common exam paper and marking wouldn’t help them , as they are very familiar to them. So, to add more and more spice,",
+		what_is_mora_pilot_exam__li1:
+			"The exam papers are set by popular and experienced teachers.",
+		what_is_mora_pilot_exam__li2:
+			"The exam papers are set in a way that portrays the final examination environment. This helps students ensure time management.",
+		what_is_mora_pilot_exam__li3:
+			"We too release island ranks based on their z-scores.",
+		what_is_mora_pilot_exam__p3:
+			"It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the final contest (G.C.E.A./L), which makes their future more efficacious.",
 	},
 	ta: {
 		meta__description:
@@ -347,11 +353,17 @@ export const ui = Object.freeze({
 		timetable__date_dec: "DEC",
 		timetable__end: "முடிவு",
 		what_is_mora_pilot_exam__h2: "மொறா உ/த முன்னோடிப் பரீட்சை என்றால் என்ன?",
-		what_is_mora_pilot_exam__p1: "தமிழ் பேசும் மாணவர்களின் கல்வித் தரத்தை மேம்படுத்துவதற்கான வழிகளை எவ்வாறு தேர்வு செய்வது என்பது குறித்த யோசனைகளை ஆராயும்போது, ​​கடந்த முறை உற்பத்தியை அதிகரிப்பதற்கும் மாணவர்களை மிகக் குறைவாக மதிப்பிடுவதற்கும் முன்னோடித் தேர்வுகளை எங்கள் தோழர்கள் நினைத்தார்கள்.",
-		what_is_mora_pilot_exam__p2: "ஆனால் பொதுவான பரீட்சை தாளை வழங்குவது மற்றும் மதிப்பெண் வழங்குவது அவர்களுக்கு உதவாது, ஏனெனில் அவர்கள் அவர்களுக்கு மிகவும் பரிச்சயமானவர்கள். எனவே, மேலும் மேலும் மசாலா சேர்க்க,",
-		what_is_mora_pilot_exam__li1: "தேர்வுத் தாள்கள் பிரபலமான மற்றும் அனுபவம் வாய்ந்த ஆசிரியர்களால் அமைக்கப்பட்டுள்ளன.",
-		what_is_mora_pilot_exam__li2: "தேர்வுத் தாள்கள் இறுதித் தேர்வுச் சூழலைச் சித்தரிக்கும் வகையில் அமைக்கப்பட்டுள்ளன. இது மாணவர்களுக்கு நேர மேலாண்மையை உறுதி செய்ய உதவுகிறது.",
-		what_is_mora_pilot_exam__li3: "நாங்களும் அவர்களின் z-ஸ்கோர்களின் அடிப்படையில் தீவு தரவரிசைகளை வெளியிடுகிறோம்.",
-		what_is_mora_pilot_exam__p3: "இது பரீட்சைகளின் தரங்களையும் மாணவர்களிடையே அவர்களின் திறனையும் தெளிவாகப் பதிவு செய்கிறது, இதனால் மாணவர்கள் இறுதிப் போட்டிக்கு (G.C.E.A./L) தங்களைத் தாங்களே மாற்றிக் கொள்ள முடியும், இது அவர்களின் எதிர்காலத்தை மிகவும் திறம்படச் செய்கிறது.",
+		what_is_mora_pilot_exam__p1:
+			"தமிழ் பேசும் மாணவர்களின் கல்வித் தரத்தை மேம்படுத்துவதற்கான வழிகளை எவ்வாறு தேர்வு செய்வது என்பது குறித்த யோசனைகளை ஆராயும்போது, ​​கடந்த முறை உற்பத்தியை அதிகரிப்பதற்கும் மாணவர்களை மிகக் குறைவாக மதிப்பிடுவதற்கும் முன்னோடித் தேர்வுகளை எங்கள் தோழர்கள் நினைத்தார்கள்.",
+		what_is_mora_pilot_exam__p2:
+			"ஆனால் பொதுவான பரீட்சை தாளை வழங்குவது மற்றும் மதிப்பெண் வழங்குவது அவர்களுக்கு உதவாது, ஏனெனில் அவர்கள் அவர்களுக்கு மிகவும் பரிச்சயமானவர்கள். எனவே, மேலும் மேலும் மசாலா சேர்க்க,",
+		what_is_mora_pilot_exam__li1:
+			"தேர்வுத் தாள்கள் பிரபலமான மற்றும் அனுபவம் வாய்ந்த ஆசிரியர்களால் அமைக்கப்பட்டுள்ளன.",
+		what_is_mora_pilot_exam__li2:
+			"தேர்வுத் தாள்கள் இறுதித் தேர்வுச் சூழலைச் சித்தரிக்கும் வகையில் அமைக்கப்பட்டுள்ளன. இது மாணவர்களுக்கு நேர மேலாண்மையை உறுதி செய்ய உதவுகிறது.",
+		what_is_mora_pilot_exam__li3:
+			"நாங்களும் அவர்களின் z-ஸ்கோர்களின் அடிப்படையில் தீவு தரவரிசைகளை வெளியிடுகிறோம்.",
+		what_is_mora_pilot_exam__p3:
+			"இது பரீட்சைகளின் தரங்களையும் மாணவர்களிடையே அவர்களின் திறனையும் தெளிவாகப் பதிவு செய்கிறது, இதனால் மாணவர்கள் இறுதிப் போட்டிக்கு (G.C.E.A./L) தங்களைத் தாங்களே மாற்றிக் கொள்ள முடியும், இது அவர்களின் எதிர்காலத்தை மிகவும் திறம்படச் செய்கிறது.",
 	},
 });
