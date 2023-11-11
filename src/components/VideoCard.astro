@@ -1,14 +1,21 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
 interface Props {
-	subject: string;
+	subject: "combined-maths" | "physics" | "chemistry";
 	href: string;
 }
 
 const { href, subject } = Astro.props;
-const subjectDisplayName = subject
-	.charAt(0)
-	.toUpperCase()
-	.concat(subject.slice(1));
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const x = subject.replace("-", "_") as
+	| "combined_maths"
+	| "physics"
+	| "chemistry";
+
+const subjectDisplayName = t(`elearning_videos_${x}`);
 ---
 
 <a
@@ -16,6 +23,10 @@ const subjectDisplayName = subject
 	target="_blank"
 	class="no-underline text-inherit hover:underline"
 >
-	<img class="w-full" src={`/subject/${subject}.jpeg`} alt={subject} />
+	<img
+		class="w-full"
+		src={`/subject/${subject}.jpeg`}
+		alt={subjectDisplayName}
+	/>
 	{subjectDisplayName}
 </a>

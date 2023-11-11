@@ -64,9 +64,9 @@ export const defaultLang = "en";
  * @prop {string} footer_title_4_s5
  * @prop {string} elearning_videos_title
  * @prop {string} elearning_videos_p
- * @prop {string} elearning_videos_sub1
- * @prop {string} elearning_videos_sub2
- * @prop {string} elearning_videos_sub3
+ * @prop {string} elearning_videos_combined_maths
+ * @prop {string} elearning_videos_physics
+ * @prop {string} elearning_videos_chemistry
  * @prop {string} pathway__title
  * @prop {string} pathway__card1_title
  * @prop {string} pathway__card2_title
@@ -160,9 +160,9 @@ export const ui = Object.freeze({
 		elearning_videos_title: "E-Learning videos",
 		elearning_videos_p:
 			"We have done video explanations regarding important topics in each subject on our YouTube channel. Click on any of the subjects listed below and view the respective videos.",
-		elearning_videos_sub1: "maths",
-		elearning_videos_sub2: "physics",
-		elearning_videos_sub3: "chemistry",
+		elearning_videos_combined_maths: "Combined Maths",
+		elearning_videos_physics: "Physics",
+		elearning_videos_chemistry: "Chemistry",
 		pathway__title: "Pathway of the Mora Exam",
 		pathway__card1_title: "START ",
 		pathway__card2_title: "RESTART ",
@@ -270,9 +270,9 @@ export const ui = Object.freeze({
 		elearning_videos_title: "மின் கற்றல் வீடியோக்கள்",
 		elearning_videos_p:
 			"எங்கள் யூடியூப் சேனலில் ஒவ்வொரு பாடத்திலும் முக்கியமான தலைப்புகள் குறித்து வீடியோ விளக்கங்கள் செய்துள்ளோம். கீழே பட்டியலிடப்பட்டுள்ள ஏதேனும் ஒன்றைத் தெரிவுசெய்து அந்தந்த வீடியோக்களைப் பார்க்கவும்.",
-		elearning_videos_sub1: "இணைந்த கணிதம்",
-		elearning_videos_sub2: "பௌதிகவியல்",
-		elearning_videos_sub3: "இரசாயனவியல்",
+		elearning_videos_combined_maths: "இணைந்த கணிதம்",
+		elearning_videos_physics: "பௌதிகவியல்",
+		elearning_videos_chemistry: "இரசாயனவியல்",
 		pathway__title: "மொறா பரீட்சை கடந்து வந்த பாதை",
 		pathway__card1_title: "ஆரம்பம்",
 		pathway__card2_title: "மீள் ஆரம்பம்",
