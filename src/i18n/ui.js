@@ -87,7 +87,37 @@ export const defaultLang = "en";
  * @prop {string} feedback_jathurshan
  * @prop {string} feedback_sundarbavan
  * @prop {string} feedback_suriya
+
  * @prop {string} feedback_heading
+
+
+ * @prop {string} timetable__start
+ * @prop {string} timetable__date25_sub1
+ * @prop {string} timetable__date25_sub2 
+ * @prop {string} timetable__date26_sub1
+ * @prop {string} timetable__date26_sub2
+ * @prop {string} timetable__date30_sub1
+ * @prop {string} timetable__date03_sub1
+ * @prop {string} timtable__date09_sub1
+ * @prop {string} timtable__date09_sub2
+ * @prop {string} timtable__date10_sub1
+ * @prop {string}	timtable__date10_sub2
+
+ * @prop {string} timetable__date_sep
+ * @prop {string} timetable__date_dec
+ * @prop {string} timetable__end
+ * @prop {string} what_is_mora_pilot_exam__h2
+ * @prop {string} what_is_mora_pilot_exam__p1
+ * @prop {string} what_is_mora_pilot_exam__p2
+ * @prop {string} what_is_mora_pilot_exam__li1
+ * @prop {string} what_is_mora_pilot_exam__li2
+ * @prop {string} what_is_mora_pilot_exam__li3
+ * @prop {string} what_is_mora_pilot_exam__p3
+ 
+ 
+ 
+
+>>>>>>> 52153ef (Tamil transilation)
  */
 
 /**
@@ -174,6 +204,41 @@ export const ui = Object.freeze({
 		feedback_suriya:
 			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
 		feedback_heading: "FEEDBACK FROM ACHIEVERS",
+
+		statistics__years: "Years",
+		statistics__districts: "Districts",
+		statistics__centers: "Centres",
+		statistics__candidates: "Candidates",
+		pathway__card1_para:
+			"A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology departments in 2007. This test laid the foundation for the Mora exam.",
+		pathway__card2_para:
+			"The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
+		pathway__card3_para:
+			"We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
+		pathway__card4_para:
+			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
+		timetable__start: "START",
+		timetable__date25_sub1: "Combined Mathematics-I",
+		timetable__date25_sub2: "Biology-I",
+		timetable__date26_sub1: "Combined Mathematics-I",
+		timetable__date26_sub2: "Biology-II",
+		timetable__date30_sub1: "Physics-I",
+		timetable__date03_sub1: "Physics-II",
+		timtable__date09_sub1: "Chemistry-I",
+		timtable__date09_sub2: "ICT-I",
+		timtable__date10_sub1: "Chemistry-II",
+		timtable__date10_sub2: "ICT-II",
+
+		timetable__date_sep: "SEP",
+		timetable__date_dec: "DEC",
+		timetable__end: "END",
+		what_is_mora_pilot_exam__h2: "What is Mora A/L Pilot Examination?",
+		what_is_mora_pilot_exam__p1: "When sweeping over the ideas of how to choose the ways to advance the academic standards of Tamil-speaking students, our buddies thought of pilot examinations, which could boost the last-time preparations and be a way to appraise the students themselves at the very edge.",
+		what_is_mora_pilot_exam__p2: "But providing a common exam paper and marking wouldn’t help them , as they are very familiar to them. So, to add more and more spice,",
+		what_is_mora_pilot_exam__li1: "The exam papers are set by popular and experienced teachers.",
+		what_is_mora_pilot_exam__li2: "The exam papers are set in a way that portrays the final examination environment. This helps students ensure time management.",
+		what_is_mora_pilot_exam__li3: "We too release island ranks based on their z-scores.",
+		what_is_mora_pilot_exam__p3: "It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the final contest (G.C.E.A./L), which makes their future more efficacious.",
 	},
 	ta: {
 		meta__description:
@@ -254,5 +319,39 @@ export const ui = Object.freeze({
 		feedback_suriya:
 			"மோரா பரீட்சைகள் எமது A/L இறுதிப் பரீட்சைக்கு மிகவும் ஒத்தவை. மாணவர்கள் தங்கள் பலம் மற்றும் பலவீனங்களை முன்கூட்டியே கண்டறிய உதவுகிறது.",
 		feedback_heading: "எமது பரீட்சை பற்றி சாதனையாளர்களின் கருத்துக்கள்",
+
+		statistics__years: "வருடங்கள்",
+		statistics__districts: "மாவட்டங்கள்",
+		statistics__centers: "பரீட்சை நிலையங்கள்",
+		statistics__candidates: "மாணவர்கள்",
+		pathway__card1_para:
+			"இறுதிப் பரீட்சைக்கு முன்பு மாணவர்களை தயார்ப்படுத்தும் நோக்கில் ஒரு பொதுவான மாதிரிப் பரீட்சைக்கான தேவை உணரப்பட்டது. 2007 ஆம் ஆண்டு கணித மற்றும் உயிரியல் பிரிவு மாணவர்களுக்கு பொதுவான மாதிரிப் பரீட்சை ஒன்று இடம்பெற்றது. இப் பரீட்சையானது மொறா பரீட்சைக்கான அடித்தளமாக அமைந்தது.",
+		pathway__card2_para:
+			"நாட்டில் நிலவிய அசாதாரண சூழ்நிலைகளின் காரணமாக அடுத்த இரு வருடங்களும் பரீட்சை இடம்பெறவில்லை. 2010 ஆம் ஆண்டு பரீட்சை முறைமை புதிதாக கட்டமைக்கப்பட்டு முதலாவது மொறா பரீட்சை 5 மாவட்டங்களில் 500 மாணவர்களுடன் நடைபெற்றது.",
+		pathway__card3_para:
+			"மாணவர்களினதும் மாகாணக் கல்விப் பணிப்பாளரின் தொடர்ச்சியான வேண்டுகோளின் நிமித்தம் 2016 ஆம் ஆண்டு தொழில்நுட்பப் பிரிவு மாணவர்களுக்கும் எமது பரீட்சையை விஸ்தரித்திரிந்தோம். ஆனால் சில வருடங்களின் பின்பு யாழ் பல்கைலைக்கழக தொழில்நுட்பப் பீட மாணவர்களிடம் அக் கடமையை ஒப்படைத்து அவர்களுக்குரிய ஆலோசனைகளை வழங்கி வருகின்றோம்.",
+		pathway__card4_para:
+			"	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
+		timetable__start: "ஆரம்பம்",
+		timetable__date25_sub1: "இணைந்த கணிதம்-I",
+		timetable__date25_sub2: "உயிரியல்-I",
+		timetable__date26_sub1: "இணைந்த கணிதம்-II",
+		timetable__date26_sub2: "உயிரியல்-II",
+		timetable__date30_sub1: "பௌதிகவியல்-I",
+		timetable__date03_sub1: "பௌதிகவியல்-II",
+		timtable__date09_sub1: "இரசாயனவியல்-I",
+		timtable__date09_sub2: "ICT-I",
+		timtable__date10_sub1: "இரசாயனவியல்-II",
+		timtable__date10_sub2: "ICT-II",
+		timetable__date_sep: "SEP",
+		timetable__date_dec: "DEC",
+		timetable__end: "முடிவு",
+		what_is_mora_pilot_exam__h2: "மொறா உ/த முன்னோடிப் பரீட்சை என்றால் என்ன?",
+		what_is_mora_pilot_exam__p1: "தமிழ் பேசும் மாணவர்களின் கல்வித் தரத்தை மேம்படுத்துவதற்கான வழிகளை எவ்வாறு தேர்வு செய்வது என்பது குறித்த யோசனைகளை ஆராயும்போது, ​​கடந்த முறை உற்பத்தியை அதிகரிப்பதற்கும் மாணவர்களை மிகக் குறைவாக மதிப்பிடுவதற்கும் முன்னோடித் தேர்வுகளை எங்கள் தோழர்கள் நினைத்தார்கள்.",
+		what_is_mora_pilot_exam__p2: "ஆனால் பொதுவான பரீட்சை தாளை வழங்குவது மற்றும் மதிப்பெண் வழங்குவது அவர்களுக்கு உதவாது, ஏனெனில் அவர்கள் அவர்களுக்கு மிகவும் பரிச்சயமானவர்கள். எனவே, மேலும் மேலும் மசாலா சேர்க்க,",
+		what_is_mora_pilot_exam__li1: "தேர்வுத் தாள்கள் பிரபலமான மற்றும் அனுபவம் வாய்ந்த ஆசிரியர்களால் அமைக்கப்பட்டுள்ளன.",
+		what_is_mora_pilot_exam__li2: "தேர்வுத் தாள்கள் இறுதித் தேர்வுச் சூழலைச் சித்தரிக்கும் வகையில் அமைக்கப்பட்டுள்ளன. இது மாணவர்களுக்கு நேர மேலாண்மையை உறுதி செய்ய உதவுகிறது.",
+		what_is_mora_pilot_exam__li3: "நாங்களும் அவர்களின் z-ஸ்கோர்களின் அடிப்படையில் தீவு தரவரிசைகளை வெளியிடுகிறோம்.",
+		what_is_mora_pilot_exam__p3: "இது பரீட்சைகளின் தரங்களையும் மாணவர்களிடையே அவர்களின் திறனையும் தெளிவாகப் பதிவு செய்கிறது, இதனால் மாணவர்கள் இறுதிப் போட்டிக்கு (G.C.E.A./L) தங்களைத் தாங்களே மாற்றிக் கொள்ள முடியும், இது அவர்களின் எதிர்காலத்தை மிகவும் திறம்படச் செய்கிறது.",
 	},
 });

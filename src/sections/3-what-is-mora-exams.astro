@@ -1,37 +1,32 @@
 ---
 // JS required for this section goes here (don't bother for now)
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <section>
-	<h2 class="text-3xl sm:text-4xl">What is Mora A/L Pilot Examination?</h2>
+	<h2 class="text-3xl sm:text-4xl">{t("what_is_mora_pilot_exam__h2")}</h2>
 	<p class="text-xl text-justify">
-		When sweeping over the ideas of how to choose the ways to advance the
-		academic standards of Tamil-speaking students, our buddies thought of pilot
-		examinations, which could boost the last-time preparations and be a way to
-		appraise the students themselves at the very edge.
+		{t("what_is_mora_pilot_exam__p1")}
 	</p>
 
 	<p class="text-xl text-justify">
-		But providing a common exam paper and marking wouldn’t help them , as they
-		are very familiar to them. So, to add more and more spice,
+		{t("what_is_mora_pilot_exam__p2")}
 	</p>
 
 	<ul>
 		<li class="text-xl">
-			The exam papers are set by popular and experienced teachers.
+			{t("what_is_mora_pilot_exam__li1")}
 		</li>
 		<li class="text-xl text-justify">
-			The exam papers are set in a way that portrays the final examination
-			environment. This helps students ensure time management.
+			{t("what_is_mora_pilot_exam__li2")}
 		</li>
 		<li class="text-xl">
-			We too release island ranks based on their z-scores.
+			{t("what_is_mora_pilot_exam__li3")}
 		</li>
 	</ul>
 	<p class="text-xl text-justify">
-		It vividly canvases the standards of the examinations and their potential
-		among the students so that the students can adjust themselves to become more
-		and more fit for the final contest (G.C.E.A./L), which makes their future
-		more efficacious.
+		{t("what_is_mora_pilot_exam__p3")}
 	</p>
 </section>
