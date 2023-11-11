@@ -9,7 +9,7 @@ interface Props {
 const { name, state, body, batch } = Astro.props;
 ---
 
-<div class="relative cursor-pointer card">
+<div class="cursor-pointer snap-center card">
 	<div class="face face1">
 		<div class="content">
 			<img src={`/achievers/${name}.jpg`} alt={name} />
@@ -24,7 +24,7 @@ const { name, state, body, batch } = Astro.props;
 		</div>
 	</div>
 	<div class="face face2">
-		<p class="content-center text-lg p-0 m-0">
+		<p class="content-center text-base p-0 m-0">
 			{body}
 		</p>
 	</div>
