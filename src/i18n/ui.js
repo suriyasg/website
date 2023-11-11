@@ -80,6 +80,7 @@ export const defaultLang = "en";
  * @prop {string} statistics__districts
  * @prop {string} statistics__centers
  * @prop {string} statistics__candidates
+ * @prop {string} feedback_iroshan
  */
 
 /**
@@ -147,6 +148,8 @@ export const ui = Object.freeze({
 			"We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
 		pathway__card4_para:
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
+		feedback_iroshan:
+			"It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level.",
 	},
 	ta: {
 		meta__description:
@@ -211,5 +214,7 @@ export const ui = Object.freeze({
 			"மாணவர்களினதும் மாகாணக் கல்விப் பணிப்பாளரின் தொடர்ச்சியான வேண்டுகோளின் நிமித்தம் 2016 ஆம் ஆண்டு தொழில்நுட்பப் பிரிவு மாணவர்களுக்கும் எமது பரீட்சையை விஸ்தரித்திரிந்தோம். ஆனால் சில வருடங்களின் பின்பு யாழ் பல்கைலைக்கழக தொழில்நுட்பப் பீட மாணவர்களிடம் அக் கடமையை ஒப்படைத்து அவர்களுக்குரிய ஆலோசனைகளை வழங்கி வருகின்றோம்.",
 		pathway__card4_para:
 			"	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
+		feedback_iroshan:
+			"இத்தேர்வு பல்வேறு படிநிலைகளை தாண்டி தேசிய அங்கீகாரம் பெற்று காணப்படுகின்றது சுருக்கமாக சொல்லப்போனால் இது பரீட்சையின் அடுத்த நிலை ஆகும்",
 	},
 });
