@@ -84,10 +84,17 @@ export const defaultLang = "en";
  * @prop {string} feedback_abarna
  * @prop {string} feedback_sankavi
  * @prop {string} feedback_darukeesan
- * @prop {string} feedback_jathurshan
+ * @prop {string} feedback_jathusan
  * @prop {string} feedback_sundarbavan
  * @prop {string} feedback_suriya
  * @prop {string} feedback_heading
+ * @prop {string} feedback_iroshan_name
+ * @prop {string} feedback_abarna_name
+ * @prop {string} feedback_sankavi_name
+ * @prop {string} feedback_darukeesan_name
+ * @prop {string} feedback_jathusan_name
+ * @prop {string} feedback_sundarbavan_name
+ * @prop {string} feedback_suriya_name
  * @prop {string} timetable__start
  * @prop {string} timetable__date25_sub1
  * @prop {string} timetable__date25_sub2
@@ -184,12 +191,19 @@ export const ui = Object.freeze({
 			"Since the exam papers are prepared by well-experienced teachers, this team is important in our preparations for the final exam. It is better to practice two or three years of Mora exam past papers to face the final examination successfully!",
 		feedback_sankavi:
 			"Mora exams become part of the A/L examination. It gave me more practice and confidence. I am very glad about it. I saw the reflection of mora exams in my final examination.",
-		feedback_jathurshan:
+		feedback_jathusan:
 			"The MORA exam provided a chance to improve my time management,the most important aspect of an examination. This examination creates an environment similar to that of the final examination, which helps to develop our mental stamina.",
 		feedback_sundarbavan:
 			"Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly.",
 		feedback_suriya:
 			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
+		feedback_iroshan_name: "Iroshan",
+		feedback_darukeesan_name: "Darukeesan",
+		feedback_abarna_name: "Abarna",
+		feedback_sankavi_name: "Sankavi",
+		feedback_jathusan_name: "Jathusan",
+		feedback_sundarbavan_name: "Sundarbavan",
+		feedback_suriya_name: "Suriya",
 		feedback_heading: "FEEDBACK FROM ACHIEVERS",
 		statistics__years: "Years",
 		statistics__districts: "Districts",
@@ -301,7 +315,13 @@ export const ui = Object.freeze({
 		feedback_suriya:
 			"மொறா பரீட்சைகள் எமது A/L இறுதிப் பரீட்சைக்கு மிகவும் ஒத்தவை. மாணவர்கள் தங்கள் பலம் மற்றும் பலவீனங்களை முன்கூட்டியே கண்டறிய உதவுகிறது.",
 		feedback_heading: "எமது பரீட்சை பற்றி சாதனையாளர்களின் கருத்துக்கள்",
-
+		feedback_iroshan_name: "இரோஷன்",
+		feedback_darukeesan_name: "டாருகீசன்",
+		feedback_abarna_name: "அபர்ணா",
+		feedback_sankavi_name: "சங்கவி",
+		feedback_jathusan_name: "யதுஷன்",
+		feedback_sundarbavan_name: "சுந்தர்பவன்",
+		feedback_suriya_name: "சூரியா",
 		statistics__years: "வருடங்கள்",
 		statistics__districts: "மாவட்டங்கள்",
 		statistics__centers: "பரீட்சை நிலையங்கள்",
