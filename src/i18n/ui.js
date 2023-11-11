@@ -81,6 +81,11 @@ export const defaultLang = "en";
  * @prop {string} statistics__centers
  * @prop {string} statistics__candidates
  * @prop {string} feedback_iroshan
+ * @prop {string} feedback_abarna
+ * @prop {string} feedback_sankavi
+ * @prop {string} feedback_jathurshan
+ * @prop {string} feedback_sundarbavan
+ * @prop {string} feedback_suriya
  */
 
 /**
@@ -150,6 +155,18 @@ export const ui = Object.freeze({
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 		feedback_iroshan:
 			"It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level.",
+		feedback_darukeesan:
+			"It is a common notion in society that students who are in universities focus only on their studies and have no care or concern for society. Our students have proved that to be wrong.",
+		feedback_abarna:
+			"Since the exam papers are prepared by well-experienced teachers, this team is important in our preparations for the final exam. It is better to practice two or three years of Mora exam past papers to face the final examination successfully!",
+		feedback_sankavi:
+			"Mora exams become part of the A/L examination. It gave me more practice and confidence. I am very glad about it. I saw the reflection of mora exams in my final examination.",
+		feedback_jathurshan:
+			"The MORA exam provided a chance to improve my time management,the most important aspect of an examination. This examination creates an environment similar to that of the final examination, which helps to develop our mental stamina.",
+		feedback_sundarbavan:
+			"Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly.",
+		feedback_suriya:
+			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
 	},
 	ta: {
 		meta__description:
@@ -180,10 +197,13 @@ export const ui = Object.freeze({
 		committee__treasurer_faculty: "பொருள் விஞ்ஞானம் மற்றும் பொறியியல்",
 		committee__vice_president_faculty: "கணினி விஞ்ஞானம் மற்றும் பொறியியல்",
 		committee__university: "மொறட்டுவைப் பல்கலைக்கழகம்",
-		looking_for_past_papers__description: "இப்போது உங்களுக்குத் தேவையான கடந்தகால வினாத்தாள்களை கண்டுபிடிப்பது இன்னும் எளிதாகிவிட்டது. எங்களிடம் மேம்பட்ட வடிகட்டுதல் தெரிவுகள் உள்ளன. மேலும் ஒவ்வொரு பாடத்தின் அடிப்படையில் ஒவ்வொரு ஆண்டுக்கான அனைத்து கேள்விகளையும் பிரித்துள்ளோம். இப்போது நீங்கள் எங்கள் கடந்தகால வினாத்தாள்களை பிரிவு வாரியாக பயிற்சி செய்யலாம்.",
-		footer_title_1:"மொறா தேர்வுகள்",
-		footer_title_1_description_p1: "பொறியியலாளர்களாகிய நாம், சமூகம் மற்றும் அதன் மேம்பாடு குறித்து மிகவும் அக்கறை கொண்டுள்ளோம், மேலும் சமூகத்தின் மேம்பாடு பொருத்தமற்ற பிறழ்வுகளை விட மிகவும் வளமான மற்றும் கலப்பின எதிர்கால தலைமுறையைக் கொண்டுவரும் என்று நாங்கள் நம்புகிறோம்.",
-		footer_title_1_description_p2: "நமது சமூகத்தில் உள்ள பொறியியல் மாணவர்கள் எவ்வாறு தங்களை வளர்த்துக்கொள்கிறார்கள் மற்றும் எங்கள் சமூகத்திற்கு பல வழிகளில் உதவுவதற்கான திட்டங்களைத் திட்டமிடுகிறார்கள் என்பது மிகவும் தெளிவாகத் தெரிகிறது. மொறட்டுவை பல்கலைக்கழக தமிழ் மக்களாகிய நாமும் மொறா இ-தமிழர் என்ற பதாகையின் கீழ் ஒன்றிணைந்தோம்.",
+		looking_for_past_papers__description:
+			"இப்போது உங்களுக்குத் தேவையான கடந்தகால வினாத்தாள்களை கண்டுபிடிப்பது இன்னும் எளிதாகிவிட்டது. எங்களிடம் மேம்பட்ட வடிகட்டுதல் தெரிவுகள் உள்ளன. மேலும் ஒவ்வொரு பாடத்தின் அடிப்படையில் ஒவ்வொரு ஆண்டுக்கான அனைத்து கேள்விகளையும் பிரித்துள்ளோம். இப்போது நீங்கள் எங்கள் கடந்தகால வினாத்தாள்களை பிரிவு வாரியாக பயிற்சி செய்யலாம்.",
+		footer_title_1: "மொறா தேர்வுகள்",
+		footer_title_1_description_p1:
+			"பொறியியலாளர்களாகிய நாம், சமூகம் மற்றும் அதன் மேம்பாடு குறித்து மிகவும் அக்கறை கொண்டுள்ளோம், மேலும் சமூகத்தின் மேம்பாடு பொருத்தமற்ற பிறழ்வுகளை விட மிகவும் வளமான மற்றும் கலப்பின எதிர்கால தலைமுறையைக் கொண்டுவரும் என்று நாங்கள் நம்புகிறோம்.",
+		footer_title_1_description_p2:
+			"நமது சமூகத்தில் உள்ள பொறியியல் மாணவர்கள் எவ்வாறு தங்களை வளர்த்துக்கொள்கிறார்கள் மற்றும் எங்கள் சமூகத்திற்கு பல வழிகளில் உதவுவதற்கான திட்டங்களைத் திட்டமிடுகிறார்கள் என்பது மிகவும் தெளிவாகத் தெரிகிறது. மொறட்டுவை பல்கலைக்கழக தமிழ் மக்களாகிய நாமும் மொறா இ-தமிழர் என்ற பதாகையின் கீழ் ஒன்றிணைந்தோம்.",
 		footer_title_2: "தொடர்பு கொள்க :",
 		footer_title_3: "எங்களைப் பின்பற்றவும் :",
 		footer_title_4: "எங்கள் சேவைகள்",
@@ -213,5 +233,17 @@ export const ui = Object.freeze({
 			"	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
 		feedback_iroshan:
 			"இத்தேர்வு பல்வேறு படிநிலைகளை தாண்டி தேசிய அங்கீகாரம் பெற்று காணப்படுகின்றது சுருக்கமாக சொல்லப்போனால் இது பரீட்சையின் அடுத்த நிலை ஆகும்",
+		feedback_darukeesan:
+			"பல்கலைக்கழகங்களில் படிக்கும் மாணவர்கள் படிப்பில் மட்டுமே கவனம் செலுத்துகிறார்கள், சமூகத்தின் மீது அக்கறையோ அக்கறையோ இல்லை என்பது சமூகத்தில் பொதுவான கருத்து. அது தவறு என்று எங்கள் மாணவர்கள் நிரூபித்துள்ளனர்.",
+		feedback_abarna:
+			"தேர்வுத் தாள்கள் நன்கு அனுபவம் வாய்ந்த ஆசிரியர்களால் தயாரிக்கப்படுவதால், இறுதித் தேர்வுக்கான எங்கள் தயாரிப்புகளில் இந்தக் குழு முக்கியமானது. இறுதித் தேர்வை வெற்றிகரமாக எதிர்கொள்ள இரண்டு அல்லது மூன்று ஆண்டுகள் மோரா பரீட்சை கடந்த தாள்களை பயிற்சி செய்வது நல்லது!",
+		feedback_sankavi:
+			"மோரா பரீட்சைகள் A/L பரீட்சையின் ஒரு பகுதியாகும். அது எனக்கு அதிக பயிற்சியையும் நம்பிக்கையையும் கொடுத்தது. அதில் நான் மிகவும் மகிழ்ச்சி அடைகிறேன். எனது இறுதித் தேர்வில் மோரா தேர்வுகளின் பிரதிபலிப்பைக் கண்டேன்.",
+		feedback_jathurshan:
+			"மோரா தேர்வு எனது நேர நிர்வாகத்தை மேம்படுத்துவதற்கான வாய்ப்பை வழங்கியது, இது ஒரு தேர்வின் மிக முக்கியமான அம்சமாகும். இந்தத் தேர்வு இறுதித் தேர்வைப் போன்ற சூழலை உருவாக்கி, நமது மன உறுதியை வளர்க்க உதவுகிறது.",
+		feedback_sundarbavan:
+			"கோவிட்-19 தொற்றுநோய் காரணமாக, கிட்டத்தட்ட ஐந்து மாதங்களாக நாங்கள் எந்த மாதிரித் தேர்வுகளையும் எதிர்கொள்ளவில்லை. அந்த வகையில் மோரா பரீட்சைகள் கேள்விகளை அணுகி சரியான முறையில் பதிலளிக்கும் திறனை வளர்க்க எனக்கு உதவியது.",
+		feedback_suriya:
+			"மோரா பரீட்சைகள் எமது A/L இறுதிப் பரீட்சைக்கு மிகவும் ஒத்தவை. மாணவர்கள் தங்கள் பலம் மற்றும் பலவீனங்களை முன்கூட்டியே கண்டறிய உதவுகிறது.",
 	},
 });
