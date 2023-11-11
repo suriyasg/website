@@ -76,6 +76,10 @@ export const defaultLang = "en";
  * @prop {string} pathway__card2_para
  * @prop {string} pathway__card3_para
  * @prop {string} pathway__card4_para
+ * @prop {string} statistics__years
+ * @prop {string} statistics__districts
+ * @prop {string} statistics__centers
+ * @prop {string} statistics__candidates
  */
 
 /**
@@ -136,6 +140,10 @@ export const ui = Object.freeze({
 		pathway__card2_para: "The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
 		pathway__card3_para: "We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
 		pathway__card4_para: "In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
+		statistics__years: "Years",
+		statistics__districts: "Districts",
+		statistics__centers: "Centres",
+		statistics__candidates: "Candidates",
 
 	},
 	ta: {
@@ -194,6 +202,10 @@ export const ui = Object.freeze({
 		pathway__card2_para: "நாட்டில் நிலவிய அசாதாரண சூழ்நிலைகளின் காரணமாக அடுத்த இரு வருடங்களும் பரீட்சை இடம்பெறவில்லை. 2010 ஆம் ஆண்டு பரீட்சை முறைமை புதிதாக கட்டமைக்கப்பட்டு முதலாவது மொறா பரீட்சை 5 மாவட்டங்களில் 500 மாணவர்களுடன் நடைபெற்றது.",
 		pathway__card3_para: "மாணவர்களினதும் மாகாணக் கல்விப் பணிப்பாளரின் தொடர்ச்சியான வேண்டுகோளின் நிமித்தம் 2016 ஆம் ஆண்டு தொழில்நுட்பப் பிரிவு மாணவர்களுக்கும் எமது பரீட்சையை விஸ்தரித்திரிந்தோம். ஆனால் சில வருடங்களின் பின்பு யாழ் பல்கைலைக்கழக தொழில்நுட்பப் பீட மாணவர்களிடம் அக் கடமையை ஒப்படைத்து அவர்களுக்குரிய ஆலோசனைகளை வழங்கி வருகின்றோம்.",
 		pathway__card4_para: "	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
+		statistics__years: "வருடங்கள்",
+		statistics__districts: "மாவட்டங்கள்",
+		statistics__centers: "பரீட்சை நிலையங்கள்",
+		statistics__candidates: "மாணவர்கள்",
 
 	},
 });

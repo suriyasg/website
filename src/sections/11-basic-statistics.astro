@@ -1,5 +1,8 @@
 ---
 import StatisticCard from "../components/StatisticCard.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <section class="text-center box-border">
@@ -7,9 +10,9 @@ import StatisticCard from "../components/StatisticCard.astro";
 		class="px-1 py-8 place-items-center gap-4 grid grid-cols-2 md:grid-cols-4"
 		id="counter"
 	>
-		<StatisticCard value={14} text="Years" icon="🕑" />
-		<StatisticCard value={22} text="Districts" icon="🪧" />
-		<StatisticCard value={69} text="Centres" icon="🏢" />
-		<StatisticCard value={6821} text="Candidates" icon="🧑‍🎓" />
+		<StatisticCard value={14} text={t("statistics__years")} icon="🕑" />
+		<StatisticCard value={22} text={t("statistics__districts")} icon="🪧" />
+		<StatisticCard value={69} text={t("statistics__centers")} icon="🏢" />
+		<StatisticCard value={6821} text={t("statistics__candidates")} icon="🧑‍🎓" />
 	</div>
 </section>
