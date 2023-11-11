@@ -76,6 +76,10 @@ export const defaultLang = "en";
  * @prop {string} pathway__card2_para
  * @prop {string} pathway__card3_para
  * @prop {string} pathway__card4_para
+ * @prop {string} statistics__years
+ * @prop {string} statistics__districts
+ * @prop {string} statistics__centers
+ * @prop {string} statistics__candidates
  */
 
 /**
