@@ -124,6 +124,7 @@ export const defaultLang = "en";
  * @prop {string} all_about_us_section_thamilaruvi
  * @prop {string} all_about_us_section_sotkanai
  * @prop {string} all_about_us_section_etc
+ * @prop {string} all_about_us_section_3
  */
 
 /**
@@ -252,6 +253,8 @@ export const ui = Object.freeze({
 		all_about_us_section_thamilaruvi: "Thamilaruvi",
 		all_about_us_section_sotkanai: "Sotkanai",
 		all_about_us_section_etc: "Brammam, Jeevanathi,...etc",
+		all_about_us_section_3:
+			"All these programmes are designed and developed with the motive of strengthening the longevity and enrichment of the culture and tradition of the society. The organization Mora E-Tamils was established and fostered by the Tamil students of the Engineering Faculty of the University of Moratuwa with the sole aim of uplifting and forward-moving the academic standards of the Tamil-speaking students in our country.",
 	},
 	ta: {
 		meta__description:
@@ -377,5 +380,7 @@ export const ui = Object.freeze({
 		all_about_us_section_thamilaruvi: "தமிழருவி",
 		all_about_us_section_sotkanai: "சொற்கனை",
 		all_about_us_section_etc: "பிரம்மம்,ஜீவநதி ....மேலும் பல",
+		all_about_us_section_3:
+			"இந்த திட்டங்கள் அனைத்தும் சமூகத்தின் கலாச்சாரம் மற்றும் பாரம்பரியத்தின் நீண்ட ஆயுளை வலுப்படுத்தவும் செழுமைப்படுத்தவும் நோக்கமாகக் கொண்டு வடிவமைக்கப்பட்டு உருவாக்கப்படுகின்றன. மொறட்டுவை பல்கலைக்கழகத்தின் பொறியியல் பீடத்தின் தமிழ் மாணவர்களால் மொறா  இ-தமிழர் என்ற அமைப்பு நிறுவப்பட்டு வளர்க்கப்பட்டதன் ஒரே நோக்கம், நமது நாட்டில் தமிழ் பேசும் மாணவர்களின் கல்வித் தரத்தை உயர்த்தலும் முன்னோக்கி நகர்த்தலும்.",
 	},
 });
