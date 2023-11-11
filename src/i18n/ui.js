@@ -231,7 +231,7 @@ export const ui = Object.freeze({
 		nav__past_papers: "கடந்த கால வினாத்தாள்கள்",
 		nav__about: "எம்மைப் பற்றி",
 		hero__title:
-			"க. பொ. த. (உ/த) மாணவர்களுக்கான இலங்கையின்  மிகப்பெரிய முன்னோடி பரீட்ச்சை",
+			"க. பொ. த. (உ/த) மாணவர்களுக்கான இலங்கையின்  மிகப்பெரிய முன்னோடி பரீட்சை",
 		find_your_examination_centres__tile:
 			"உங்களது பரீட்சை நிலையத்தை கண்டறியுங்கள்",
 		find_your_examination_centres__description:
