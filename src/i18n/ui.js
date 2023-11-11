@@ -84,10 +84,17 @@ export const defaultLang = "en";
  * @prop {string} feedback_abarna
  * @prop {string} feedback_sankavi
  * @prop {string} feedback_darukeesan
- * @prop {string} feedback_jathurshan
+ * @prop {string} feedback_jathusan
  * @prop {string} feedback_sundarbavan
  * @prop {string} feedback_suriya
  * @prop {string} feedback_heading
+ * @prop {string} feedback_iroshan_name
+ * @prop {string} feedback_abarna_name
+ * @prop {string} feedback_sankavi_name
+ * @prop {string} feedback_darukeesan_name
+ * @prop {string} feedback_jathusan_name
+ * @prop {string} feedback_sundarbavan_name
+ * @prop {string} feedback_suriya_name
  * @prop {string} timetable__start
  * @prop {string} timetable__date25_sub1
  * @prop {string} timetable__date25_sub2
@@ -187,12 +194,19 @@ export const ui = Object.freeze({
 			"Since the exam papers are prepared by well-experienced teachers, this team is important in our preparations for the final exam. It is better to practice two or three years of Mora exam past papers to face the final examination successfully!",
 		feedback_sankavi:
 			"Mora exams become part of the A/L examination. It gave me more practice and confidence. I am very glad about it. I saw the reflection of mora exams in my final examination.",
-		feedback_jathurshan:
+		feedback_jathusan:
 			"The MORA exam provided a chance to improve my time management,the most important aspect of an examination. This examination creates an environment similar to that of the final examination, which helps to develop our mental stamina.",
 		feedback_sundarbavan:
 			"Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly.",
 		feedback_suriya:
 			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
+		feedback_iroshan_name: "Iroshan",
+		feedback_darukeesan_name: "Darukeesan",
+		feedback_abarna_name: "Abarna",
+		feedback_sankavi_name: "Sankavi",
+		feedback_jathusan_name: "Jathusan",
+		feedback_sundarbavan_name: "Sundarbavan",
+		feedback_suriya_name: "Suriya",
 		feedback_heading: "FEEDBACK FROM ACHIEVERS",
 		statistics__years: "Years",
 		statistics__districts: "Districts",
@@ -292,11 +306,10 @@ export const ui = Object.freeze({
 			"	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
 		feedback_iroshan:
 			"இத்தேர்வு பல்வேறு படிநிலைகளை தாண்டி தேசிய அங்கீகாரம் பெற்று காணப்படுகின்றது சுருக்கமாக சொல்லப்போனால் இது பரீட்சையின் அடுத்த நிலை ஆகும்",
-
 		feedback_darukeesan:
 			"பல்கலைக்கழகங்களில் படிக்கும் மாணவர்கள் படிப்பில் மட்டுமே கவனம் செலுத்துகிறார்கள், சமூகத்தின் மீது அக்கறை இல்லை என்பது சமூகத்தில் பொதுவான கருத்து. அது தவறு என்று எங்கள் மாணவர்கள் நிரூபித்துள்ளனர்.",
 		feedback_abarna:
-			"தேர்வு தாள்கள் நன்கு அனுபவம் வாய்ந்த ஆசிரியர்களினால் தயாரிக்கப்படுவதால் இறுதித் தேர்வுக்கான தயார்படுத்தலில் மொறாபரீட்சை முக்கியமானது.இறுதித் தேர்வை வெற்றிகரமாக எதிர்கொள்வதற்கு 2 அல்லது 3 வருட கடந்த கால மொறா பரீட்சை வினாத்தாளை பயிற்சி செய்வது நன்று",
+			"வினாத்தாள்கள் நன்கு அனுபவம் வாய்ந்த ஆசிரியர்களினால் தயாரிக்கப்படுவதால் இறுதித்தேர்வுக்கான தயார்படுத்தலில் மொறாபரீட்சை முக்கியமானது. இறுதித்தேர்வை வெற்றிகரமாக எதிர்கொள்வதற்கு 2 அல்லது 3 வருடங்கள் கடந்தகால மொறா பரீட்சை வினாத்தாளை பயிற்சி செய்வது நன்று",
 		feedback_sankavi:
 			"மொறா பரீட்சைகள் A/L பரீட்சையின் ஒரு பகுதியாகும். அது எனக்கு அதிக பயிற்சியையும் நம்பிக்கையையும் கொடுத்தது. அதில் நான் மிகவும் மகிழ்ச்சி அடைகிறேன். எனது இறுதித் தேர்வில் மொறா தேர்வுகளின் பிரதிபலிப்பைக் கண்டேன்.",
 		feedback_jathurshan:
@@ -306,7 +319,13 @@ export const ui = Object.freeze({
 		feedback_suriya:
 			"மொறா பரீட்சைகள் எமது A/L இறுதிப் பரீட்சைக்கு மிகவும் ஒத்தவை. மாணவர்கள் தங்கள் பலம் மற்றும் பலவீனங்களை முன்கூட்டியே கண்டறிய உதவுகிறது.",
 		feedback_heading: "எமது பரீட்சை பற்றி சாதனையாளர்களின் கருத்துக்கள்",
-
+		feedback_iroshan_name: "இரோஷன்",
+		feedback_darukeesan_name: "டாருகீசன்",
+		feedback_abarna_name: "அபர்ணா",
+		feedback_sankavi_name: "சங்கவி",
+		feedback_jathusan_name: "யதுஷன்",
+		feedback_sundarbavan_name: "சுந்தர்பவன்",
+		feedback_suriya_name: "சூரியா",
 		statistics__years: "வருடங்கள்",
 		statistics__districts: "மாவட்டங்கள்",
 		statistics__centers: "பரீட்சை நிலையங்கள்",

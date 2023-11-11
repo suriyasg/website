@@ -7,7 +7,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <footer class="w-full pt-4">
-	<div class="pb-2 grid md:grid-cols-5 gap-4">
+	<div class="pb-2 grid md:grid-cols-4 gap-4">
 		<div class="col-span-3">
 			<h2 class="font-extrabold text-justify pb-1 text-[#3c005a]">
 				{t("footer_title_1")}
@@ -109,5 +109,8 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 <style>
 	ul {
 		@apply p-0;
+	}
+	ul li {
+		@apply mb-2;
 	}
 </style>
