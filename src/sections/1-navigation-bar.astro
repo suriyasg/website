@@ -22,7 +22,7 @@ const t = useTranslations(lang);
 >
 	<div>
 		<a
-			class="text-3xl text-inherit font-bold inline-block w-max no-underline hover:underline relative z-30"
+			class="text-3xl text-inherit font-bold inline-block w-max no-underline relative z-30"
 			href="/"
 		>
 			Mora&nbsp;Exams
@@ -31,7 +31,7 @@ const t = useTranslations(lang);
 	<input type="checkbox" class="hidden" id="nav-bar-toggle" />
 	<label
 		for="nav-bar-toggle"
-		class="block sm:hidden h-full cursor-pointer relative z-30 opacity-80"
+		class="block sm:hidden h-fit cursor-pointer relative z-30 opacity-80"
 	>
 		<div class="h-1 w-7 mb-2 bg-white rounded-sm" id="nav-bar-toggle-line-1">
 		</div>
@@ -54,6 +54,10 @@ const t = useTranslations(lang);
 </nav>
 
 <style>
+	header,
+	nav {
+		@apply px-[var(--body-margin-x)];
+	}
 	ul {
 		transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
 		transition-delay: 0.1s;

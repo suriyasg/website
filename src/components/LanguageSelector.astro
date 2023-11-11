@@ -3,7 +3,7 @@ import { LANGUAGES_DISPLAY_TEXT, LIST_OF_LANGUAGES } from "../i18n/ui";
 import { getLangFromUrl, replaceLanguage } from "../i18n/utils";
 
 interface Props {
-	class: string;
+	class?: string;
 }
 
 interface OtherLanguage {
@@ -29,7 +29,7 @@ for (let i = 0; i < LIST_OF_LANGUAGES.length; i++) {
 ---
 
 <div
-	class={`rounded-lg bg-ultra-violet-200 py-2 px-3 text-base text-black w-fit mx-auto ${className}`}
+	class={`rounded-lg bg-ultra-violet-50 pt-2 pb-1 px-3 text-base text-black w-fit mx-auto ${className}`}
 >
 	This page is also available in {
 		otherLanguages.map((t, i) => {
