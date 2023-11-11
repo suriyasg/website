@@ -81,11 +81,26 @@ export const defaultLang = "en";
  * @prop {string} statistics__centers
  * @prop {string} statistics__candidates
  * @prop {string} feedback_iroshan
+<<<<<<< HEAD
  * @prop {string} feedback_abarna
  * @prop {string} feedback_sankavi
  * @prop {string} feedback_jathurshan
  * @prop {string} feedback_sundarbavan
  * @prop {string} feedback_suriya
+=======
+ * @prop {string} timetable__start
+ * @prop {string} timetable__date25_sub1
+ * @prop {string} timetable__date25_sub2 
+ * @prop {string} timetable__date26_sub1
+ * @prop {string} timetable__date26_sub2
+ * @prop {string} timetable__date30_sub1
+ * @prop {string} timetable__date03_sub1
+ * @prop {string} timtable__date09_sub1
+ * @prop {string} timtable__date09_sub2
+ * @prop {string} timtable__date10_sub1
+ * @prop {string}	timtable__date10_sub2
+ * 
+>>>>>>> 62fe1fb40c90132cadfca55c0b133b125d8ef724
  */
 
 /**
@@ -126,6 +141,8 @@ export const ui = Object.freeze({
 			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
 		footer_title_1_description_p2:
 			"It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
+		footer_title_1_description_p1: "We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
+		footer_title_1_description_p2: "It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
 		footer_title_2: "Contact Us :",
 		footer_title_3: "Follow Us :",
 		footer_title_4: "Our Services",
@@ -155,6 +172,7 @@ export const ui = Object.freeze({
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 		feedback_iroshan:
 			"It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level.",
+<<<<<<< HEAD
 		feedback_darukeesan:
 			"It is a common notion in society that students who are in universities focus only on their studies and have no care or concern for society. Our students have proved that to be wrong.",
 		feedback_abarna:
@@ -167,6 +185,27 @@ export const ui = Object.freeze({
 			"Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly.",
 		feedback_suriya:
 			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
+=======
+		statistics__years: "Years",
+		statistics__districts: "Districts",
+		statistics__centers: "Centres",
+		statistics__candidates: "Candidates",
+		pathway__card1_para: "A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology departments in 2007. This test laid the foundation for the Mora exam.",
+		pathway__card2_para: "The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
+		pathway__card3_para: "We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
+		pathway__card4_para: "In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
+		timetable__start: "START",
+		timetable__date25_sub1: "Combined Mathematics-I",
+		timetable__date25_sub2: "Biology-I",
+		timetable__date26_sub1: "Combined Mathematics-I",
+		timetable__date26_sub2: "Biology-II",
+		timetable__date30_sub1: "Physics-I",
+		timetable__date03_sub1: "Physics-II",
+		timtable__date09_sub1: "Chemistry-I",
+		timtable__date09_sub2: "ICT-I",
+		timtable__date10_sub1: "Chemistry-II",
+		timtable__date10_sub2: "ICT-II",
+>>>>>>> 62fe1fb40c90132cadfca55c0b133b125d8ef724
 	},
 	ta: {
 		meta__description:
