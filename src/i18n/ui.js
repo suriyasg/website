@@ -121,6 +121,9 @@ export const defaultLang = "en";
  * @prop {string} all_about_us_section_heading
  * @prop {string} all_about_us_section_1
  * @prop {string} all_about_us_section_2
+ * @prop {string} all_about_us_section_thamilaruvi
+ * @prop {string} all_about_us_section_sotkanai
+ * @prop {string} all_about_us_section_etc
  */
 
 /**
@@ -246,6 +249,9 @@ export const ui = Object.freeze({
 			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
 		all_about_us_section_2:
 			"It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils. We also stand with our Tamil Literary Association in all its speculations and extend our heartfelt support to them during",
+		all_about_us_section_thamilaruvi: "Thamilaruvi",
+		all_about_us_section_sotkanai: "Sotkanai",
+		all_about_us_section_etc: "Brammam, Jeevanathi,...etc",
 	},
 	ta: {
 		meta__description:
@@ -368,5 +374,8 @@ export const ui = Object.freeze({
 			"பொறியியலாளர்களாகிய நாம், சமூகம் மற்றும் அதன் மேம்பாடு குறித்து மிகவும் அக்கறை கொண்டுள்ளோம், மேலும் சமூகத்தின் மேம்பாடு, பொருத்தமற்ற பிறழ்வுகளை விட மிகவும் வளமான மற்றும் கலப்பின எதிர்கால தலைமுறையைக் கொண்டுவரும் என்று நாங்கள் நம்புகிறோம்.",
 		all_about_us_section_2:
 			"நமது சமூகத்தில் உள்ள பொறியியல் மாணவர்கள் எவ்வாறு தங்களை வளர்த்துக்கொள்கிறார்கள் மற்றும் எங்கள் சமூகத்திற்கு பல வழிகளில் உதவுவதற்கான திட்டங்களைத் திட்டமிடுகிறார்கள் என்பது மிகவும் தெளிவாகத் தெரிகிறது. மொறட்டுவை பல்கலைக்கழக தமிழ் மக்களாகிய நாமும் மொறா இ-தமிழர் என்ற பதாகையின் கீழ் ஒன்றிணைந்தோம். எமது தமிழ் இலக்கியச் சங்கத்தின் அனைத்து ஊகங்களுக்கும் எமது மனமார்ந்த ஆதரவைத் தெரிவித்துக் கொள்கிறோம்",
+		all_about_us_section_thamilaruvi: "தமிழருவி",
+		all_about_us_section_sotkanai: "சொற்கனை",
+		all_about_us_section_etc: "பிரம்மம்,ஜீவநதி ....மேலும் பல",
 	},
 });
