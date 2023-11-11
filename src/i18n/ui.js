@@ -26,6 +26,7 @@ export const defaultLang = "en";
 
 /**
  * @typedef UiStrings
+ * @prop {string} index__title
  * @prop {string} meta__description
  * @prop {string} nav__timetable
  * @prop {string} nav__exam_centres
@@ -132,6 +133,7 @@ export const defaultLang = "en";
  */
 export const ui = Object.freeze({
 	en: {
+		index__title: "Mora Exams",
 		meta__description:
 			"Mora Exams is the largest, island-wide pioneer exam for A/L students. It proves to be incredibly helpful before entering the final exams, providing access to past papers and model papers.",
 		nav__timetable: "Timetable",
@@ -257,6 +259,7 @@ export const ui = Object.freeze({
 			"All these programmes are designed and developed with the motive of strengthening the longevity and enrichment of the culture and tradition of the society. The organization Mora E-Tamils was established and fostered by the Tamil students of the Engineering Faculty of the University of Moratuwa with the sole aim of uplifting and forward-moving the academic standards of the Tamil-speaking students in our country.",
 	},
 	ta: {
+		index__title: "மொறா பரீட்சைகள்",
 		meta__description:
 			"Mora Exams என்பது க.பொ.த (A/L) மாணவர்களுக்கான மிகப்பெரிய, நாடளாவிய பரீட்சையாகும். இறுதித் தேர்வுகளில் நுழைய போகும் மாணவர்களுக்கு இது நம்பமுடியாத அளவிற்கு உதவியாக இருக்கின்றது.",
 		nav__timetable: "பரீட்சை அட்டவணை",
@@ -327,7 +330,6 @@ export const ui = Object.freeze({
 			"வினாத்தாள்கள் நன்கு அனுபவம் வாய்ந்த ஆசிரியர்களினால் தயாரிக்கப்படுவதால் இறுதித்தேர்வுக்கான தயார்படுத்தலில் மொறாபரீட்சை முக்கியமானது. இறுதித்தேர்வை வெற்றிகரமாக எதிர்கொள்வதற்கு 2 அல்லது 3 வருடங்கள் கடந்தகால மொறா பரீட்சை வினாத்தாளை பயிற்சி செய்வது நன்று",
 		feedback_sankavi:
 			"மொறா பரீட்சைகள் A/L பரீட்சையின் ஒரு பகுதியாகும். அது எனக்கு அதிக பயிற்சியையும் நம்பிக்கையையும் கொடுத்தது. அதில் நான் மிகவும் மகிழ்ச்சி அடைகிறேன். எனது இறுதித் தேர்வில் மொறா தேர்வுகளின் பிரதிபலிப்பைக் கண்டேன்.",
-
 		feedback_sundarbavan:
 			"கோவிட்-19 தொற்றுநோய் காரணமாக, கிட்டத்தட்ட ஐந்து மாதங்களாக நாங்கள் எந்த மாதிரித் தேர்வுகளையும் எதிர்கொள்ளவில்லை. அந்த வகையில் மொறா பரீட்சைகள் கேள்விகளை அணுகி சரியான முறையில் பதிலளிக்கும் திறனை வளர்க்க எனக்கு உதவியது.",
 		feedback_suriya:

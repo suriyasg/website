@@ -5,59 +5,48 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<!-- Fonts -->
-<link
-	href="https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900"
-	rel="stylesheet"
-	type="text/css"
-/>
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
-	rel="stylesheet"
-	type="text/css"
-/>
-<!-- // Fonts -->
-<h1 class="text-[28px] text-center mt-5">{t("timetable__title")}</h1>
+<section>
+	<h2 class="text-center mt-5">{t("timetable__title")}</h2>
 
-<!-- Vertical Timeline -->
+	<!-- Vertical Timeline -->
 
-<section id="conference-timeline">
-	<div class="timeline-start">{t("timetable__start")}</div>
-	<div class="conference-center-line"></div>
-	<div class="conference-timeline-content">
-		<!-- Article -->
-		<div class="timeline-article">
-			<div class="content-left-container">
-				<div class="content-left">
-					<p class="text-[16px] lg:text-[22px]">
-						{t("timetable__date25_sub1")}<br /><span class="sm:ml-[20px]"
-							>1.30 P.m - 4.40 P.m</span
-						><br />{t("timetable__date25_sub2")}<br /><span class="sm:ml-[20px]"
-							>1.30 P.m - 3.30 P.m</span
-						>
-						<span class="article-number"></span>
-					</p>
+	<section id="conference-timeline">
+		<div class="timeline-start">{t("timetable__start")}</div>
+		<div class="conference-center-line"></div>
+		<div class="conference-timeline-content">
+			<!-- Article -->
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<div class="content-left">
+						<p class="text-[16px] lg:text-[22px]">
+							{t("timetable__date25_sub1")}<br /><span class="sm:ml-[20px]"
+								>1.30 P.m - 4.40 P.m</span
+							><br />{t("timetable__date25_sub2")}<br /><span
+								class="sm:ml-[20px]">1.30 P.m - 3.30 P.m</span
+							>
+							<span class="article-number"></span>
+						</p>
+					</div>
+					<span class="timeline-author"></span>
 				</div>
-				<span class="timeline-author"></span>
-			</div>
-			<div class="content-right-container">
-				<!-- <div class="content-right">
+				<div class="content-right-container">
+					<!-- <div class="content-right">
 							<p>
 								<br />
 								<span class="article-number"></span>
 							</p>
 						</div> -->
-				<!-- <span class="timeline-author"></span> -->
+					<!-- <span class="timeline-author"></span> -->
+				</div>
+				<div class="meta-date">
+					<span class="date">25</span>
+					<span class="month">{t("timetable__date_sep")}</span>
+				</div>
 			</div>
-			<div class="meta-date">
-				<span class="date">25</span>
-				<span class="month">{t("timetable__date_sep")}</span>
-			</div>
-		</div>
-		<!-- // Article -->
-		<!-- Article -->
-		<div class="timeline-article">
-			<!-- <div class="content-left-container">
+			<!-- // Article -->
+			<!-- Article -->
+			<div class="timeline-article">
+				<!-- <div class="content-left-container">
 							<div class="content-left">
 								<p>
 									Combined Mathematics-II<br />1.30 PM - 4.30 PM<span
@@ -66,52 +55,53 @@ const t = useTranslations(lang);
 							</div>
 							<span class="timeline-author"></span>
 						</div> -->
-			<div class="content-right-container">
-				<div class="content-right">
-					<p class="text-[16px] lg:text-[22px]">
-						{t("timetable__date26_sub1")}<br /><span class="sm:ml-[20px]"
-							>1.30 P.m - 4.40 P.m</span
-						><br />{t("timetable__date26_sub2")}<br /><span class="sm:ml-[20px]"
-						></span>1.30 P.m - 4.40 P.m <span class="article-number"></span>
-					</p>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p class="text-[16px] lg:text-[22px]">
+							{t("timetable__date26_sub1")}<br /><span class="sm:ml-[20px]"
+								>1.30 P.m - 4.40 P.m</span
+							><br />{t("timetable__date26_sub2")}<br /><span
+								class="sm:ml-[20px]"></span>1.30 P.m - 4.40 P.m <span
+								class="article-number"></span>
+						</p>
+					</div>
+					<span class="timeline-author"></span>
 				</div>
-				<span class="timeline-author"></span>
-			</div>
-			<div class="meta-date">
-				<span class="date">26</span>
-				<span class="month">{t("timetable__date_sep")}</span>
-			</div>
-		</div>
-		<!-- // Article -->
-		<!-- Article -->
-		<div class="timeline-article">
-			<div class="content-left-container">
-				<div class="content-left">
-					<p class="text-[16px] lg:text-[22px]">
-						{t("timetable__date30_sub1")}<br /><span class="sm:ml-[20px]"
-						></span>2.30 P.m - 4.30 P.m<span class="article-number"></span>
-					</p>
+				<div class="meta-date">
+					<span class="date">26</span>
+					<span class="month">{t("timetable__date_sep")}</span>
 				</div>
-				<span class="timeline-author"></span>
 			</div>
-			<div class="content-right-container">
-				<!-- <div class="content-right">
+			<!-- // Article -->
+			<!-- Article -->
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<div class="content-left">
+						<p class="text-[16px] lg:text-[22px]">
+							{t("timetable__date30_sub1")}<br /><span class="sm:ml-[20px]"
+							></span>2.30 P.m - 4.30 P.m<span class="article-number"></span>
+						</p>
+					</div>
+					<span class="timeline-author"></span>
+				</div>
+				<div class="content-right-container">
+					<!-- <div class="content-right">
 								<p>
 									Biology-II<br />1.30 PM - 4.30 PM <span class="article-number"
 									></span>
 								</p>
 							</div> -->
-				<span class="timeline-author"></span>
+					<span class="timeline-author"></span>
+				</div>
+				<div class="meta-date">
+					<span class="date">30</span>
+					<span class="month">{t("timetable__date_sep")}</span>
+				</div>
 			</div>
-			<div class="meta-date">
-				<span class="date">30</span>
-				<span class="month">{t("timetable__date_sep")}</span>
-			</div>
-		</div>
-		<!-- // Article -->
-		<!-- Article -->
-		<div class="timeline-article">
-			<!-- <div class="content-left-container">
+			<!-- // Article -->
+			<!-- Article -->
+			<div class="timeline-article">
+				<!-- <div class="content-left-container">
 							<div class="content-left">
 								<p>
 									Combined Mathematics-II<br />1.30 PM - 4.30 PM<span
@@ -120,91 +110,86 @@ const t = useTranslations(lang);
 							</div>
 							<span class="timeline-author"></span>
 						</div> -->
-			<div class="content-right-container">
-				<div class="content-right">
-					<p class="text-[16px] lg:text-[22px]">
-						{t("timetable__date03_sub1")}<br /><span class="sm:ml-[20px]"
-						></span>1.30 P.m - 4.40 P.m <span class="article-number"></span>
-					</p>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p class="text-[16px] lg:text-[22px]">
+							{t("timetable__date03_sub1")}<br /><span class="sm:ml-[20px]"
+							></span>1.30 P.m - 4.40 P.m <span class="article-number"></span>
+						</p>
+					</div>
+					<span class="timeline-author"></span>
 				</div>
-				<span class="timeline-author"></span>
-			</div>
-			<div class="meta-date">
-				<span class="date">03</span>
-				<span class="month">{t("timetable__date_dec")}</span>
-			</div>
-		</div>
-		<!-- // Article -->
-		<!-- Article -->
-		<div class="timeline-article">
-			<div class="content-left-container">
-				<div class="content-left">
-					<p class="text-[16px] lg:text-[22px]">
-						{t("timtable__date09_sub1")}<br /><span class="sm:ml-[20px]"
-						></span>1.30 P.m - 3.30 P.m<br />{t("timtable__date09_sub2")}<br
-						/><span class="sm:ml-[20px]"></span>1.30 P.m - 3.30 P.m<span
-							class="article-number"></span>
-					</p>
+				<div class="meta-date">
+					<span class="date">03</span>
+					<span class="month">{t("timetable__date_dec")}</span>
 				</div>
-				<span class="timeline-author"></span>
 			</div>
-			<div class="content-right-container">
-				<!-- <div class="content-right">
+			<!-- // Article -->
+			<!-- Article -->
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<div class="content-left">
+						<p class="text-[16px] lg:text-[22px]">
+							{t("timtable__date09_sub1")}<br /><span class="sm:ml-[20px]"
+							></span>1.30 P.m - 3.30 P.m<br />{t("timtable__date09_sub2")}<br
+							/><span class="sm:ml-[20px]"></span>1.30 P.m - 3.30 P.m<span
+								class="article-number"></span>
+						</p>
+					</div>
+					<span class="timeline-author"></span>
+				</div>
+				<div class="content-right-container">
+					<!-- <div class="content-right">
 								<p>
 									Biology-II<br />1.30 PM - 4.30 PM <span class="article-number"
 									></span>
 								</p>
 							</div> -->
-				<span class="timeline-author"></span>
+					<span class="timeline-author"></span>
+				</div>
+				<div class="meta-date">
+					<span class="date">09</span>
+					<span class="month">{t("timetable__date_dec")}</span>
+				</div>
 			</div>
-			<div class="meta-date">
-				<span class="date">09</span>
-				<span class="month">{t("timetable__date_dec")}</span>
-			</div>
-		</div>
-		<!-- // Article -->
-		<!-- Article -->
-		<div class="timeline-article">
-			<div class="content-left-container">
-				<!-- <div class="content-left">
+			<!-- // Article -->
+			<!-- Article -->
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<!-- <div class="content-left">
 								<p>
 									Combined Mathematics-II<br />1.30 PM - 4.30 PM<span
 										class="article-number"></span>
 								</p>
 							</div> -->
-				<span class="timeline-author"></span>
-			</div>
-			<div class="content-right-container">
-				<div class="content-right">
-					<p class="text-[16px] lg:text-[22px]">
-						{t("timtable__date10_sub1")}<br /><span class="sm:ml-[20px]"
-						></span>1.30 P.m - 4.40 P.m <br />{t("timtable__date10_sub2")}<br
-						/><span class="sm:ml-[20px]"></span>1.30 P.m - 4.40 P.m<span
-							class="article-number"></span>
-					</p>
+					<span class="timeline-author"></span>
 				</div>
-				<span class="timeline-author"></span>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p class="text-[16px] lg:text-[22px]">
+							{t("timtable__date10_sub1")}<br /><span class="sm:ml-[20px]"
+							></span>1.30 P.m - 4.40 P.m <br />{t("timtable__date10_sub2")}<br
+							/><span class="sm:ml-[20px]"></span>1.30 P.m - 4.40 P.m<span
+								class="article-number"></span>
+						</p>
+					</div>
+					<span class="timeline-author"></span>
+				</div>
+				<div class="meta-date">
+					<span class="date">10</span>
+					<span class="month">{t("timetable__date_dec")}</span>
+				</div>
 			</div>
-			<div class="meta-date">
-				<span class="date">10</span>
-				<span class="month">{t("timetable__date_dec")}</span>
-			</div>
+			<!-- // Article -->
 		</div>
-		<!-- // Article -->
-	</div>
-	<div class="timeline-end">{t("timetable__end")}</div>
+		<div class="timeline-end">{t("timetable__end")}</div>
+	</section>
 </section>
-
 <!-- // Vertical Timeline -->
 <style>
 	/*===== Vertical Timeline =====*/
-	* {
-		font-family: "Poppins", sans-serif;
-	}
-
 	#conference-timeline {
 		position: relative;
-
 		width: 100%;
 		margin: 0 auto;
 		margin-top: 30px;
@@ -213,7 +198,6 @@ const t = useTranslations(lang);
 	#conference-timeline .timeline-start,
 	#conference-timeline .timeline-end {
 		display: table;
-		font-family: "Poppins", sans-serif;
 		font-size: 18px;
 		font-weight: 900;
 		text-transform: uppercase;

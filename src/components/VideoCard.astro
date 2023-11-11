@@ -21,12 +21,27 @@ const subjectDisplayName = t(`elearning_videos_${x}`);
 <a
 	href={href}
 	target="_blank"
-	class="no-underline text-inherit hover:underline"
+	class="block no-underline text-inherit hover:underline relative w-full aspect-square bg-contain rounded-lg text-white"
+	style=`background-image: linear-gradient(120deg, transparent, #000000a0), url("/subject/${subject}.jpeg");`
 >
-	<img
-		class="w-full rounded-lg"
-		src={`/subject/${subject}.jpeg`}
-		alt={subjectDisplayName}
-	/>
-	{subjectDisplayName}
+	<div
+		class="absolute bottom-2 rounded-lg flex justify-between items-center w-full px-4 text-xl"
+	>
+		<span>
+			{subjectDisplayName}
+		</span>
+		<i
+			class="fa-solid fa-arrow-right text-3xl translate-x-[-10px] transition-transform"
+		></i>
+	</div>
 </a>
+
+<style>
+	a:hover {
+		background-blend-mode: multiply;
+	}
+
+	a:hover i {
+		@apply translate-x-[0px];
+	}
+</style>
