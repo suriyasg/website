@@ -12,7 +12,10 @@ if (href == undefined) {
 ---
 
 <li class="inline-block w-fit">
-	<a class="text-inherit no-underline hover:underline" href={href || ""}>
+	<a
+		class="text-inherit no-underline font-bold opacity-80 transition-opacity hover:opacity-100 hover:underline"
+		href={href || ""}
+	>
 		{text}</a
 	>
 </li>

@@ -1,43 +1,22 @@
 ---
 import CommitteeMemberCard from "../components/CommitteeMemberCard.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
-// JS required for this section goes here (don't bother for now)
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section>
-	<h2 class="text-center">Mora Exam - 2023 | Committee</h2>
+	<h2 class="text-center">
+		{t("committee__title")}
+	</h2>
 
 	<div
 		class="px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 gap-10 shadow-black w-full h-auto rounded-full p-4"
 	>
-		<!-- President -->
-		<div>
-			<CommitteeMemberCard
-				name="sarujan"
-				post="President"
-				faculty="Civil Engineering"
-			/>
-		</div>
-		<div>
-			<CommitteeMemberCard
-				name="harikrishna"
-				post="Secretary"
-				faculty="Computer Science and Engineering"
-			/>
-		</div>
-		<div>
-			<CommitteeMemberCard
-				name="mayoorathan"
-				post="Treasurer"
-				faculty="Material Science And Engineering"
-			/>
-		</div>
-		<div>
-			<CommitteeMemberCard
-				name="thabendra"
-				post="Vice President"
-				faculty="Computer Science and Engineering"
-			/>
-		</div>
+		<CommitteeMemberCard post="president" lang={lang} />
+		<CommitteeMemberCard post="secretary" lang={lang} />
+		<CommitteeMemberCard post="treasurer" lang={lang} />
+		<CommitteeMemberCard post="vice_president" lang={lang} />
 	</div>
 </section>

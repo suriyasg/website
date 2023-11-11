@@ -1,37 +1,31 @@
 ---
+import HeaderContactLink from "../components/HeaderContactLink.astro";
 import NavLink from "../components/NavLink.astro";
 
-// JS required for this section goes here (don't bother for now)
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<header class="hidden sm:flex bg-mora-purple-950 items-center py-1 text-white">
-	<div>
-		<i class="fa-solid fa-envelope text-s mr-1.5"></i>
-		<a
-			class="text-inherit no-underline hover:underline opacity-80 mr-5"
-			href="
-        mailto:moraetamils@gmail.com"
-			>moraetamils@gmail.com
-		</a>
-	</div>
-	<div>
-		<i class="fa-solid fa-phone text-s mr-1.5"></i>
-		<a
-			class="text-inherit no-underline hover:underline opacity-80 mr-5"
-			href="tel:+94704616400">+94 70 461 6400</a
-		>
-	</div>
+<header class="hidden sm:flex bg-mora-purple-800 items-center py-1 text-white">
+	<HeaderContactLink icon="envelope" href="mailto:moraetamils@gmail.com">
+		moraetamils@gmail.com
+	</HeaderContactLink>
+	<HeaderContactLink icon="phone" href="tel:+94704616400">
+		+94 70 461 6400
+	</HeaderContactLink>
 </header>
 
 <nav
-	class="flex items-center gap-x-2 py-3 sm:py-2 justify-between sticky top-0 bg-mora-purple-800 text-white z-10"
+	class="flex items-center gap-x-2 py-3 sm:py-2 justify-between sticky top-0 bg-mora-purple-600 text-white z-10"
 >
 	<div>
 		<a
 			class="text-3xl text-inherit font-bold inline-block w-max no-underline hover:underline relative z-30"
 			href="/"
 		>
-			Mora&nbsp;E-Tamils
+			Mora&nbsp;Exams
 		</a>
 	</div>
 	<input type="checkbox" class="hidden" id="nav-bar-toggle" />
@@ -50,11 +44,12 @@ import NavLink from "../components/NavLink.astro";
 			`sm:ml-25 sm:p-0 sm:flex-row sm:gap-y-0 sm:justify-end sm:static sm:translate-x-[0] sm:items-center sm:bg-inherit sm:h-fit sm:text-base`,
 		].join(" ")}
 	>
-		<NavLink text="Home" />
-		<NavLink text="About" />
-		<NavLink text="Exam Centres" />
-		<NavLink text="Schedule" />
-		<NavLink text="Contact Us" />
+		<!-- <NavLink text="Home" href="/" /> -->
+		<NavLink text={t("nav__timetable")} href="#timetable" />
+		<NavLink text={t("nav__exam_centres")} href="#exam-centres" />
+		<NavLink text={t("nav__past_papers")} href="#past-papers" />
+		<NavLink text={t("nav__about")} href="#about-us" />
+		<!-- <NavLink text="Contact Us" /> -->
 	</ul>
 </nav>
 

@@ -1,0 +1,170 @@
+export const languages = Object.freeze({
+	en: "English",
+	ta: "Tamil",
+});
+/**
+ * @typedef {keyof typeof languages} Language
+ */
+
+export const LANGUAGES_DISPLAY_TEXT = Object.freeze(
+	/**
+	 * @type {Record<Language, string>}
+	 */
+	{
+		en: "English",
+		ta: "தமிழ்",
+	},
+);
+
+/**
+ * @type {Array<Language>}
+ */
+// @ts-expect-error
+export const LIST_OF_LANGUAGES = Object.keys(languages);
+
+export const defaultLang = "en";
+
+/**
+ * @typedef UiStrings
+ * @prop {string} meta__description
+ * @prop {string} nav__timetable
+ * @prop {string} nav__exam_centres
+ * @prop {string} nav__past_papers
+ * @prop {string} nav__about
+ * @prop {string} hero__title
+ * @prop {string} find_your_examination_centres__tile
+ * @prop {string} find_your_examination_centres__description
+ * @prop {string} looking_for_past_papers__title
+ * @prop {string} timetable__title
+ * @prop {string} committee__title
+ * @prop {string} committee__president_name
+ * @prop {string} committee__president_post
+ * @prop {string} committee__president_faculty
+ * @prop {string} committee__secretary_faculty
+ * @prop {string} committee__treasurer_faculty
+ * @prop {string} committee__vice_president_faculty
+ * @prop {string} committee__secretary_name
+ * @prop {string} committee__secretary_post
+ * @prop {string} committee__treasurer_name
+ * @prop {string} committee__treasurer_post
+ * @prop {string} committee__vice_president_name
+ * @prop {string} committee__vice_president_post
+ * @prop {string} committee__university
+ * @prop {string} looking_for_past_papers__description
+ * @prop {string} footer_title_1
+ * @prop {string} footer_title_1_description_p1
+ * @prop {string} footer_title_1_description_p2
+ * @prop {string} footer_title_2
+ * @prop {string} footer_title_3
+ * @prop {string} footer_title_4
+ * @prop {string} footer_title_4_s1
+ * @prop {string} footer_title_4_s2
+ * @prop {string} footer_title_4_s3
+ * @prop {string} footer_title_4_s4
+ * @prop {string} footer_title_4_s5
+ * @prop {string} elearning_videos_title
+ * @prop {string} elearning_videos_p
+ * @prop {string} elearning_videos_sub1
+ * @prop {string} elearning_videos_sub2
+ * @prop {string} elearning_videos_sub3
+ */
+
+/**
+ * @type {Readonly<Record<Language, UiStrings>>}}
+ */
+export const ui = Object.freeze({
+	en: {
+		meta__description:
+			"Mora Exams is the largest, island-wide pioneer exam for A/L students. It proves to be incredibly helpful before entering the final exams, providing access to past papers and model papers.",
+		nav__timetable: "Timetable",
+		nav__exam_centres: "Exam Centres",
+		nav__past_papers: "Past Papers",
+		nav__about: "About Us",
+		hero__title: "Sri Lanka's biggest pioneer exams for G.C.E. (A/L) students",
+		find_your_examination_centres__tile: "Find your examination centres",
+		find_your_examination_centres__description:
+			"We have 67 examination centre networks covering almost the whole island. Choose your district to view the examination centres available.",
+		looking_for_past_papers__title: "Looking for Mora Exam Past Papers?",
+		timetable__title: "Timetable",
+		committee__title: "Mora Exam - 2023 | Committee",
+		committee__president_name: "Sarujan",
+		committee__president_post: "President",
+		committee__secretary_name: "Harikrishna",
+		committee__secretary_post: "Secretary",
+		committee__treasurer_name: "Mayoorathan",
+		committee__treasurer_post: "Treasurer",
+		committee__vice_president_name: "Thabendra",
+		committee__vice_president_post: "Vice President",
+		committee__president_faculty: "Civil Engineering",
+		committee__secretary_faculty: "Computer Sciecne and Engineering",
+		committee__treasurer_faculty: "Material Science And Engineering",
+		committee__vice_president_faculty: "Computer Sciecne and Engineering",
+		committee__university: "University of Moratuwa",
+		looking_for_past_papers__description:
+			"Now It is even easier to find the paper you need. We have advanced filtering options. And we divided all the questions for each year based on the sub-sections of each subject. Now you can practice our past papers section-wise.",
+		footer_title_1: "Mora Exams",	
+		footer_title_1_description_p1: "We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
+		footer_title_1_description_p2: "It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
+		footer_title_2: "Contact Us :",
+		footer_title_3: "Follow Us :",
+		footer_title_4: "Our Services",
+		footer_title_4_s1: "Mora Exam",
+		footer_title_4_s2: "Practice Papers",
+		footer_title_4_s3: "E-learning Videos",
+		footer_title_4_s4: "E-learning Site",
+		footer_title_4_s5: "Doubts Forms",
+		elearning_videos_title: "E-Learning videos",
+		elearning_videos_p: "We have done video explanations regarding important topics in each subject on our YouTube channel. Click on any of the subjects listed below and view the respective videos.",
+		elearning_videos_sub1: "maths",
+		elearning_videos_sub2: "physics",
+		elearning_videos_sub3: "chemistry",
+	},
+	ta: {
+		meta__description:
+			"Mora Exams என்பது க.பொ.த (A/L) மாணவர்களுக்கான மிகப்பெரிய, நாடளாவிய பரீட்சையாகும். இறுதித் தேர்வுகளில் நுழைய போகும் மாணவர்களுக்கு இது நம்பமுடியாத அளவிற்கு உதவியாக இருக்கின்றது.",
+		nav__timetable: "பரீட்சை அட்டவணை",
+		nav__exam_centres: "பரீட்சை நிலையங்கள்",
+		nav__past_papers: "கடந்த கால வினாத்தாள்கள்",
+		nav__about: "எம்மைப் பற்றி",
+		hero__title:
+			"க. பொ. த. (உ/த) மாணவர்களுக்கான இலங்கையின்  மிகப்பெரிய முன்னோடி பரீட்ச்சை",
+		find_your_examination_centres__tile:
+			"உங்களது பரீட்சை நிலையத்தை கண்டறியுங்கள்",
+		find_your_examination_centres__description:
+			"எங்களிடம் 67 பரீட்சை மைய வலையமைப்புகள் கிட்டத்தட்ட முழு தீவையும் உள்ளடக்கி உள்ளன. தேர்வு மையங்களைப் பார்க்க உங்கள் மாவட்டத்தைத் தேர்வு செய்யவும்.",
+		looking_for_past_papers__title: "கடந்த கால வினாத்தாள்களை தேடுகின்றீர்களா?",
+		timetable__title: "நேர அட்டவணை",
+		committee__title: "Mora Exam - 2023 | செயற்குழு",
+		committee__president_name: "சாருஜன்",
+		committee__secretary_name: "ஹரிகிரிஷ்ணா",
+		committee__treasurer_name: "மயூரதன்",
+		committee__vice_president_name: "தபேந்திரா",
+		committee__president_post: "தலைவர்",
+		committee__secretary_post: "செயலாளர்",
+		committee__treasurer_post: "பொருளாளர்",
+		committee__vice_president_post: "துணைத்தலைவர்",
+		committee__president_faculty: "குடிசார் பொறியியல்",
+		committee__secretary_faculty: "கணினி விஞ்ஞானம் மற்றும் பொறியியல்",
+		committee__treasurer_faculty: "பொருள் விஞ்ஞானம் மற்றும் பொறியியல்",
+		committee__vice_president_faculty: "கணினி விஞ்ஞானம் மற்றும் பொறியியல்",
+		committee__university: "மொரட்டுவ பல்கலைக்கழகம்",
+		looking_for_past_papers__description:
+			"இப்போது உங்களுக்குத் தேவையான காகிதத்தைக் கண்டுபிடிப்பது இன்னும் எளிதாகிவிட்டது. எங்களிடம் மேம்பட்ட வடிகட்டுதல் விருப்பங்கள் உள்ளன. மேலும் ஒவ்வொரு பாடத்தின் துணைப்பிரிவுகளின் அடிப்படையில் ஒவ்வொரு ஆண்டுக்கான அனைத்து கேள்விகளையும் பிரித்தோம். இப்போது நீங்கள் எங்கள் கடந்த தாள்களை பிரிவு வாரியாக பயிற்சி செய்யலாம்.",
+		footer_title_1:"மோரா தேர்வுகள்",
+		footer_title_1_description_p1: "பொறியியலாளர்களாகிய நாம், சமூகம் மற்றும் அதன் மேம்பாடு குறித்து மிகவும் அக்கறை கொண்டுள்ளோம், மேலும் சமூகத்தின் மேம்பாடு பொருத்தமற்ற பிறழ்வுகளை விட மிகவும் வளமான மற்றும் கலப்பின எதிர்கால தலைமுறையைக் கொண்டுவரும் என்று நாங்கள் நம்புகிறோம்.",
+		footer_title_1_description_p2: "நமது சமூகத்தில் உள்ள பொறியியல் மாணவர்கள் எவ்வாறு தங்களை வளர்த்துக்கொள்கிறார்கள் மற்றும் எங்கள் சமூகத்திற்கு பல வழிகளில் உதவுவதற்கான திட்டங்களைத் திட்டமிடுகிறார்கள் என்பது மிகவும் தெளிவாகத் தெரிகிறது. மொரட்டுவை பல்கலைக்கழக தமிழ் மக்களாகிய நாமும் மொரா இ-தமிழர் என்ற பதாகையின் கீழ் ஒன்றிணைந்தோம்.",
+		footer_title_2: "தொடர்பு கொள்க :",
+		footer_title_3: "எங்களைப் பின்பற்றவும் :",
+		footer_title_4: "எங்கள் சேவைகள்",
+		footer_title_4_s1: "மோரா தேர்வு",
+		footer_title_4_s2: "பயிற்சிக் கட்டுரைகள்",
+		footer_title_4_s3: "மின் கற்றல் வீடியோக்கள்",
+		footer_title_4_s4: "மின் கற்றல் தளம்",
+		footer_title_4_s5: "சந்தேக படிவங்கள்",
+		elearning_videos_title: "மின் கற்றல் வீடியோக்கள்",
+		elearning_videos_p: "எங்கள் யூடியூப் சேனலில் ஒவ்வொரு பாடத்திலும் முக்கியமான தலைப்புகள் குறித்து வீடியோ விளக்கங்கள் செய்துள்ளோம். கீழே பட்டியலிடப்பட்டுள்ள ஏதேனும் ஒன்றைத் தெரிவுசெய்து அந்தந்த வீடியோக்களைப் பார்க்கவும்.",
+		elearning_videos_sub1: "maths",
+		elearning_videos_sub2: "physics",
+		elearning_videos_sub3: "chemistry",
+	},
+});

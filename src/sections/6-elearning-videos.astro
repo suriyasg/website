@@ -1,29 +1,28 @@
 ---
 import VideoCard from "../components/VideoCard.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
 // JS required for this section goes here (don't bother for now)
 ---
 
 <section class="mt-10">
-	<h2 class="text-center text-3xl">E-Learning videos</h2>
+	<h2 class="text-center text-3xl">{t("elearning_videos_title")}</h2>
 	<p class="text-center text-xl my-8 px-14">
-		We have done video explanations regarding important topics in each subject
-		on our YouTube channel. Click on any of the subjects listed below and view
-		the respective videos.
+		{t("elearning_videos_p")}
 	</p>
-	<div
-		class="grid grid-flow-row sm:grid-flow-col gap-10 mt-10 mx-16 text-center"
-	>
+	<div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mt-10 mx-16 text-center">
 		<VideoCard
 			href="https://www.youtube.com/watch?v=_Q4DpITrqeQ&list=PL7rqMCp2H_mRqMLtF-QEYsiHhwgzn5ifn"
-			subject="maths"
+			subject= {t("elearning_videos_sub1")}
 		/>
 		<VideoCard
 			href="https://www.youtube.com/watch?v=vJ8oHxNUJGk&list=PL7rqMCp2H_mQ1lASzvCKicK19cB6IcihD"
-			subject="physics"
+			subject={t("elearning_videos_sub2")}
 		/>
 		<VideoCard
 			href="https://www.youtube.com/watch?v=9uxap27eeps&list=PL7rqMCp2H_mTyC9g8FjscRqLDSEkFivpP"
-			subject="chemistry"
+			subject={t("elearning_videos_sub3")}
 		/>
 	</div>
 </section>

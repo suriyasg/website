@@ -1,28 +1,35 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 interface Props {
 	pageTitle: string;
 }
 
 const { pageTitle } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<meta name="generator" content={Astro.generator} />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={t("meta__description")} />
+		<meta property="og:description" content={t("meta__description")} />
+		<title>{pageTitle}</title>
+		<meta property="og:title" content={pageTitle} />
+
+		<!-- TODO favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>{pageTitle}</title>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -30,6 +37,14 @@ const { pageTitle } = Astro.props;
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+
+		<meta
+			name="keywords"
+			content="Pilot Exam, mora exam, A/L exam, exam mora, mora exam 2021, moratuwa university exam, moratuwa exam, moraetamils, moraetamils exam, moraexam, moraetamils, mora etamils "
+		/>
+
+		<meta property="og:url" content="https://moraetamils.com/" />
+		<meta property="og:image" content="/og-image.jpg" />
 	</head>
 	<body>
 		<slot />
@@ -37,12 +52,12 @@ const { pageTitle } = Astro.props;
 </html>
 <style is:global>
 	* {
-		font-family: "Poppins", sans-serif;
+		font-family: "Noto Sans Tamil", "Poppins", sans-serif;
 		box-sizing: border-box;
 	}
 	html,
 	body {
-		margin: 0;
+		@apply m-0 scroll-smooth;
 	}
 	:root {
 		--body-width: min(80rem, 92vw);

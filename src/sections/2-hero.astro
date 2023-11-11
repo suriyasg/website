@@ -1,12 +1,21 @@
 ---
-// JS required for this section goes here (don't bother for now)
+import LanguageSelector from "../components/LanguageSelector.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section class="py-20 bg-cover text-black text-center bg-mora-purple-50">
-	<img class="h-24 sm:h-32" src="/logo.png" />
-	<h1 class="text-4xl sm:text-6xl">
-		WELCOME TO<br /><span class="inline-block w-max">MORA&nbsp;E-TAMILS</span>
+<section
+	class="pt-20 pb-4 bg-cover text-white bg-[url('/hero.jpeg')] bg-mora-purple-50 h-[70vh] flex flex-col items-center"
+>
+	<!-- <img class="h-24 sm:h-32" src="/logo.png" /> -->
+	<h1
+		class="text-4xl sm:text-5xl md:text-6xl !leading-snug max-w-[45ch] text-center"
+	>
+		{t("hero__title")}
+		<!-- Welcome To<br /><span class="inline-block w-max">Mora&nbsp;Exams</span> -->
 	</h1>
+	<LanguageSelector class="mt-auto" />
 	<!-- <p class="text-xl sm:text-2xl">Please Select Your language</p>
 	<div>
 		<button
