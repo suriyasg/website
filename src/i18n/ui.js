@@ -26,6 +26,7 @@ export const defaultLang = "en";
 
 /**
  * @typedef UiStrings
+ * @prop {string} index__title
  * @prop {string} meta__description
  * @prop {string} nav__timetable
  * @prop {string} nav__exam_centres
@@ -132,6 +133,7 @@ export const defaultLang = "en";
  */
 export const ui = Object.freeze({
 	en: {
+		index__title: "Mora Exams",
 		meta__description:
 			"Mora Exams is the largest, island-wide pioneer exam for A/L students. It proves to be incredibly helpful before entering the final exams, providing access to past papers and model papers.",
 		nav__timetable: "Timetable",
@@ -257,6 +259,7 @@ export const ui = Object.freeze({
 			"All these programmes are designed and developed with the motive of strengthening the longevity and enrichment of the culture and tradition of the society. The organization Mora E-Tamils was established and fostered by the Tamil students of the Engineering Faculty of the University of Moratuwa with the sole aim of uplifting and forward-moving the academic standards of the Tamil-speaking students in our country.",
 	},
 	ta: {
+		index__title: "மொறா பரீட்சைகள்",
 		meta__description:
 			"Mora Exams என்பது க.பொ.த (A/L) மாணவர்களுக்கான மிகப்பெரிய, நாடளாவிய பரீட்சையாகும். இறுதித் தேர்வுகளில் நுழைய போகும் மாணவர்களுக்கு இது நம்பமுடியாத அளவிற்கு உதவியாக இருக்கின்றது.",
 		nav__timetable: "பரீட்சை அட்டவணை",
