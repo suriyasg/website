@@ -1,5 +1,8 @@
 ---
 import Feedback from "../components/Feedback.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <div class="bg-ultra-violet-200 pt-7">
@@ -10,7 +13,7 @@ import Feedback from "../components/Feedback.astro";
 				name="iroshan"
 				state="Ex-President"
 				batch="(Tamil Literary Association)"
-				body="It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level."
+				body="{t(feedback_iroshan)}"
 			/>
 			<Feedback
 				name="darukeesan"
