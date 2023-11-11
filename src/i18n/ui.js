@@ -81,26 +81,13 @@ export const defaultLang = "en";
  * @prop {string} statistics__centers
  * @prop {string} statistics__candidates
  * @prop {string} feedback_iroshan
-<<<<<<< HEAD
  * @prop {string} feedback_abarna
  * @prop {string} feedback_sankavi
+ * @prop {string} feedback_darukeesan
  * @prop {string} feedback_jathurshan
  * @prop {string} feedback_sundarbavan
  * @prop {string} feedback_suriya
-=======
- * @prop {string} timetable__start
- * @prop {string} timetable__date25_sub1
- * @prop {string} timetable__date25_sub2 
- * @prop {string} timetable__date26_sub1
- * @prop {string} timetable__date26_sub2
- * @prop {string} timetable__date30_sub1
- * @prop {string} timetable__date03_sub1
- * @prop {string} timtable__date09_sub1
- * @prop {string} timtable__date09_sub2
- * @prop {string} timtable__date10_sub1
- * @prop {string}	timtable__date10_sub2
- * 
->>>>>>> 62fe1fb40c90132cadfca55c0b133b125d8ef724
+ * @prop {string} feedback_heading
  */
 
 /**
@@ -141,8 +128,10 @@ export const ui = Object.freeze({
 			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
 		footer_title_1_description_p2:
 			"It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
-		footer_title_1_description_p1: "We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
-		footer_title_1_description_p2: "It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
+		footer_title_1_description_p1:
+			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
+		footer_title_1_description_p2:
+			"It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
 		footer_title_2: "Contact Us :",
 		footer_title_3: "Follow Us :",
 		footer_title_4: "Our Services",
@@ -172,7 +161,6 @@ export const ui = Object.freeze({
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 		feedback_iroshan:
 			"It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level.",
-<<<<<<< HEAD
 		feedback_darukeesan:
 			"It is a common notion in society that students who are in universities focus only on their studies and have no care or concern for society. Our students have proved that to be wrong.",
 		feedback_abarna:
@@ -185,27 +173,7 @@ export const ui = Object.freeze({
 			"Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly.",
 		feedback_suriya:
 			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
-=======
-		statistics__years: "Years",
-		statistics__districts: "Districts",
-		statistics__centers: "Centres",
-		statistics__candidates: "Candidates",
-		pathway__card1_para: "A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology departments in 2007. This test laid the foundation for the Mora exam.",
-		pathway__card2_para: "The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
-		pathway__card3_para: "We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
-		pathway__card4_para: "In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
-		timetable__start: "START",
-		timetable__date25_sub1: "Combined Mathematics-I",
-		timetable__date25_sub2: "Biology-I",
-		timetable__date26_sub1: "Combined Mathematics-I",
-		timetable__date26_sub2: "Biology-II",
-		timetable__date30_sub1: "Physics-I",
-		timetable__date03_sub1: "Physics-II",
-		timtable__date09_sub1: "Chemistry-I",
-		timtable__date09_sub2: "ICT-I",
-		timtable__date10_sub1: "Chemistry-II",
-		timtable__date10_sub2: "ICT-II",
->>>>>>> 62fe1fb40c90132cadfca55c0b133b125d8ef724
+		feedback_heading: "FEEDBACK FROM ACHIEVERS",
 	},
 	ta: {
 		meta__description:
@@ -275,7 +243,7 @@ export const ui = Object.freeze({
 		feedback_darukeesan:
 			"பல்கலைக்கழகங்களில் படிக்கும் மாணவர்கள் படிப்பில் மட்டுமே கவனம் செலுத்துகிறார்கள், சமூகத்தின் மீது அக்கறையோ அக்கறையோ இல்லை என்பது சமூகத்தில் பொதுவான கருத்து. அது தவறு என்று எங்கள் மாணவர்கள் நிரூபித்துள்ளனர்.",
 		feedback_abarna:
-			"தேர்வுத் தாள்கள் நன்கு அனுபவம் வாய்ந்த ஆசிரியர்களால் தயாரிக்கப்படுவதால், இறுதித் தேர்வுக்கான எங்கள் தயாரிப்புகளில் இந்தக் குழு முக்கியமானது. இறுதித் தேர்வை வெற்றிகரமாக எதிர்கொள்ள இரண்டு அல்லது மூன்று ஆண்டுகள் மோரா பரீட்சை கடந்த தாள்களை பயிற்சி செய்வது நல்லது!",
+			"தேர்வு தாள்கள் நன்கு அனுபவம் வாய்ந்த ஆசிரியர்களினால் தயாரிக்கப்படுவதால் இறுதித் தேர்வுக்கான தயார்படுத்தலில் மொறாபரீட்சை முக்கியமானது.இறுதித் தேர்வை வெற்றிகரமாக எதிர்கொள்வதற்கு 2 அல்லது 3 வருட கடந்த கால மொறா பரீட்சை வினாத்தாளை பயிற்சி செய்வது நன்று",
 		feedback_sankavi:
 			"மோரா பரீட்சைகள் A/L பரீட்சையின் ஒரு பகுதியாகும். அது எனக்கு அதிக பயிற்சியையும் நம்பிக்கையையும் கொடுத்தது. அதில் நான் மிகவும் மகிழ்ச்சி அடைகிறேன். எனது இறுதித் தேர்வில் மோரா தேர்வுகளின் பிரதிபலிப்பைக் கண்டேன்.",
 		feedback_jathurshan:
@@ -284,5 +252,6 @@ export const ui = Object.freeze({
 			"கோவிட்-19 தொற்றுநோய் காரணமாக, கிட்டத்தட்ட ஐந்து மாதங்களாக நாங்கள் எந்த மாதிரித் தேர்வுகளையும் எதிர்கொள்ளவில்லை. அந்த வகையில் மோரா பரீட்சைகள் கேள்விகளை அணுகி சரியான முறையில் பதிலளிக்கும் திறனை வளர்க்க எனக்கு உதவியது.",
 		feedback_suriya:
 			"மோரா பரீட்சைகள் எமது A/L இறுதிப் பரீட்சைக்கு மிகவும் ஒத்தவை. மாணவர்கள் தங்கள் பலம் மற்றும் பலவீனங்களை முன்கூட்டியே கண்டறிய உதவுகிறது.",
+		feedback_heading: "எமது பரீட்சை பற்றி சாதனையாளர்களின் கருத்துக்கள்",
 	},
 });

@@ -6,7 +6,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <div class="bg-ultra-violet-200 pt-7">
-	<h2 class="text-center text-3xl">FEEDBACK FROM ACHIEVERS</h2>
+	<h2 class="text-center text-3xl">{t("feedback_heading")}</h2>
 	<div class="overflow-auto px-1">
 		<div class="w-full relative flex justify-between pl-0 pr-5 pt-4 gap-2">
 			<Feedback
