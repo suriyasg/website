@@ -150,6 +150,10 @@ export const ui = Object.freeze({
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 		feedback_iroshan:
 			"It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level.",
+		statistics__years: "Years",
+		statistics__districts: "Districts",
+		statistics__centers: "Centres",
+		statistics__candidates: "Candidates",
 	},
 	ta: {
 		meta__description:
@@ -213,5 +217,9 @@ export const ui = Object.freeze({
 			"	14 ஆவது மொறா பரீட்சையை வெற்றிகரமாக நடாத்துவதை எண்ணி பெருமையடைகின்றோம். கடந்த வருடம் 22 மாவட்டங்களில் 69 பரீட்சை நிலையங்களில் 5000 இற்கு மேற்பட்ட மாணவர்களை உள்ளடக்கி எமது பரீட்சையை நடாத்தி இருந்தோம்.",
 		feedback_iroshan:
 			"இத்தேர்வு பல்வேறு படிநிலைகளை தாண்டி தேசிய அங்கீகாரம் பெற்று காணப்படுகின்றது சுருக்கமாக சொல்லப்போனால் இது பரீட்சையின் அடுத்த நிலை ஆகும்",
+		statistics__years: "வருடங்கள்",
+		statistics__districts: "மாவட்டங்கள்",
+		statistics__centers: "பரீட்சை நிலையங்கள்",
+		statistics__candidates: "மாணவர்கள்",
 	},
 });
