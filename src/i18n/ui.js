@@ -107,8 +107,11 @@ export const defaultLang = "en";
  * @prop {string} what_is_mora_pilot_exam__p2
  * @prop {string} what_is_mora_pilot_exam__li1
  * @prop {string} what_is_mora_pilot_exam__li2
+ *
  * @prop {string} what_is_mora_pilot_exam__li3
+ *
  * @prop {string} what_is_mora_pilot_exam__p3
+ * @prop {string} all_about_us_section_heading
  */
 
 /**
@@ -222,6 +225,7 @@ export const ui = Object.freeze({
 			"We too release island ranks based on their z-scores.",
 		what_is_mora_pilot_exam__p3:
 			"It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the final contest (G.C.E.A./L), which makes their future more efficacious.",
+		all_about_us_section_heading: "What is all about us?",
 	},
 	ta: {
 		meta__description:
@@ -334,5 +338,6 @@ export const ui = Object.freeze({
 			"நாங்களும் அவர்களின் z-புள்ளிகளின் அடிப்படையில் தேசிய நிலைகளை வெளியிடுகிறோம்.",
 		what_is_mora_pilot_exam__p3:
 			"இது பரீட்சைகளின் தரங்களையும் மாணவர்களிடையே அவர்களின் திறனையும் தெளிவாக விளக்குகிறது, இதனால் மாணவர்கள் க.பொ.த.(உ/த) இறுதிப் போட்டிக்கு மேலும் மேலும் தகுதி பெற தங்களைத் தாங்களே சரி செய்து கொள்ள முடியும், இது அவர்களின் எதிர்காலத்தை மிகவும் திறம்படச் செய்கிறது.",
+		all_about_us_section_heading: "நாம் யார்?",
 	},
 });
