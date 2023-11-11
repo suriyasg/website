@@ -81,13 +81,13 @@ export const defaultLang = "en";
  * @prop {string} statistics__centers
  * @prop {string} statistics__candidates
  * @prop {string} feedback_iroshan
-<<<<<<< HEAD
+
  * @prop {string} feedback_abarna
  * @prop {string} feedback_sankavi
  * @prop {string} feedback_jathurshan
  * @prop {string} feedback_sundarbavan
  * @prop {string} feedback_suriya
-=======
+
  * @prop {string} timetable__start
  * @prop {string} timetable__date25_sub1
  * @prop {string} timetable__date25_sub2 
@@ -99,15 +99,13 @@ export const defaultLang = "en";
  * @prop {string} timtable__date09_sub2
  * @prop {string} timtable__date10_sub1
  * @prop {string}	timtable__date10_sub2
-<<<<<<< HEAD
- * 
->>>>>>> 62fe1fb40c90132cadfca55c0b133b125d8ef724
-=======
+
  * @prop {string} timetable__date_sep
  * @prop {string} timetable__date_dec
+ * @prop {string} timetable__end
  
  
->>>>>>> 5d038c3 (tamil support)
+
  */
 
 /**
@@ -214,7 +212,8 @@ export const ui = Object.freeze({
 		timtable__date10_sub2: "ICT-II",
 
 		timetable__date_sep: "SEP",
-		timetable__date_dec: "DEC"
+		timetable__date_dec: "DEC",
+		timetable__end: "END"
 
 
 
@@ -318,6 +317,7 @@ export const ui = Object.freeze({
 		timtable__date10_sub1: "இரசாயனவியல்-II",
 		timtable__date10_sub2: "ICT-II",
 		timetable__date_sep: "SEP",
-		timetable__date_dec: "DEC"
+		timetable__date_dec: "DEC",
+		timetable__end: "முடிவு"
 	},
 });
