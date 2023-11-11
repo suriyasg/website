@@ -119,6 +119,7 @@ export const defaultLang = "en";
  *
  * @prop {string} what_is_mora_pilot_exam__p3
  * @prop {string} all_about_us_section_heading
+ * @prop {string} all_about_us_section_1
  */
 
 /**
@@ -240,6 +241,8 @@ export const ui = Object.freeze({
 		what_is_mora_pilot_exam__p3:
 			"It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the final contest (G.C.E.A./L), which makes their future more efficacious.",
 		all_about_us_section_heading: "What is all about us?",
+		all_about_us_section_1:
+			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
 	},
 	ta: {
 		meta__description:
@@ -358,5 +361,7 @@ export const ui = Object.freeze({
 		what_is_mora_pilot_exam__p3:
 			"இது பரீட்சைகளின் தரங்களையும் மாணவர்களிடையே அவர்களின் திறனையும் தெளிவாக விளக்குகிறது, இதனால் மாணவர்கள் க.பொ.த.(உ/த) இறுதிப் போட்டிக்கு மேலும் மேலும் தகுதி பெற தங்களைத் தாங்களே சரி செய்து கொள்ள முடியும், இது அவர்களின் எதிர்காலத்தை மிகவும் திறம்படச் செய்கிறது.",
 		all_about_us_section_heading: "நாம் யார்?",
+		all_about_us_section_1:
+			"பொறியியலாளர்களாகிய நாம், சமூகம் மற்றும் அதன் மேம்பாடு குறித்து மிகவும் அக்கறை கொண்டுள்ளோம், மேலும் சமூகத்தின் மேம்பாடு, பொருத்தமற்ற பிறழ்வுகளை விட மிகவும் வளமான மற்றும் கலப்பின எதிர்கால தலைமுறையைக் கொண்டுவரும் என்று நாங்கள் நம்புகிறோம்.",
 	},
 });
