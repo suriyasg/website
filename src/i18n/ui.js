@@ -195,7 +195,7 @@ export const ui = Object.freeze({
 		pathway__card3_title: "TECHNOLOGY STREAM ",
 		pathway__card4_title: "NOW ",
 		pathway__card1_para:
-			"A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology departments in 2007. This test laid the foundation for the Mora exam.",
+			"A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology streams in 2007. This test laid the foundation for the Mora exam.",
 		pathway__card2_para:
 			"The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
 		pathway__card3_para:
