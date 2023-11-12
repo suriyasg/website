@@ -2,21 +2,47 @@
 interface Props {
 	value: number;
 	text: string;
-	icon: string;
+	
 }
 
-const { value, text, icon } = Astro.props;
+const { value, text,  } = Astro.props;
 ---
 
 <div
-	class="w-48 h-48 rounded-xl shadow-lg bg-fairy-tale-200 grid place-items-center"
+	class=""
 >
-	<span
-		class="text-4xl w-48 pt-2 rounded-t-xl bg-fairy-tale-400 place-items-start"
-		>{value}</span
-	><br />
-	<span class="text-3xl w-18 h-18 pt-2 pb-1 px-0.5 bg-fairy-tale-400 rounded-xl"
-		>{icon}</span
-	><br />
-	<span class="font-semibold text-xl pb-3 text-fairy-tale-900">{text}</span>
+	<h2 class="">{value}</h2>
+	
+	<p class="">{text}</p>
 </div>
+
+<style>
+	div {
+  width:100%;
+  display: inline-block ;
+  justify-content: center;
+  align-items: center;
+  transition-property: box-shadow, transform;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+	
+}
+div:is(:hover, :focus) {
+  color: rgb(157, 230, 230);
+  transform: translateY(-8px);
+}
+span{
+	font-size: 30px;
+  text-align: center;
+
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}
+h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+</style>

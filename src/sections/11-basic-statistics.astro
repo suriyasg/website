@@ -5,14 +5,29 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section class="text-center box-border">
+<section class="">
 	<div
-		class="px-1 py-8 place-items-center gap-4 grid grid-cols-2 md:grid-cols-4"
+		class=" "
 		id="counter"
 	>
-		<StatisticCard value={14} text={t("statistics__years")} icon="🕑" />
-		<StatisticCard value={22} text={t("statistics__districts")} icon="🪧" />
-		<StatisticCard value={69} text={t("statistics__centers")} icon="🏢" />
-		<StatisticCard value={6821} text={t("statistics__candidates")} icon="🧑‍🎓" />
+		<StatisticCard value={14} text={t("statistics__years")}  /><hr>
+		<StatisticCard value={22} text={t("statistics__districts")}  /><hr>
+		<StatisticCard value={69} text={t("statistics__centers")} /><hr>
+		<StatisticCard value={6821} text={t("statistics__candidates")}  />
 	</div>
 </section>
+<style>
+	div{
+		display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	align-items: center;
+ 		background-color: rgb(54, 13, 92);
+ 		color: #e6d1d1;
+		margin-top: 15px;
+}
+hr{
+  height: 130px;
+  border-left: 1px solid rgb(219, 78, 78);
+}
+</style>
