@@ -10,7 +10,7 @@ const { value, text } = Astro.props;
 ---
 
 <div class="text-center px-12 pointer-events-none">
-	<h2 class="text-6xl text-center mb-0">
+	<h2 class="text-8xl text-center mb-0 mt-10">
 		<InViewNumberAnimator client:only="react" targetValue={value} />
 	</h2>
 
@@ -28,4 +28,4 @@ const { value, text } = Astro.props;
 		transform: translateY(-8px);
 	}
 </style>
- ./react/InViewNumberAnimator
+ 

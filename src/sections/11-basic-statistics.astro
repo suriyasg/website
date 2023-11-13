@@ -5,15 +5,16 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section class="">
+<section class="px-2.5">
 	<div
 		class="grid grid-flow-col"
 		id="counter"
 	>
+	<hr>
 		<StatisticCard value={14} text={t("statistics__years")}  /><hr>
 		<StatisticCard value={22} text={t("statistics__districts")}  /><hr>
 		<StatisticCard value={69} text={t("statistics__centers")} /><hr>
-		<StatisticCard value={6821} text={t("statistics__candidates")}  />
+		<StatisticCard value={6821} text={t("statistics__candidates")}  /><hr>
 	</div>
 </section>
 <style>
@@ -39,7 +40,7 @@ hr{
 	hr{
 		height:0%;
 		width: 200px;
-		border: 1px solid rgb(219, 78, 78);
+		border: 1px solid #ffA500;
 	}
 	
 }  
