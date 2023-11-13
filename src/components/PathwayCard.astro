@@ -12,7 +12,7 @@ const { year, title, description } = Astro.props;
 	ontouchstart="this.classList.toggle('hover');"
 >
 	<div class="container">
-		<div class="front" style="background-color: rgb(241, 110, 219);">
+		<div class="front" style="background-color: rgba(210, 16, 165, 0.852);">
 			<div class="inner">
 				<h4 class="relative text-3xl mb-8">{title}</h4>
 				<span class="opacity-70 font-light">{year}</span>
@@ -30,7 +30,7 @@ const { year, title, description } = Astro.props;
 	h4::after {
 		@apply h-[2px] absolute inset-x-0 my-0 mx-auto content-[""] w-16;
 
-		background: #c6d4df;
+		background: #9fc9e8;
 		bottom: -0.75rem;
 	}
 	.container {
