@@ -7,8 +7,6 @@ interface Props {
 	lang: Language;
 }
 const { post, lang } = Astro.props;
-
-console.log("component", lang);
 const t = useTranslations(lang);
 
 // @ts-expect-error
@@ -17,7 +15,6 @@ const name = t(`committee__${post}_name`);
 const displayPost = t(`committee__${post}_post`);
 // @ts-expect-error
 const faculty = t(`committee__${post}_faculty`);
-console.log(faculty);
 ---
 
 <div class="p-3 rounded-xl bg-[#fff]">
