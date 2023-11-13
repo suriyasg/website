@@ -5,28 +5,96 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section>
-	<h2 class="text-3xl sm:text-4xl">{t("what_is_mora_pilot_exam__h2")}</h2>
-	<p class="text-xl text-justify">
-		{t("what_is_mora_pilot_exam__p1")}
-	</p>
+<div class="body1">
+	<div class="card">
+		<p1>
+			<section>
+				<h2 class="text-3xl sm:text-4xl">{t("what_is_mora_pilot_exam__h2")}</h2>
+				<p class="text-xl text-justify">
+					{t("what_is_mora_pilot_exam__p1")}
+				</p>
 
-	<p class="text-xl text-justify">
-		{t("what_is_mora_pilot_exam__p2")}
-	</p>
+				<p class="text-xl text-justify">
+					{t("what_is_mora_pilot_exam__p2")}
+				</p>
 
-	<ul>
-		<li class="text-xl">
-			{t("what_is_mora_pilot_exam__li1")}
-		</li>
-		<li class="text-xl text-justify">
-			{t("what_is_mora_pilot_exam__li2")}
-		</li>
-		<li class="text-xl">
-			{t("what_is_mora_pilot_exam__li3")}
-		</li>
-	</ul>
-	<p class="text-xl text-justify">
-		{t("what_is_mora_pilot_exam__p3")}
-	</p>
-</section>
+				<ul>
+					<li class="text-xl">
+						{t("what_is_mora_pilot_exam__li1")}
+					</li>
+					<li class="text-xl text-justify">
+						{t("what_is_mora_pilot_exam__li2")}
+					</li>
+					<li class="text-xl">
+						{t("what_is_mora_pilot_exam__li3")}
+					</li>
+				</ul>
+				<p class="text-xl text-justify">
+					{t("what_is_mora_pilot_exam__p3")}
+				</p>
+			</section>
+		</p1>
+	</div>
+</div>
+
+<style>
+	:root {
+		font-size: 15px;
+		box-sizing: inherit;
+	}
+
+	*,
+	*:before,
+	*:after {
+		box-sizing: inherit;
+	}
+
+	.p1 {
+		margin: 0;
+		padding-top: 5px;
+	}
+
+	.p1:not(:last-child) {
+		margin-bottom: 1.5em;
+	}
+
+	.body1 {
+		font:
+			1em/1.618 Inter,
+			sans-serif;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		min-height: 100vh;
+		padding: 5px;
+
+		color: #224;
+		background: url("/bg1.jpg") center / cover no-repeat fixed;
+	}
+
+	.card {
+		max-width: 900px;
+		min-height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		max-width: 1000px;
+		height: 500px;
+		padding: 10px;
+
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		border-radius: 20px;
+		background-color: rgba(255, 255, 255, 0.45);
+		box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+		backdrop-filter: blur(15px);
+	}
+
+	.card-footer {
+		font-size: 0.65em;
+		color: #446;
+	}
+</style>
