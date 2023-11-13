@@ -8,7 +8,7 @@ const { year, title, description } = Astro.props;
 ---
 
 <div
-	class="col cursor-pointer min-w-fit lg:w-64 w-56"
+	class="col cursor-pointer min-w-fit"
 	ontouchstart="this.classList.toggle('hover');"
 >
 	<div class="container">
@@ -20,7 +20,7 @@ const { year, title, description } = Astro.props;
 		</div>
 		<div class="back">
 			<div class="inner">
-				<p class="text-sm">{description}</p>
+				<p class="text-sm md:text-lg lg:text-sm">{description}</p>
 			</div>
 		</div>
 	</div>
@@ -65,7 +65,7 @@ const { year, title, description } = Astro.props;
 
 	.back {
 		background: #3c4b7e;
-		background: linear-gradient(45deg,#232c48 0%,#3c4b7e 100%)
+		background: linear-gradient(45deg, #232c48 0%, #3c4b7e 100%);
 		position: absolute;
 		top: 0;
 		left: 0;
