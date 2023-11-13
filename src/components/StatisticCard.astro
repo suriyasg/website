@@ -9,40 +9,22 @@ const { value, text,  } = Astro.props;
 ---
 
 <div
-	class=""
+	class=" text-center px-12"
 >
-	<h2 class="">{value}</h2>
+	<h2 class=" text-5xl text-center">{value}</h2>
 	
-	<p class="">{text}</p>
+	<p class="text-center text-xl">{text}</p>
 </div>
-
 <style>
 	div {
-  width:100%;
-  display: inline-block ;
-  justify-content: center;
-  align-items: center;
+  
   transition-property: box-shadow, transform;
   transition-duration: 350ms;
   transition-timing-function: ease;
-	
+  
 }
 div:is(:hover, :focus) {
   color: rgb(157, 230, 230);
   transform: translateY(-8px);
 }
-span{
-	font-size: 30px;
-  text-align: center;
-
-}
-p{
-  font-size: 20px;
-  text-align: center;
-}
-h2{
-  font-size: 40px;
-  text-align: center;
-}
-
 </style>

@@ -7,7 +7,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 
 <section class="">
 	<div
-		class=" "
+		class="grid grid-flow-col"
 		id="counter"
 	>
 		<StatisticCard value={14} text={t("statistics__years")}  /><hr>
@@ -18,16 +18,32 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 </section>
 <style>
 	div{
-		display: flex;
-  	flex-direction: row;
-  	justify-content: center;
-  	align-items: center;
- 		background-color: rgb(54, 13, 92);
- 		color: #e6d1d1;
-		margin-top: 15px;
+	justify-content: center;
+  align-items: center;
+ 	margin-top: 15px;
+}
+section{
+	background-color: rgb(54, 13, 92);
+ 	color: #e6d1d1;
+	
 }
 hr{
-  height: 130px;
-  border-left: 1px solid rgb(219, 78, 78);
+	height: 100px;
+	border: 1px solid rgb(219, 78, 78);
 }
+@media(max-width:750px) {
+	div{
+		display: grid;
+		grid-auto-flow: row;
+	}
+	hr{
+		height:0%;
+		width: 200px;
+		border: 1px solid rgb(219, 78, 78);
+	}
+	
+}  
+
+
+
 </style>
