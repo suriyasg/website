@@ -361,7 +361,7 @@ export const ui = Object.freeze({
 		feedback_suriya_name: "சூரியா",
 		statistics__years: "வருடங்கள்",
 		statistics__districts: "மாவட்டங்கள்",
-		statistics__centers: "பரீட்சை நிலையங்கள்",
+		statistics__centers: "நிலையங்கள்",
 		statistics__candidates: "மாணவர்கள்",
 		timetable__start: "ஆரம்பம்",
 		timetable__date25_sub1: "இணைந்த கணிதம்-I",
