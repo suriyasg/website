@@ -1,5 +1,4 @@
 ---
-import LanguageSelector from "../components/LanguageSelector.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const t = useTranslations(getLangFromUrl(Astro.url));
@@ -18,7 +17,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		<!-- Welcome To<br /><span class="inline-block w-max">Mora&nbsp;Exams</span> -->
 	</h1>
 	<button class="btn">Apply Now</button>
-	<LanguageSelector />
+
 	<!-- <p class="text-xl sm:text-2xl">Please Select Your language</p>
 	<div>
 		<button
