@@ -1,6 +1,6 @@
 ---
 interface brand {
-	name: "twitter" | "facebook" | "linkedin" | "youtube";
+	name: "twitter" | "facebook" | "linkedin" | "youtube" | "telegram";
 	dark: boolean;
 }
 const { name, dark } = Astro.props;
@@ -19,6 +19,9 @@ switch (name) {
 		break;
 	case "youtube":
 		hrefLink = "https://www.youtube.com/@MoraETamils";
+		break;
+	case "telegram":
+		hrefLink = "https://t.me/moraexam ";
 		break;
 	default:
 		throw new Error("");

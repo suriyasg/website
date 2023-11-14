@@ -1,6 +1,7 @@
 ---
 import HeaderContactLink from "../components/HeaderContactLink.astro";
 import NavLink from "../components/NavLink.astro";
+import HeaderContactIcon from "../components/HeaderContactIcon.astro";
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
@@ -8,17 +9,24 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<header class="hidden sm:flex bg-mora-purple-800 items-center py-1 text-white">
+<header class="hidden sm:flex items-center py-1 bg-transparent text-white">
 	<HeaderContactLink icon="envelope" href="mailto:moraetamils@gmail.com">
 		moraetamils@gmail.com
 	</HeaderContactLink>
 	<HeaderContactLink icon="phone" href="tel:+94704616400">
 		+94 70 461 6400
 	</HeaderContactLink>
+	<div class="ml-auto">
+		<HeaderContactIcon name="twitter" />
+		<HeaderContactIcon name="youtube" />
+		<HeaderContactIcon name="facebook" />
+		<HeaderContactIcon name="linkedin" />
+		<HeaderContactIcon name="telegram" />
+	</div>
 </header>
 
 <nav
-	class="flex items-center gap-x-2 py-3 sm:py-2 justify-between sticky top-0 bg-mora-purple-600 text-white z-10"
+	class="flex items-center gap-x-2 py-3 sm:py-2 justify-between sticky top-0 bg-transparent text-white z-10"
 >
 	<div>
 		<a
