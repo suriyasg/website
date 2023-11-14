@@ -13,58 +13,60 @@ const { name, state, body, batch } = Astro.props;
 const displayName = t(`feedback_${name}_name`);
 ---
 
-<div class="cursor-pointer snap-center card">
-	<div class="face face1">
-		<div class="content">
-			<img src={`/achievers/${name}.jpg`} alt={displayName} />
-			<h3 class="text-white mt-1 p-0 text-center text-2xl">
-				<span class="capitalize">
-					{displayName}
-				</span>
-				<br />
-				{state}<br />
-				{batch}
-			</h3>
-		</div>
-	</div>
-	<div class="face face2">
-		<p class="content-center text-base p-0 m-0">
-			{body}
-		</p>
-	</div>
+<div class="card">
+	<img src={`/achievers/${name}.jpg`} alt={displayName} />
+	<h3 class="">
+		<span class="capitalize">
+			{displayName}
+		</span>
+		<br />
+		{state}<br />
+		{batch}
+	</h3>
+	<p>
+		{body}
+	</p>
 </div>
 <style>
-	.card .face {
-		@apply rounded-lg w-96;
-		transition: transform 0.5s;
-	}
+	.card {
+		--width: min(28rem, 90vw);
+		--height: 20rem;
 
-	.card .face.face1 {
-		@apply relative bg-gray-700 z-[4] py-5;
+		@apply flex transition-all flex-col px-3 py-6 opacity-90 rounded-lg cursor-pointer snap-center relative bg-gray-700 text-white items-center overflow-hidden;
+		min-width: var(--width);
+		height: var(--height);
 	}
-
-	.card:hover .face.face1 {
-		@apply bg-fairy-tale-500 translate-y-[-5%];
+	.card:hover {
+		@apply bg-fairy-tale-500 opacity-100;
 	}
-
-	.card .face.face1 .content {
-		@apply opacity-40 transition-all duration-500 flex flex-col items-center;
+	img,
+	h3,
+	p {
+		@apply transition-transform;
+		transform-origin: center;
+		transition-duration: 350ms;
 	}
-
-	.card:hover .face.face1 .content {
-		@apply opacity-100;
+	img {
+		@apply aspect-square rounded-full w-24 justify-self-center mb-4;
+		transform: translateY(calc(0.05 * var(--width)));
 	}
-
-	.card .face.face1 .content img {
-		@apply mb-3 aspect-square w-32 rounded-full;
+	.card:hover img {
+		transform: translateX(calc(-0.33 * var(--width))) scale(0.8);
 	}
-
-	.card .face.face2 {
-		@apply p-5 pt-6 bg-white relative flex justify-center items-center translate-y-[-100%];
-		box-shadow: 0 20px 50px rgba(101, 94, 87, 0.2);
+	h3 {
+		@apply m-0 text-center text-xl h-fit;
+		transform: translateY(calc(0.05 * var(--width)));
 	}
-
-	.card:hover .face.face2 {
-		@apply translate-y-[-12%];
+	.card:hover h3 {
+		transform: translateX(calc(0.1 * var(--width)))
+			translateY(calc(-0.34 * var(--height)));
+	}
+	p {
+		@apply content-center text-lg p-0 m-0 text-white lg:text-lg h-0;
+		transform: translateY(200px);
+	}
+	.card:hover p {
+		transform: translateY(calc(-0.28 * var(--height)));
+		@apply h-full;
 	}
 </style>

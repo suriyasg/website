@@ -6,15 +6,18 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <section
-	class="pt-32 sm:pt-20 px-2 pb-4 text-white top-0 bottom-0 z-[1] flex flex-col items-center"
+	class="pt-32 sm:pt-20 pb-4 px-[var(--body-margin-x)] text-white top-0 bottom-0 z-[1] flex flex-col items-left"
 >
 	<!-- <img class="h-24 sm:h-32" src="/logo.png" /> -->
-	<h1
-		class="text-3xl sm:text-5xl md:text-6xl !leading-snug max-w-[45ch] text-center"
-	>
-		{t("hero__title")}
+	<h1 class="text-3xl sm:text-5xl md:text-7xl max-w-[20ch] text-left">
+		<span class="text-center">{t("index__title")}</span><br />
+		<span
+			class="text-xl sm:text-3xl md:text-5xl !leading-snug font-light text-left p-0"
+			>{t("hero__title")}</span
+		>
 		<!-- Welcome To<br /><span class="inline-block w-max">Mora&nbsp;Exams</span> -->
 	</h1>
+	<button class="btn">Apply Now</button>
 	<LanguageSelector />
 	<!-- <p class="text-xl sm:text-2xl">Please Select Your language</p>
 	<div>
@@ -28,3 +31,56 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		>
 	</div> -->
 </section>
+<style>
+	.btn {
+		color: #fff;
+		background: linear-gradient(135deg, #852d91, #312a6c);
+
+		padding: 12px 20px;
+		transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+		font-size: 20px;
+		font-weight: bold;
+		border: 0;
+		outline-color: hsl(243, 31%, 60%);
+		outline-width: 2px;
+		border-radius: 0.5rem;
+		cursor: pointer;
+		margin-bottom: 50px;
+		margin-top: 30px;
+		width: 20vw;
+	}
+	.btn:hover {
+		color: #cfcece;
+		border: none;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		animation: rotate 0.7s ease-in-out both;
+	}
+
+	.btn:hover:before,
+	.btn:hover:after {
+		opacity: 0.15;
+	}
+	.btn:hover:before {
+		transform: translate3d(50%, 0, 0) scale(0.9);
+	}
+	.btn:hover:after {
+		transform: translate(50%, 0) scale(1.1);
+	}
+	@keyframes rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(3deg);
+		}
+		50% {
+			transform: rotate(-3deg);
+		}
+		75% {
+			transform: rotate(1deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+</style>

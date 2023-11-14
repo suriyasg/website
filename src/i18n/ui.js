@@ -148,7 +148,7 @@ export const ui = Object.freeze({
 		nav__exam_centres: "Exam Centres",
 		nav__past_papers: "Past Papers",
 		nav__about: "About Us",
-		hero__title: "Sri Lanka's biggest pioneer exams for G.C.E. (A/L) students",
+		hero__title: "Sri Lanka's biggest pilot exams for G.C.E. (A/L) students",
 		find_your_examination_centres__tile: "Find your examination centres",
 		find_your_examination_centres__description:
 			"We have 67 examination centre networks covering almost the whole island. Choose your district to view the examination centres available.",
@@ -199,7 +199,7 @@ export const ui = Object.freeze({
 		pathway__card2_para:
 			"The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
 		pathway__card3_para:
-			"We included the Technology stream after the kind request of many students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the Technology stream to the very own faculty of technology students, the University of Jaffna, and we guide them for their own betterment.",
+			"We added the Tech stream in 2016 due to student requests and the Provincial Director of Education. Now, we've delegated its management to tech faculty, University of Jaffna for students' benefit.",
 		pathway__card4_para:
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 		feedback_iroshan:

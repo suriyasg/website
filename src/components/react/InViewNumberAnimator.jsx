@@ -30,7 +30,10 @@ export default function InViewNumberAnimator({ targetValue, duration = 2000 }) {
 
 		const observer = new IntersectionObserver((entries) => {
 			const entry = entries[0];
-			setIsVisible(entry.isIntersecting);
+			if (entry.isIntersecting) {
+				setIsVisible(true);
+				observer.disconnect();
+			}
 		}, options);
 
 		if (containerRef.current) {
@@ -43,11 +46,18 @@ export default function InViewNumberAnimator({ targetValue, duration = 2000 }) {
 	}, []);
 
 	useEffect(() => {
-		if (isVisible) {
+		if (isVisible && targetValue >= currentValue) {
 			startTimeRef.current = null;
 			requestAnimationFrame(animate);
 		}
 	}, [isVisible, targetValue]);
 
-	return <div ref={containerRef}>{isVisible ? currentValue : 0}</div>;
+	return (
+		<span ref={containerRef} style={{ fontVariant: "tabular-nums" }}>
+			{(isVisible ? currentValue.toString() : "0").padStart(
+				targetValue.toString().length,
+				"0",
+			)}
+		</span>
+	);
 }
