@@ -29,7 +29,7 @@ const displayName = t(`feedback_${name}_name`);
 </div>
 <style>
 	.card {
-		--width: 28rem;
+		--width: min(28rem, 90vw);
 		--height: 20rem;
 
 		@apply flex transition-all flex-col px-3 py-6 opacity-90 rounded-lg cursor-pointer snap-center relative bg-gray-700 text-white items-center overflow-hidden;
@@ -47,20 +47,22 @@ const displayName = t(`feedback_${name}_name`);
 		transition-duration: 350ms;
 	}
 	img {
-		@apply aspect-square rounded-full w-12 sm:w-20 lg:w-28 justify-self-center mb-4;
+		@apply aspect-square rounded-full w-24 justify-self-center mb-4;
+		transform: translateY(calc(0.05 * var(--width)));
 	}
 	.card:hover img {
 		transform: translateX(calc(-0.33 * var(--width))) scale(0.8);
 	}
 	h3 {
 		@apply m-0 text-center text-xl h-fit;
+		transform: translateY(calc(0.05 * var(--width)));
 	}
 	.card:hover h3 {
 		transform: translateX(calc(0.1 * var(--width)))
 			translateY(calc(-0.34 * var(--height)));
 	}
 	p {
-		@apply content-center text-base p-0 m-0 text-white lg:text-lg h-0;
+		@apply content-center text-lg p-0 m-0 text-white lg:text-lg h-0;
 		transform: translateY(200px);
 	}
 	.card:hover p {
