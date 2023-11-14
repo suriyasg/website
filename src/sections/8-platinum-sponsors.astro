@@ -1,5 +1,5 @@
 <section>
-	<h3 class="animate-charcter">PLATINUM SPONSORS</h3>
+	<h2>PLATINUM SPONSORS</h2>
 	<!-- <div class="row">
 			<div class="col-md-12 text-center">
 			</div>
@@ -15,47 +15,92 @@
 	</a>
 </section>
 <style>
+	h2 {
+		@apply text-white text-6xl;
+	}
 	section {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: rgb(243, 219, 240);
+		@apply flex flex-col items-center;
 		padding-bottom: 40px;
+		--hue: 290;
+		--sz: 10px; /*** size ***/
+		--c0: hsl(calc(var(--hue) / 2), 59%, 14%);
+		--c1: hsl(var(--hue), 100%, 72%);
+		--c2: hsl(var(--hue), 68%, 54%);
+		--c3: hsl(var(--hue), 94%, 31%);
+		--ts: 50% / calc(var(--sz) * 12.8) calc(var(--sz) * 22);
+		background:
+		/*bottom*/
+			conic-gradient(
+					from 120deg at 50% 86.5%,
+					var(--c1) 0 120deg,
+					hsl(var(--hue), 50%, 50%, 50%) 0 360deg
+				)
+				var(--ts),
+			conic-gradient(
+					from 120deg at 50% 86.5%,
+					var(--c1) 0 120deg,
+					#fff0 0 360deg
+				)
+				var(--ts),
+			/*bottom dark*/
+				conic-gradient(
+					from 120deg at 50% 74%,
+					var(--c0) 0 120deg,
+					#fff0 0 360deg
+				)
+				var(--ts),
+			/*right*/
+				conic-gradient(
+					from 60deg at 60% 50%,
+					var(--c1) 0 60deg,
+					var(--c2) 0 120deg,
+					#fff0 0 360deg
+				)
+				var(--ts),
+			/*left*/
+				conic-gradient(
+					from 180deg at 40% 50%,
+					var(--c3) 0 60deg,
+					var(--c1) 0 120deg,
+					#fff0 0 360deg
+				)
+				var(--ts),
+			/*top dark*/
+				conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg)
+				var(--ts),
+			conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg)
+				var(--ts),
+			conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg)
+				var(--ts),
+			conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg)
+				var(--ts),
+			/*top*/
+				conic-gradient(
+					from -60deg at 50% 13.5%,
+					var(--c1) 0 120deg,
+					#fff0 0 360deg
+				)
+				var(--ts),
+			conic-gradient(
+					from -60deg at 50% 13.5%,
+					var(--c1) 0 120deg,
+					#fff0 0 360deg
+				)
+				var(--ts),
+			conic-gradient(
+					from -60deg at 50% 41%,
+					var(--c2) 0 60deg,
+					var(--c3) 0 120deg,
+					#fff0 0 360deg
+				)
+				var(--ts),
+			var(--c0);
 	}
 	a {
 		width: 80%;
+		background-color: white;
 	}
 	a img {
 		width: 100%;
-	}
-	.animate-charcter {
-		margin: 40px 0;
-		width: 100%;
-		text-align: center;
-		text-transform: uppercase;
-		background-image: linear-gradient(
-			-225deg,
-			#ffd700 0%,
-			#faf732 29%,
-			#69695b 67%,
-			#e9e90e 100%
-		);
-		background-size: auto auto;
-		background-clip: border-box;
-		background-size: 200% auto;
-		color: #fff;
-		background-clip: text;
-		text-fill-color: transparent;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: textclip 2s linear infinite;
-		display: inline-block;
-		font-size: clamp(20px, 12vw, 100px);
-	}
-
-	@keyframes textclip {
-		to {
-			background-position: 200% center;
-		}
 	}
 </style>
