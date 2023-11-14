@@ -30,8 +30,9 @@ export default function InViewNumberAnimator({ targetValue, duration = 2000 }) {
 
 		const observer = new IntersectionObserver((entries) => {
 			const entry = entries[0];
-			if (targetValue != currentValue) {
-				setIsVisible(entry.isIntersecting);
+			if (entry.isIntersecting) {
+				setIsVisible(true);
+				observer.disconnect();
 			}
 		}, options);
 
