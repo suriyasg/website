@@ -190,16 +190,16 @@ export const ui = Object.freeze({
 		elearning_videos_physics: "Physics",
 		elearning_videos_chemistry: "Chemistry",
 		pathway__title: "Pathway of the Mora Exam",
-		pathway__card1_title: "START ",
-		pathway__card2_title: "RESTART ",
-		pathway__card3_title: "TECHNOLOGY STREAM ",
-		pathway__card4_title: "NOW ",
+		pathway__card1_title: "START",
+		pathway__card2_title: "RESTART",
+		pathway__card3_title: "TECHNOLOGY STREAM",
+		pathway__card4_title: "NOW",
 		pathway__card1_para:
 			"A need for a common model test was felt in order to prepare students for the final exam. A common model test was held for students of the mathematics and biology streams in 2007. This test laid the foundation for the Mora exam.",
 		pathway__card2_para:
 			"The need for the pilot examination is felt. An exam was held for physical science and biological science students. This exam transformed into the Mora Exam in 2010.",
 		pathway__card3_para:
-			"We too, have included the technology stream due to the kind request of the students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the technology stream to the very own faculty of technology students, the University of Jaffna, and we just guide them for their own betterment.",
+			"We included the Technology stream after the kind request of many students and also the Provincial Director of Education in 2016. But now, because of the demands, we have handed over the responsibilities of the Technology stream to the very own faculty of technology students, the University of Jaffna, and we guide them for their own betterment.",
 		pathway__card4_para:
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
 		feedback_iroshan:
