@@ -113,41 +113,26 @@ const t = useTranslations(lang);
 </div>
 
 <style>
-	.ag-format-container {
-		width: 1142px;
-		margin: 0 auto;
-	}
-
 	.ag-courses_box {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: start;
-		-ms-flex-align: start;
-		align-items: flex-start;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-
-		padding: 50px 0;
+		@apply grid pt-5 py-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3;
 	}
 	.ag-courses_item {
+		@apply rounded-lg;
 		-ms-flex-preferred-size: calc(33.33333% - 30px);
 		flex-basis: calc(33.33333% - 30px);
 
-		margin: 0 15px 30px;
+		/* margin: 0 15px 30px; */
 
 		overflow: hidden;
 
-		border-radius: 28px;
 		cursor: pointer;
 	}
 	.ag-courses-item_link {
+		@apply h-full;
 		display: block;
 		padding: 10px 20px;
 		background-color: #353333;
-
 		overflow: hidden;
-
 		position: relative;
 	}
 	.ag-courses-item_link:hover,
