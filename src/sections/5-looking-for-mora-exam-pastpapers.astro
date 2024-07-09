@@ -2,6 +2,7 @@
 import Button from "../components/Button.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
@@ -10,12 +11,18 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 	<p class="text-xl">
 		{t("looking_for_past_papers__description")}
 	</p>
-	<a href="https://bit.ly/moraexamspp">
+	<a href="./pastpapers">
 		<Button>{t("looking_for_past_papers__button")}</Button>
 	</a>
-	<a
+	<!-- <a href="https://bit.ly/moraexamspp">
+		<Button>{t("looking_for_past_papers__button")}</Button>
+	</a> -->
+	<a href="./pastpapers">
+		<Button>{t("schemes_button")}</Button>
+	</a>
+	<!-- <a
 		href="https://drive.google.com/drive/folders/1ZivLO18_dEHd53VGWkstlHR3PCsw1hOR?usp=drive_link"
 	>
 		<Button>{t("schemes_button")}</Button>
-	</a>
+	</a> -->
 </section>
