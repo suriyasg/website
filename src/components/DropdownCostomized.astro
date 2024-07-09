@@ -1,0 +1,246 @@
+<!-- ---
+
+interface Link {
+	href: string;
+	text: string;
+}
+
+interface Props {
+	drop_down_title : string;
+	links: Link[];
+}
+
+const { drop_down_title, links } = Astro.props;
+--- -->
+<!-- 
+<div class="dropdown" data-dropdown>
+	<button class="link btn text-xl text-center font-bold border-0 outline-ultra-violet-500 outline-2 outline rounded-lg cursor-pointer" data-dropdown-button>{ drop_down_title }</button>
+	<div class="dropdown-menu information-grid">
+		<div>
+			<div class="dropdown-headding">Year</div>
+			<div class="dropdown-links">
+				{links.map(link => (
+					<a class="block" href={link.href}>{link.text}</a> 
+				))}
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.addEventListener('click', e => {
+		const isDropdownButton = (e.target as HTMLInputElement).matches("[data-dropdown-button]")
+		if(!isDropdownButton && (e.target as HTMLInputElement).closest("[data-dropdown]") != null) return; 
+		
+		let currentDropdown;
+		if (isDropdownButton) {
+			currentDropdown = (e.target as HTMLInputElement).closest('[data-dropdown]')
+			currentDropdown.classList.toggle('active')
+		}
+		document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+			if (dropdown === currentDropdown) return 
+			dropdown.classList.remove('active')
+		})
+	})
+</script>
+
+<style>
+	button {
+		color: #fff;
+		background: linear-gradient(135deg, #852d91, #312a6c);
+		padding: 12px 20px;
+		transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	}
+
+	button:hover {
+		color: #cfcece;
+		border: none;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		animation: rotate 0.7s ease-in-out both;
+	}
+	
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-menu {
+		position: absolute;
+		left: 0;
+		top: calc(100%+0.25rem);
+		background-color: white;
+		padding: 0.75rem;
+		border-radius: .25rem;
+		box-shadow: 0 2px 15px 0 rgba(0,0,0, .9);
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(-10px);
+		transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+	}
+
+	.dropdown.active > .link + .dropdown-menu {
+		opacity: 1;
+		transform: translateY(0);
+		pointer-events: auto;
+	}
+	.information-grid {
+		display: grid;
+		grid-template-columns: repeat(2, max-conten);
+		gap: 2rem;
+	}
+	.dropdown-links {
+		display: flex;
+		flex-direction: column;
+		gap: .25rem;
+		
+	}
+</style> -->
+
+<!-- <div class="p-4 m-10 bg-gray-200 rounded-lg">
+	<div class="py-2">
+		<button class="flex justify-between w-full">
+			<span>Math</span>
+			<span>+</span>
+		</button>
+		<div class="grid overflow-hidden transition-all duration-300 ease-in-out">
+			<div>
+				{links.map(link => (
+					<a class="block" href={link.href}>{link.text}</a> 
+				))}
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const toggleButton = document.getElementById('toggleButton') as HTMLButtonElement;
+	const content = document.getElementById('content') as HTMLElement;
+	
+	toggleButton.addEventListener('click', () => {
+	  content.style.maxHeight = content.classList.contains('open') ? '0px' : `${content.scrollHeight}px`;
+	  content.classList.toggle('open');
+	});
+	</script>
+	
+	<style>
+	  .accordion-header {
+		cursor: pointer;
+	  }
+	
+	  .transition {
+		/* Add your transition properties here for smooth opening/closing */
+	  }
+	
+	  .open {
+		max-height: var(--content-height); /* Optional: Set a default max-height for open state */
+	  }
+	</style> -->
+
+<!-- <div class="p-4 m-4 bg-purple-400 rounded-lg">
+	<div class="">
+		<button class="flex justify-between w-full accordion-header" id=`toggleButton`>
+			<span>Math</span>
+			<span>+</span>
+		</button>
+		<div class="grid overflow-hidden transition-all duration-300 ease-in-out" id="content">
+			<div>
+			  {links.map(link => (
+				<a class="block" href={link.href}>{link.text}</a>
+			  ))}
+			</div>
+		</div>
+	</div>
+</div>
+	  
+<script>
+	const toggleButton = document.getElementById(`toggleButton`) as HTMLButtonElement;
+	const content = document.getElementById('content') as HTMLElement;
+	  
+	toggleButton.addEventListener('click', () => {
+		content.style.maxHeight = content.classList.contains('open') ? '0px' : `${content.scrollHeight}px`;
+		content.classList.toggle('open');
+	});
+</script>
+	  
+<style>
+.accordion-header {
+	cursor: pointer;
+}
+
+.transition {
+	/* Add your transition properties here for smooth opening/closing */
+}
+
+.open {
+	max-height: var(--content-height); /* Optional: Set a default max-height for open state */
+}
+</style> -->
+
+
+---
+interface Link {
+  href: string;
+  title: string;
+}
+
+interface Year {
+	year: string;
+	links: Link[];
+}
+
+interface Props {
+	drop_down_title: string;
+	years: Year[];
+}
+
+const { drop_down_title, years } = Astro.props;
+---
+<div class="p-4 m-4 bg-purple-400 rounded-lg shadow-purple-950 shadow-lg">
+  <div class="">
+    <div class="flex text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-70 justify-between w-full accordion-header  shadow-purple-800 shadow-lg">
+      <span> {drop_down_title}</span>
+    </div>
+    <div class="content grid overflow-hidden transition-all duration-300 ease-in-out">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+		{years.map((yearItem, index) => (
+			<div>
+			  <div class="font-semibold text-lg mb-0">{yearItem.year}</div>
+			  <div class="list-none p-0">
+				{yearItem.links.map((link, linkIndex) => (
+				  <div class="mb-0">
+					<a href={link.href} target="_blank" rel="noopener noreferrer" class="no-underline text-black hover:text-white transition duration-300">
+					  {link.title}
+					</a>
+				  </div>
+				))}
+			  </div>
+			</div>
+		  ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+document.querySelectorAll('.accordion-header').forEach(div => {
+		const content = div.nextElementSibling;
+		// content.classList.toggle('open'); 
+
+		const isOpen = content.classList.contains('open');
+		const contentHeight = isOpen ? '0px' : `${content.scrollHeight}px`;
+		(content as HTMLElement).style.maxHeight = contentHeight;
+
+	});
+	
+	document.querySelectorAll('.accordion-header').forEach(div => {
+	div.addEventListener('click', () => {
+		const content = div.nextElementSibling;
+		content.classList.toggle('open');  // Toggle class first
+
+		const isOpen = content.classList.contains('open');
+		const contentHeight = isOpen ? '0px' : `${content.scrollHeight}px`;
+		(content as HTMLElement).style.maxHeight = contentHeight;
+	});
+	});
+  </script>
