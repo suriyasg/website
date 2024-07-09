@@ -12,6 +12,7 @@ export default defineConfig({
 	redirects: {
 		"/": `/${defaultLang}/`,
 		"/results": `/${defaultLang}/results`,
+		"/pastpapers": `/${defaultLang}/pastpapers`,
 		"/manage": "https://moraetamils.com/manage",
 	},
 	adapter: netlify({
