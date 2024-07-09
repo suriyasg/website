@@ -1,0 +1,51 @@
+---
+export const prerender = false;
+import Layout from "../../layouts/Layout.astro";
+import Pastpaper from "../../sections/17-pastpaper.astro";
+import NavigationBar from "../../sections/1-navigation-bar.astro";
+import Footer from "../../sections/16-footer.astro";
+
+import {
+	getLangFromUrl,
+	useTranslations,
+	isSupportedLanguage,
+} from "../../i18n/utils";
+// import { langStaticRoutes } from "../../i18n/ui";
+
+const { lang } = Astro.params;
+
+if (!isSupportedLanguage(lang)) {
+	return;
+}
+const t = useTranslations(lang);
+---
+
+<Layout pageTitle={t("index__title")}>
+	<div
+		class="first-fold grid grid-cols-1 px-0 min-h-[72vh] sm:grid-rows-[auto_auto_1fr] bg-cover"
+	>
+		<NavigationBar hideLogo={false} />
+		<Pastpaper />
+	</div>
+	<Footer />
+</Layout>
+
+<style is:global>
+	body {
+		@apply text-black;
+	}
+	body:has(#nav-bar-toggle:checked),
+	body.disable-scrolling {
+		overflow: hidden;
+	}
+	body > * {
+		@apply px-[var(--body-margin-x)];
+	}
+	section {
+		@apply scroll-mt-20;
+	}
+	.first-fold {
+		background: url("/assets/backgrounds/bg4.jpg") center / cover no-repeat
+			fixed;
+	}
+</style>
