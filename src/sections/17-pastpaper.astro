@@ -1,0 +1,76 @@
+---
+import Dropdown from "../components/DropdownCostomized.astro"
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
+
+---
+<div class="tabs flex justify-center mb-4 max-h-12">
+	<div class="flex w-full max-w-md rounded-full border-2 border-gray-300 overflow-hidden">
+		<div id="pastpapers-tab" class="flex-1 tab cursor-pointer py-2 px-4 text-lg rounded-l-full  transition-colors duration-500 ease-in-out transform translate-x-0"> 
+			<span id="pastpapers-span">
+				Past Papers
+			</span>
+		</div>
+		<button id="schemes-tab" class="flex-1 tab cursor-pointer py-2 px-4 text-lg rounded-r-full transition-colors duration-500 ease-in-out transform translate-x-0">
+			<span id="schemes-span">
+				Schemes
+			</span>
+		</button>
+	</div>
+</div>
+  
+
+<div id="pastpapers-content" class="tab-content active">
+	<Dropdown years={t('mathspastpapers')} drop_down_title={t("pastpapers_combined_maths")}/>
+	<Dropdown years={t('mathspastpapers')} drop_down_title={t("pastpapers_physics")}/>
+	<Dropdown years={t('mathspastpapers')} drop_down_title={t("pastpapers_chemistry")}/>
+	<Dropdown years={t('mathspastpapers')} drop_down_title={t("pastpapers_ict")}/>
+</div>
+
+<div id="schemes-content" class="tab-content">
+	<Dropdown years={t('mathsschemes')} drop_down_title={t("schemes_combined_maths")}/>
+	<Dropdown years={t('mathsschemes')} drop_down_title={t("schemes_physics")}/>
+	<Dropdown years={t('mathsschemes')} drop_down_title={t("schemes_chemistry")}/>
+	<Dropdown years={t('mathsschemes')} drop_down_title={t("schemes_ict")}/>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+	const pastpapersTab = document.getElementById('pastpapers-tab') as HTMLDivElement;
+	const schemesTab = document.getElementById('schemes-tab') as HTMLDivElement;
+
+	const pastpapersContent = document.getElementById('pastpapers-content') as HTMLDivElement;
+	const schemesContent = document.getElementById('schemes-content') as HTMLDivElement;
+
+ 	//Initialize: Select "Past Papers" tab and content
+	pastpapersTab.classList.add('bg-purple-500', 'text-white','border-b-2', 'border-purple-400');
+	schemesTab.classList.remove('bg-purple-500', 'text-black','border-b-2', 'border-purple-400');
+	pastpapersContent.classList.remove('hidden');
+	schemesContent.classList.add('hidden');
+
+	pastpapersTab.addEventListener('click', () => {
+		pastpapersTab.classList.add('bg-purple-500','text-white','border-b-2', 'border-purple-400');
+		pastpapersTab.classList.remove('bg-white', 'text-black');
+
+		schemesTab.classList.remove('bg-purple-500','border-b-2', 'border-purple-400','text-white');
+		schemesTab.classList.add('bg-white', 'text-black');
+
+		pastpapersContent.classList.remove('hidden');
+		schemesContent.classList.add('hidden');
+	});
+ 
+	schemesTab.addEventListener('click', () => {
+		schemesTab.classList.add('bg-purple-500','text-white','border-b-2', 'border-purple-400');
+		schemesTab.classList.remove('bg-white', 'text-black');
+
+		pastpapersTab.classList.remove('bg-purple-500','border-b-2', 'border-purple-400', 'text-white');
+		pastpapersTab.classList.add('bg-white', 'text-black');
+
+		schemesContent.classList.remove('hidden');
+		pastpapersContent.classList.add('hidden');
+	});
+});
+
+</script>
