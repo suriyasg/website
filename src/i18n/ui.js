@@ -158,6 +158,18 @@ for (const d of EXAM_CENTRES.districts) {
  * @prop {string} schemes_button
  * @prop {string} results__title
  * @prop {string} find_your_index_no__title
+ * 
+ * @prop {string} pastpapers_combined_maths
+ * @prop {string} pastpapers_physics
+ * @prop {string} pastpapers_chemistry
+ * @prop {string} pastpapers_ict
+ * @prop {string} mathspastpapers
+ * 
+ * @prop {string} schemes_combined_maths
+ * @prop {string} schemes_physics
+ * @prop {string} schemes_chemistry
+ * @prop {string} schemes_ict
+ * @prop {string} mathsschemes
  */
 
 /**
@@ -332,6 +344,62 @@ export const ui = Object.freeze({
 		schemes_button: "Schemes",
 		results__title: "Results | Mora Exams",
 		find_your_index_no__title: "Find Your Index No. | Mora Exams",
+
+		pastpapers_combined_maths: "Combined Maths Pastpapers",
+		pastpapers_physics: "Physics Pastpapers",
+		pastpapers_chemistry: "Chemistry Pastpapers",
+		pastpapers_ict: "ICT Pastpapers",
+		schemes_combined_maths: "Combined Maths Schemes",
+		schemes_physics: "Physics Schemes",
+		schemes_chemistry: "Chemistry Schemes",
+		schemes_ict: "ICT Schemes",
+
+		mathspastpapers:[
+			{
+				"year" : "2023",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "Tamil Part 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "English Part 1" },
+				]
+			},
+			{
+				"year" : "2022",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "Tamil Part 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "English Part 1" },
+				]
+			},
+			{
+				"year" : "2021",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "Tamil Part 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "English Part 1" },
+				]
+			}
+		],
+		mathsschemes:[
+			{
+				"year" : "2020",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "Tamil Part 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "English Part 1" },
+				]
+			},
+			{
+				"year" : "2019",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "Tamil Part 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "English Part 1" },
+				]
+			},
+			{
+				"year" : "2018",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "Tamil Part 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "English Part 1" },
+				]
+			}
+		]
 	},
 	ta: {
 		index__title: "Mora Exams",
@@ -488,6 +556,64 @@ export const ui = Object.freeze({
 		hero_index_button: "Index Number",
 		hero_results_button: "Results",
 		schemes_button: "Schemes",
+
+
+		pastpapers_combined_maths: "இணைந்த கணித கடந்தகால வினாத்தாள்கள்",
+		pastpapers_physics: "பௌதிகவியல் கடந்தகால வினாத்தாள்கள்",
+		pastpapers_chemistry: "இரசாயனவியல் கடந்தகால வினாத்தாள்கள்",
+		pastpapers_ict: "தகவல் தொடர்பாடல் தொழின்நுட்ப கடந்தகால வினாத்தாள்கள்",
+		schemes_combined_maths: "இணைந்த கணிதம் புள்ளி வழங்கும் திட்டம்",
+		schemes_physics: "பௌதிகவியல் புள்ளி வழங்கும் திட்டம்",
+		schemes_chemistry: "இரசாயனவியல் புள்ளி வழங்கும் திட்டம்",
+		schemes_ict: "தகவல் தொடர்பாடல் தொழின்நுட்பம் புள்ளி வழங்கும் திட்டம்",
+
+		mathspastpapers:[
+			{
+				"year" : "2023",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "தமிழ் மொழிமுலம் பகுதி 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "ஆங்கில மொழிமூலம் பகுதி 1" },
+				]
+			},
+			{
+				"year" : "2022",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "தமிழ் மொழிமுலம் பகுதி 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "ஆங்கில மொழிமூலம் பகுதி 1" },
+				]
+			},
+			{
+				"year" : "2021",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "தமிழ் மொழிமுலம் பகுதி 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "ஆங்கில மொழிமூலம் பகுதி 1``" },
+				]
+			}
+		],
+
+		mathsschemes:[
+			{
+				"year" : "2020",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "தமிழ் மொழிமுலம் பகுதி 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "ஆங்கில மொழிமூலம் பகுதி 1" },
+				]
+			},
+			{
+				"year" : "2019",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "தமிழ் மொழிமுலம் பகுதி 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "ஆங்கில மொழிமூலம் பகுதி 1" },
+				]
+			},
+			{
+				"year" : "2018",
+				"links" : [
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "தமிழ் மொழிமுலம் பகுதி 1" },
+					{ "href": "https://drive.google.com/file/d/1bct9McoCjJ4PeUzqVt2zYJHeHXRe7Lms/view?usp=drive_link", "title": "ஆங்கில மொழிமூலம் பகுதி 1``" },
+				]
+			}
+		]
 	},
 });
 
