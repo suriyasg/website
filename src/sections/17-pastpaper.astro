@@ -3,16 +3,15 @@ import Dropdown from "../components/DropdownCostomized.astro"
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const t = useTranslations(getLangFromUrl(Astro.url));
-
 ---
 <div class="tabs flex justify-center mb-4 max-h-12">
-	<div class="flex w-full max-w-md rounded-full border-2 border-gray-300 overflow-hidden">
-		<div id="pastpapers-tab" class="flex-1 tab cursor-pointer py-2 px-4 text-lg rounded-l-full  transition-colors duration-500 ease-in-out transform translate-x-0"> 
+	<div class="flex w-full max-w-7xl rounded-full border-2 border-gray-300 overflow-hidden">
+		<div id="pastpapers-tab" class="flex-1 tab cursor-pointer py-2 px-4 text-lg rounded-l-full  transition-colors duration-300 ease-in-out transform translate-x-0 text-center"> 
 			<span id="pastpapers-span">
 				Past Papers
 			</span>
 		</div>
-		<button id="schemes-tab" class="flex-1 tab cursor-pointer py-2 px-4 text-lg rounded-r-full transition-colors duration-500 ease-in-out transform translate-x-0">
+		<button id="schemes-tab" class="flex-1 tab cursor-pointer py-2 px-4 text-lg rounded-r-full transition-colors duration-500 ease-in-out transform translate-x-0 text-center">
 			<span id="schemes-span">
 				Schemes
 			</span>
@@ -21,7 +20,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 </div>
   
 
-<div id="pastpapers-content" class="tab-content active">
+<div id="pastpapers-content" class="tab-content">
 	<Dropdown years={t('mathspastpapers')} drop_down_title={t("pastpapers_combined_maths")}/>
 	<Dropdown years={t('mathspastpapers')} drop_down_title={t("pastpapers_physics")}/>
 	<Dropdown years={t('mathspastpapers')} drop_down_title={t("pastpapers_chemistry")}/>
@@ -45,13 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	const schemesContent = document.getElementById('schemes-content') as HTMLDivElement;
 
  	//Initialize: Select "Past Papers" tab and content
-	pastpapersTab.classList.add('bg-purple-500', 'text-white','border-b-2', 'border-purple-400');
+	pastpapersTab.classList.add('bg-purple-500', 'text-white','border-b-8', 'border-purple-400');
 	schemesTab.classList.remove('bg-purple-500', 'text-black','border-b-2', 'border-purple-400');
 	pastpapersContent.classList.remove('hidden');
 	schemesContent.classList.add('hidden');
 
 	pastpapersTab.addEventListener('click', () => {
-		pastpapersTab.classList.add('bg-purple-500','text-white','border-b-2', 'border-purple-400');
+		pastpapersTab.classList.add('bg-purple-500','text-white','border-b-2', 'border-purple-800');
 		pastpapersTab.classList.remove('bg-white', 'text-black');
 
 		schemesTab.classList.remove('bg-purple-500','border-b-2', 'border-purple-400','text-white');
